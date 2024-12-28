@@ -43,9 +43,15 @@ nav {
     color: #007BFF;
 }
 
-.nav-right a .material-icons {
+.nav-right a .material-icons,
+.nav-left a .material-icons {
     vertical-align: middle;
     margin-left: 8px;
+    font-size: 18px; /* Ikonernas storlek */
+    color: transparent;
+    border: 1px solid #333; /* Kontur på ikonerna */
+    padding: 2px;
+    border-radius: 50%;
 }
 
 /* Logo styles */
@@ -63,15 +69,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero .content h1 {
@@ -99,5 +96,11 @@ nav {
 
     .nav-left a, .nav-right a {
         margin: 0 20px;
+        font-size: 12px; /* Mindre textstorlek för små skärmar */
+    }
+
+    .nav-right a .material-icons,
+    .nav-left a .material-icons {
+        font-size: 14px; /* Mindre ikoner på små skärmar */
     }
 }
