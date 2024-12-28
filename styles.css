@@ -32,7 +32,9 @@ nav {
 .nav-left a, .nav-right a {
     color: #333;
     text-decoration: none;
-    font-size: 18px;
+    font-family: Georgia, serif; /* Smal Georgia font */
+    font-weight: lighter;  /* Light font weight */
+    font-size: 14px;
     margin: 0 84px; /* Detta ger mellanrummet mellan länkarna */
     transition: color 0.3s ease;
 }
@@ -47,10 +49,8 @@ nav {
 }
 
 /* Logo styles */
-.logo h1 {
-    font-family: Georgia, serif;
-    color: white;
-    font-size: 36px;
+.logo img {
+    width: 150px;  /* Anpassa storleken på din logga */
 }
 
 /* Hero section */
@@ -76,6 +76,7 @@ nav {
 
 .hero .content h1 {
     font-family: Georgia, serif;
+    font-weight: lighter;
     color: white;
     font-size: 80px;
     text-align: center;
@@ -88,8 +89,8 @@ nav {
         padding: 0 20px;
     }
 
-    .logo h1 {
-        font-size: 28px;
+    .logo img {
+        width: 120px;
     }
 
     .hero .content h1 {
