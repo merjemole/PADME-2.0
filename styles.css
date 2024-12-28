@@ -13,10 +13,11 @@ body, html {
 /* Header styles */
 header {
     background-color: #E2E8E6;
-    padding: 20px 0;
+    padding: 10px 0;  /* Justerat padding för att få en mer kompakt header */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 80px;  /* Justera headerhöjden */
     position: relative;
     z-index: 10;
 }
@@ -35,7 +36,7 @@ nav {
     font-family: Georgia, serif; /* Smal Georgia font */
     font-weight: lighter;  /* Light font weight */
     font-size: 14px;
-    margin: 0 84px; /* Detta ger mellanrummet mellan länkarna */
+    margin: 0 40px; /* Minskat mellanrum mellan länkar */
     transition: color 0.3s ease;
 }
 
@@ -46,12 +47,9 @@ nav {
 .nav-right a .material-icons,
 .nav-left a .material-icons {
     vertical-align: middle;
-    margin-left: 8px;
-    font-size: 18px; /* Ikonernas storlek */
-    color: transparent;
-    border: 1px solid #333; /* Kontur på ikonerna */
-    padding: 2px;
-    border-radius: 50%;
+    margin-right: 8px;  /* Ikoner till vänster om texten */
+    font-size: 20px; /* Ikonernas storlek */
+    color: #333; /* Färgen på ikonerna */
 }
 
 /* Logo styles */
@@ -61,7 +59,7 @@ nav {
 
 /* Hero section */
 .hero {
-    background-image: url('webbpage.png'); /* Byt till din bild */
+    background-image: url('webpage.png'); /* Byt till din bakgrundsbild */
     background-size: cover;
     background-position: center;
     height: calc(100vh - 80px); /* Full höjd minus header */
