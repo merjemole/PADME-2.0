@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +9,39 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="nav-left">
-                <a href="#">Home</a>
-                <a href="#">Create</a>
-            </div>
-            <div class="logo">
-                <img src="logo.png" alt="BrandTees Logo"> <!-- Byt ut till din logga -->
-            </div>
-            <div class="nav-right">
-                <a href="#"><span class="material-icons-outlined">info</span> About Us</a>
-                <a href="#"><span class="material-icons-outlined">shopping_cart</span> Cart</a>
-            </div>
-        </nav>
-    </header>
+    <!-- Navigation -->
+    <nav class="transparent-nav">
+        <a href="#">Home</a>
+        <a href="#">Create</a>
+        <a href="#">About Us</a>
+        <a href="#">Cart</a>
+    </nav>
 
+    <!-- Hero Section -->
     <main class="hero">
         <div class="content">
             <h1>BrandTees AI</h1>
         </div>
     </main>
+
+    <!-- "How It Works" Section -->
+    <section class="how-it-works">
+        <h2>HOW IT WORKS</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>Create your design</h3>
+                <p>Simply describe the design you'd like to create, and our AI model will generate a unique t-shirt design for you to customize. It’s as easy as typing what you want.</p>
+            </div>
+            <div class="step">
+                <h3>Integrate your brand</h3>
+                <p>Want to add a personal touch or your logo? Upload your material directly on the platform. Our AI will seamlessly incorporate it into your design, helping you create a custom t-shirt that matches your vision.</p>
+            </div>
+            <div class="step">
+                <h3>Customize the details</h3>
+                <p>Once you're happy with the design, personalize it further! Choose the t-shirt color that complements your design, select your preferred size, and add it to your cart with just a click.</p>
+            </div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
