@@ -13,11 +13,10 @@ body, html {
 /* Header styles */
 header {
     background-color: #E2E8E6;
-    padding: 5px 0; /* Mindre padding för att minska höjden */
+    padding: 10px 0; /* Mindre padding */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 70px; /* Minskad headerhöjd */
     position: relative;
     z-index: 10;
 }
@@ -25,9 +24,14 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     align-items: center;
-    padding: 0 50px;
+    width: 90%; /* Bredd för layouten */
+    max-width: 1200px; /* Begränsad bredd */
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center; /* Säkra att texten och ikoner centreras */
 }
 
 .nav-left a, .nav-right a {
@@ -35,28 +39,25 @@ nav {
     text-decoration: none;
     font-family: Georgia, serif;
     font-weight: lighter;
-    font-size: 14px;
-    margin: 0 20px; /* Minskat mellanrum */
+    font-size: 16px;
+    margin: 0 20px; /* Mellanrum mellan länkar */
     transition: color 0.3s ease;
     display: flex;
-    align-items: center; /* Gör att texten och ikonerna är centrerade vertikalt */
+    align-items: center; /* Ikoner och text centrerade vertikalt */
 }
 
 .nav-left a:hover, .nav-right a:hover {
     color: #007BFF;
 }
 
-.nav-right a .material-icons-outlined,
-.nav-left a .material-icons-outlined {
-    vertical-align: middle;
+.nav-right a .material-icons-outlined {
     margin-right: 8px; /* Ikoner till vänster om texten */
-    font-size: 20px;
-    color: #333; /* Ändra färg vid behov */
+    font-size: 20px; /* Storleken på ikonerna */
+    color: #333;
 }
 
-/* Logo styles */
 .logo img {
-    width: 130px;  /* Anpassa storleken på loggan */
+    width: 180px; /* Större logga för bättre balans */
 }
 
 /* Hero section */
@@ -64,7 +65,7 @@ nav {
     background-image: url('webpage.png'); /* Byt till din bakgrundsbild */
     background-size: cover;
     background-position: center;
-    height: calc(100vh - 70px); /* Full höjd minus header */
+    height: calc(100vh - 80px); /* Full höjd minus header */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,11 +82,11 @@ nav {
 /* Responsive settings */
 @media (max-width: 768px) {
     nav {
-        padding: 0 20px;
+        flex-direction: column; /* Justera layouten för små skärmar */
     }
 
     .logo img {
-        width: 120px;
+        width: 140px; /* Mindre logga */
     }
 
     .hero .content h1 {
@@ -93,12 +94,7 @@ nav {
     }
 
     .nav-left a, .nav-right a {
-        margin: 0 10px;
-        font-size: 12px;
-    }
-
-    .nav-right a .material-icons-outlined,
-    .nav-left a .material-icons-outlined {
-        font-size: 16px;
+        font-size: 14px;
+        margin: 10px 0;
     }
 }
