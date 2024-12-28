@@ -13,11 +13,11 @@ body, html {
 /* Header styles */
 header {
     background-color: #E2E8E6;
-    padding: 10px 0;  /* Justerat padding för att få en mer kompakt header */
+    padding: 5px 0; /* Mindre padding för att minska höjden */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;  /* Justera headerhöjden */
+    height: 70px; /* Minskad headerhöjd */
     position: relative;
     z-index: 10;
 }
@@ -33,10 +33,10 @@ nav {
 .nav-left a, .nav-right a {
     color: #333;
     text-decoration: none;
-    font-family: Georgia, serif; /* Smal Georgia font */
-    font-weight: lighter;  /* Light font weight */
+    font-family: Georgia, serif;
+    font-weight: lighter;
     font-size: 14px;
-    margin: 0 40px; /* Minskat mellanrum mellan länkar */
+    margin: 0 20px; /* Minskat mellanrum */
     transition: color 0.3s ease;
 }
 
@@ -47,14 +47,14 @@ nav {
 .nav-right a .material-icons,
 .nav-left a .material-icons {
     vertical-align: middle;
-    margin-right: 8px;  /* Ikoner till vänster om texten */
-    font-size: 20px; /* Ikonernas storlek */
-    color: #333; /* Färgen på ikonerna */
+    margin-left: 8px;  /* Ikoner till höger om texten */
+    font-size: 20px;
+    color: #333;
 }
 
 /* Logo styles */
 .logo img {
-    width: 150px;  /* Anpassa storleken på din logga */
+    width: 130px;  /* Anpassa storleken på loggan */
 }
 
 /* Hero section */
@@ -62,8 +62,7 @@ nav {
     background-image: url('webpage.png'); /* Byt till din bakgrundsbild */
     background-size: cover;
     background-position: center;
-    height: calc(100vh - 80px); /* Full höjd minus header */
-    position: relative;
+    height: calc(100vh - 70px); /* Full höjd minus header */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,9 +72,8 @@ nav {
     font-family: Georgia, serif;
     font-weight: lighter;
     color: white;
-    font-size: 80px;
+    font-size: 70px;
     text-align: center;
-    z-index: 1;
 }
 
 /* Responsive settings */
@@ -93,12 +91,12 @@ nav {
     }
 
     .nav-left a, .nav-right a {
-        margin: 0 20px;
-        font-size: 12px; /* Mindre textstorlek för små skärmar */
+        margin: 0 10px;
+        font-size: 12px;
     }
 
     .nav-right a .material-icons,
     .nav-left a .material-icons {
-        font-size: 14px; /* Mindre ikoner på små skärmar */
+        font-size: 16px;
     }
 }
