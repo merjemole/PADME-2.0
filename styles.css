@@ -42,8 +42,9 @@ body, html {
     margin-right: 8px; /* Space between icon and text */
 }
 
+/* Remove hover effect */
 .floating-nav a:hover {
-    color: #FFD700; /* Highlight color */
+    color: white; /* Keeps text color white on hover */
 }
 
 /* Hero Section */
