@@ -1,4 +1,4 @@
-/* Global settings */
+/* Global styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,36 +8,47 @@
 body, html {
     height: 100%;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
-/* Navigation styles */
-.transparent-nav {
+/* Floating navigation */
+.floating-nav {
     position: absolute;
     top: 20px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 50px;
     color: white;
-    font-family: Georgia, serif;
     font-size: 16px;
-    text-transform: uppercase;
     z-index: 100;
 }
 
-.transparent-nav a {
+.floating-nav .left a, 
+.floating-nav .right a {
     text-decoration: none;
     color: white;
-    margin: 0 15px;
+    font-family: Georgia, serif;
+    margin-right: 168px; /* Space between items */
     transition: color 0.3s ease;
 }
 
-.transparent-nav a:hover {
+.floating-nav .right a:last-child {
+    margin-right: 0; /* Remove extra margin on the last element */
+}
+
+.floating-nav .right a span {
+    vertical-align: middle;
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.floating-nav a:hover {
     color: #FFD700; /* Highlight color */
 }
 
-/* Hero section */
+/* Hero Section */
 .hero {
-    background-image: url('webpage.png'); /* Bakgrundsbild */
+    background-image: url('webpage.png'); /* Background image */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -54,52 +65,21 @@ body, html {
     text-align: center;
 }
 
-/* "How It Works" Section */
-.how-it-works {
-    background-color: #f5f5f5;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.how-it-works h2 {
-    font-family: Georgia, serif;
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.how-it-works .steps {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.how-it-works .step h3 {
-    font-family: Georgia, serif;
-    font-size: 24px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.how-it-works .step p {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #666;
-    line-height: 1.6;
-}
-
-/* Responsive settings */
-@media (min-width: 768px) {
-    .how-it-works .steps {
-        flex-direction: row;
-        justify-content: space-between;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .floating-nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
     }
 
-    .how-it-works .step {
-        flex: 1;
-        padding: 0 10px;
+    .floating-nav .left a, 
+    .floating-nav .right a {
+        margin-right: 0;
+        margin-bottom: 20px; /* Stack items with spacing */
+    }
+
+    .hero .content h1 {
+        font-size: 50px;
     }
 }
