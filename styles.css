@@ -46,12 +46,12 @@ nav {
     color: #007BFF;
 }
 
-.nav-right a .material-icons,
-.nav-left a .material-icons {
+.nav-right a .material-icons-outlined,
+.nav-left a .material-icons-outlined {
     vertical-align: middle;
-    margin-right: 8px;  /* Ikoner till vänster om texten */
+    margin-right: 8px; /* Ikoner till vänster om texten */
     font-size: 20px;
-    color: #666; /* Ljusa upp ikonerna */
+    color: #333; /* Ändra färg vid behov */
 }
 
 /* Logo styles */
@@ -97,8 +97,8 @@ nav {
         font-size: 12px;
     }
 
-    .nav-right a .material-icons,
-    .nav-left a .material-icons {
+    .nav-right a .material-icons-outlined,
+    .nav-left a .material-icons-outlined {
         font-size: 16px;
     }
 }
