@@ -55,7 +55,7 @@ nav {
 
 /* Hero section */
 .hero {
-    background-image: url('your-image.jpg'); /* Byt till din bild */
+    background-image: url('webbpage.png'); /* Byt till din bild */
     background-size: cover;
     background-position: center;
     height: calc(100vh - 80px); /* Full höjd minus header */
