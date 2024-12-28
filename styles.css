@@ -38,6 +38,8 @@ nav {
     font-size: 14px;
     margin: 0 20px; /* Minskat mellanrum */
     transition: color 0.3s ease;
+    display: flex;
+    align-items: center; /* Gör att texten och ikonerna är centrerade vertikalt */
 }
 
 .nav-left a:hover, .nav-right a:hover {
@@ -47,9 +49,9 @@ nav {
 .nav-right a .material-icons,
 .nav-left a .material-icons {
     vertical-align: middle;
-    margin-left: 8px;  /* Ikoner till höger om texten */
+    margin-right: 8px;  /* Ikoner till vänster om texten */
     font-size: 20px;
-    color: #333;
+    color: #666; /* Ljusa upp ikonerna */
 }
 
 /* Logo styles */
