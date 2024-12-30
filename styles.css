@@ -72,7 +72,7 @@ body, html {
     width: 100%; /* Ändra till 100% så att karusellen sträcker sig över hela bredden */
     height: 250px; /* Håll höjden på 250px */
     overflow: hidden;
-    margin: 50px 0; /* Minska marginalerna för att få mindre mellanrum */
+    margin: 20px 0; /* Minska mellanrummet ovanför och under karusellen */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,6 +80,7 @@ body, html {
     border-radius: 10px; /* Mjuka kanter för bättre design */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtil skugga */
 }
+
 
 /* Carousel */
 .carousel {
