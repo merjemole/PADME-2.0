@@ -146,6 +146,7 @@ body, html {
     }
 }
 
+
 /* Justera avståndet mellan HOW IT WORKS och innehållet under */
 .how-it-works {
     background-color: #FFFDF4;
@@ -156,17 +157,18 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center the entire content */
-    margin-top: 60px; /* Lägg till mer mellanrum här */
 }
 
+/* Justera avståndet mellan HOW IT WORKS och innehållet under */
 .how-it-works h2 {
     font-size: 36px;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 50px; /* Öka detta värde för mer avstånd under rubriken */
     color: #131311;
-    text-align: center; /* Ensure the heading is centered */
+    text-align: center;
     width: 100%;
 }
+
 
 
 /* Justera placering av stegen */
