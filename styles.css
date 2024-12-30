@@ -174,7 +174,7 @@ body, html {
     gap: 50px;
     max-width: 1200px;
     margin: 0 auto;
-    text-align: left; /* Ensure text in steps is aligned left */
+    text-align: left; /* Ensures text in steps is left-aligned */
 }
 
 /* Individual step */
