@@ -146,7 +146,7 @@ body, html {
     }
 }
 
-/* How It Works Section */
+/* Justera avståndet mellan HOW IT WORKS och innehållet under */
 .how-it-works {
     background-color: #FFFDF4;
     padding: 50px 20px;
@@ -156,6 +156,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center the entire content */
+    margin-top: 60px; /* Lägg till mer mellanrum här */
 }
 
 .how-it-works h2 {
@@ -166,6 +167,7 @@ body, html {
     text-align: center; /* Ensure the heading is centered */
     width: 100%;
 }
+
 
 /* Justera placering av stegen */
 .steps {
