@@ -167,8 +167,7 @@ body, html {
     width: 100%;
 }
 
-
-/* Step layout adjustments */
+/* Justera placering av stegen */
 .steps {
     display: flex;
     flex-direction: column;
@@ -177,18 +176,16 @@ body, html {
     margin: 0 auto;
 }
 
+/* Justera varje steg */
 .step {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Justera så att bild och text är "top-align" */
+    justify-content: center; /* Se till att hela innehållet är centrerat */
     gap: 30px;
+    width: 100%;
 }
 
-/* Reverse layout for specific step (Image in the middle of two text sections) */
-.reverse-layout {
-    flex-direction: row-reverse; /* Move image to the middle */
-}
-
-/* Step image */
+/* För att säkerställa att steg innehållet är centrerat, utan att påverka texten */
 .step img {
     width: 50%;
     max-width: 400px;
@@ -196,9 +193,12 @@ body, html {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Step text */
 .step .text {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrerar texten vertikalt */
+    text-align: left;
 }
 
 .step h3 {
@@ -231,6 +231,7 @@ body, html {
 }
 
 
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .floating-nav {
@@ -248,4 +249,5 @@ body, html {
     .hero .content h1 {
         font-size: 50px;
     }
-}
+}   
+
