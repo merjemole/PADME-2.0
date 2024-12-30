@@ -146,6 +146,7 @@ body, html {
     }
 }
 
+
 /* How It Works Section */
 .how-it-works {
     background-color: #FFFDF4;
@@ -153,6 +154,15 @@ body, html {
     font-family: Georgia, serif;
     color: #131311;
 }
+
+.how-it-works h2 {
+    font-size: 30px; /* Mindre än BrandTees AI */
+    font-weight: 300; /* Smalare font */
+    font-family: Georgia, serif; /* Matcha med BrandTees AI */
+    color: #131311; /* Behåll samma färg */
+    margin-bottom: 50px;
+}
+
 
 /* Steps layout */
 .steps {
