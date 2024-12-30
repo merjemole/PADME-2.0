@@ -167,26 +167,25 @@ body, html {
     width: 100%;
 }
 
-/* Steps layout */
+
+/* Step layout adjustments */
 .steps {
     display: flex;
     flex-direction: column;
     gap: 50px;
     max-width: 1200px;
     margin: 0 auto;
-    text-align: left; /* Ensures text in steps is left-aligned */
 }
 
-/* Individual step */
 .step {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-/* Reverse layout for specific step */
+/* Reverse layout for specific step (Image in the middle of two text sections) */
 .reverse-layout {
-    flex-direction: row-reverse; /* Text to the left, image to the right */
+    flex-direction: row-reverse; /* Move image to the middle */
 }
 
 /* Step image */
@@ -215,7 +214,7 @@ body, html {
     color: #333;
 }
 
-/* Responsive design */
+/* Adjustments for responsiveness */
 @media (max-width: 768px) {
     .step {
         flex-direction: column;
