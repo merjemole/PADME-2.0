@@ -152,7 +152,6 @@ body, html {
     padding: 50px 20px;
     font-family: Georgia, serif;
     color: #131311;
-    text-align: center; /* Centrerar rubriken */
 }
 
 .how-it-works h2 {
@@ -161,7 +160,6 @@ body, html {
     margin-bottom: 30px;
     color: #131311; /* Korrekt färg */
 }
-
 
 /* Steps layout */
 .steps {
