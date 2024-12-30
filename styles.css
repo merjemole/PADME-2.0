@@ -146,7 +146,6 @@ body, html {
     }
 }
 
-
 /* How It Works Section */
 .how-it-works {
     background-color: #FFFDF4;
@@ -154,14 +153,18 @@ body, html {
     font-family: Georgia, serif;
     color: #131311;
     text-align: left; /* Align all content to the left */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the entire content */
 }
 
 .how-it-works h2 {
     font-size: 36px;
     font-weight: 400;
     margin-bottom: 30px;
-    color: #131311; /* Correct color */
-    text-align: center; /* Center the "HOW IT WORKS" heading */
+    color: #131311;
+    text-align: center; /* Ensure the heading is centered */
+    width: 100%;
 }
 
 /* Steps layout */
@@ -171,6 +174,7 @@ body, html {
     gap: 50px;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: left; /* Ensure text in steps is aligned left */
 }
 
 /* Individual step */
@@ -182,7 +186,7 @@ body, html {
 
 /* Reverse layout for specific step */
 .reverse-layout {
-    flex-direction: row-reverse; /* Text till vänster, bild till höger */
+    flex-direction: row-reverse; /* Text to the left, image to the right */
 }
 
 /* Step image */
@@ -211,7 +215,7 @@ body, html {
     color: #333;
 }
 
-/* Responsiv design */
+/* Responsive design */
 @media (max-width: 768px) {
     .step {
         flex-direction: column;
