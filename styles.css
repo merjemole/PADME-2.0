@@ -68,56 +68,60 @@ body, html {
 
 /* How It Works Section */
 .how-it-works {
-    background-color: #fbf7f0; /* Light beige background */
+    background-color: #FFFDF4; /* Ny bakgrundsfärg */
     padding: 50px 20px;
     text-align: center;
     font-family: Georgia, serif;
     color: #333;
 }
 
-/* How It Works Section */
-.how-it-works h2 {
-    font-size: 30px; /* Mindre än BrandTees AI */
-    font-weight: 300; /* Smalare font */
-    font-family: Georgia, serif; /* Matcha med BrandTees AI */
-    color: #345481; /* Behåll samma färg */
-    margin-bottom: 50px;
-}
-
-/* Step Titles */
-.step h3 {
-    font-size: 20px; /* Mindre fontstorlek */
-    font-weight: 300; /* Smalare font */
-    font-family: Georgia, serif; /* Matcha med BrandTees AI */
-    margin-bottom: 10px;
-}
-
+/* Steps layout */
 .steps {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 50px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Individual step */
 .step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     text-align: left;
 }
 
-.step img {
-    width: 100%;
-    max-width: 400px;
-    display: block;
-    margin: 0 auto 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+/* Alternate layout for steps */
+.step:nth-child(odd) {
+    flex-direction: row; /* Bild till vänster, text till höger */
 }
 
+.step:nth-child(even) {
+    flex-direction: row-reverse; /* Bild till höger, text till vänster */
+}
+
+/* Step image */
+.step img {
+    width: 50%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Step text */
+.step h3 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #345481; /* Matcha titelns färg */
+}
 
 .step p {
     font-size: 16px;
     line-height: 1.6;
 }
+
 
 /* Responsive design */
 @media (max-width: 768px) {
