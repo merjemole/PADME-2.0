@@ -80,7 +80,6 @@ body, html {
     justify-content: center;
     background-color: #FFFDF4; /* Bakgrundsfärg */
     border-radius: 10px; /* Mjuka kanter för bättre design */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtil skugga */
 }
 
 /* Carousel */
