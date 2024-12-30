@@ -146,13 +146,13 @@ body, html {
     }
 }
 
+
 /* How It Works Section */
 .how-it-works {
-    background-color: #FFFDF4; /* Ny bakgrundsfärg */
+    background-color: #FFFDF4;
     padding: 50px 20px;
-    text-align: center;
     font-family: Georgia, serif;
-    color: #333;
+    color: #131311;
 }
 
 /* Steps layout */
@@ -168,16 +168,15 @@ body, html {
 .step {
     display: flex;
     align-items: center;
-    gap: 20px;
-    text-align: left;
-    flex-direction: column; /* Rubrik och text ovanför */
+    gap: 30px;
 }
 
-/* Alternate layout for images */
-.step:nth-child(odd) img {
-    order: -1; /* Bild ovanför text för udda steg */
+/* Alternate layout for steps */
+.step:nth-child(even) {
+    flex-direction: row-reverse; /* Bild till höger, text till vänster */
 }
 
+/* Step image */
 .step img {
     width: 50%;
     max-width: 400px;
@@ -186,32 +185,36 @@ body, html {
 }
 
 /* Step text */
+.step .text {
+    width: 50%;
+}
+
 .step h3 {
     font-size: 24px;
-    font-weight: 400; /* Lite tjockare */
+    font-weight: 400;
     margin-bottom: 10px;
-    color: #131311; /* Svart text för rubrik */
+    color: #131311;
 }
 
 .step p {
     font-size: 16px;
     line-height: 1.6;
-    color: #333; /* Standardtextfärg */
-    margin: 10px 0; /* Mellanrum mellan rubrik och text */
+    color: #333;
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
-    .steps {
-        grid-template-columns: 1fr;
-    }
-
     .step {
+        flex-direction: column;
         text-align: center;
     }
 
     .step img {
-        margin: 0 auto 20px;
+        width: 100%;
+    }
+
+    .step .text {
+        width: 100%;
     }
 }
 
