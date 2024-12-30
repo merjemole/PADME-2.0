@@ -146,7 +146,6 @@ body, html {
     }
 }
 
-
 /* How It Works Section */
 .how-it-works {
     background-color: #FFFDF4;
@@ -171,9 +170,9 @@ body, html {
     gap: 30px;
 }
 
-/* Alternate layout for steps */
-.step:nth-child(even) {
-    flex-direction: row-reverse; /* Bild till höger, text till vänster */
+/* Reverse layout for specific step */
+.reverse-layout {
+    flex-direction: row-reverse; /* Text till vänster, bild till höger */
 }
 
 /* Step image */
@@ -202,7 +201,7 @@ body, html {
     color: #333;
 }
 
-/* Responsive design */
+/* Responsiv design */
 @media (max-width: 768px) {
     .step {
         flex-direction: column;
