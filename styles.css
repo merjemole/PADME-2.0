@@ -66,6 +66,84 @@ body, html {
     text-align: center;
 }
 
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    width: 250px;
+    height: 264px;
+    overflow: hidden;
+    margin: 50px auto; /* Center the carousel */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    gap: 10px; /* Space between images */
+    animation: scroll-carousel 10s linear infinite; /* Smooth infinite scroll */
+}
+
+/* Carousel Images */
+.carousel img {
+    width: 250px;
+    height: 264px;
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Gradient Effect */
+.carousel-gradient {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    pointer-events: none; /* Click-through effect */
+    z-index: 2;
+}
+
+.carousel-gradient.left {
+    left: 0;
+    background: linear-gradient(to right, #FFFDF4, transparent);
+}
+
+.carousel-gradient.right {
+    right: 0;
+    background: linear-gradient(to left, #FFFDF4, transparent);
+}
+
+/* Keyframes for Carousel Animation */
+@keyframes scroll-carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-260px * 4)); /* Adjust based on the number of images */
+    }
+}
+
+/* Carousel Infinite Scroll */
+.carousel {
+    animation: scroll-carousel 10s linear infinite;
+    display: flex;
+    will-change: transform;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 200px;
+        height: 210px;
+    }
+    .carousel img {
+        width: 200px;
+        height: 210px;
+    }
+}
+
+
 /* How It Works Section */
 .how-it-works {
     background-color: #FFFDF4; /* Ny bakgrundsfärg */
