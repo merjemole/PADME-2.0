@@ -167,7 +167,6 @@ body, html {
     width: 100%;
 }
 
-
 /* Step layout adjustments */
 .steps {
     display: flex;
@@ -185,7 +184,7 @@ body, html {
 
 /* Reverse layout for specific step (Image in the middle of two text sections) */
 .reverse-layout {
-    flex-direction: row-reverse; /* Move image to the middle */
+    flex-direction: row-reverse; /* Moves image to the left and text to the right */
 }
 
 /* Step image */
@@ -229,7 +228,6 @@ body, html {
         width: 100%;
     }
 }
-
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
