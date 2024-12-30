@@ -93,10 +93,13 @@ body, html {
 .carousel img {
     width: 250px;
     height: 250px;
-    border-radius: 10px; /* Rundade hörn */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtil skugga */
-    border: 2px solid rgba(204, 204, 204, 0.5); /* Ljusgrå färg med 50% transparens */
-    box-sizing: border-box; /* Gör så att padding och border inte påverkar storleken på bilden */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    background-image: linear-gradient(#FFFDF4, #FFFDF4), 
+                      linear-gradient(to right, rgba(204, 204, 204, 0.5), rgba(204, 204, 204, 0));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
 }
 
 
