@@ -91,7 +91,7 @@ body, html {
 
 /* Carousel Images */
 .carousel img {
-    width: 264px; /* Justera bredden till 264px */
+    width: 250px; /* Justera bredden till 264px */
     height: 250px; /* Höjd på bilderna */
     object-fit: cover;
     border-radius: 10px; /* Rundade hörn */
