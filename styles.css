@@ -89,12 +89,13 @@ body, html {
     animation: scroll-carousel 10s linear infinite; /* Smooth infinite scroll */
 }
 
+
 .carousel img {
-    width: 250px; /* Justera bredden till 250px */
-    height: 250px; /* Höjd på bilderna */
+    width: 250px;
+    height: 250px;
     border-radius: 10px; /* Rundade hörn */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtil skugga */
-    border: 2px solid #ccc; /* En subtil border, ändra färgen om du vill */
+    border: 2px solid rgba(204, 204, 204, 0.5); /* Ljusgrå färg med 50% transparens */
     box-sizing: border-box; /* Gör så att padding och border inte påverkar storleken på bilden */
 }
 
