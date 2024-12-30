@@ -75,10 +75,21 @@ body, html {
     color: #333;
 }
 
+/* How It Works Section */
 .how-it-works h2 {
-    font-size: 40px;
-    color: #345481; /* Blue color for the title */
+    font-size: 30px; /* Mindre än BrandTees AI */
+    font-weight: 300; /* Smalare font */
+    font-family: Georgia, serif; /* Matcha med BrandTees AI */
+    color: #345481; /* Behåll samma färg */
     margin-bottom: 50px;
+}
+
+/* Step Titles */
+.step h3 {
+    font-size: 20px; /* Mindre fontstorlek */
+    font-weight: 300; /* Smalare font */
+    font-family: Georgia, serif; /* Matcha med BrandTees AI */
+    margin-bottom: 10px;
 }
 
 .steps {
@@ -102,10 +113,6 @@ body, html {
     border-radius: 10px;
 }
 
-.step h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
 
 .step p {
     font-size: 16px;
