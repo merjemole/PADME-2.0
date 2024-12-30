@@ -146,21 +146,20 @@ body, html {
     }
 }
 
-
 /* How It Works Section */
 .how-it-works {
     background-color: #FFFDF4;
     padding: 50px 20px;
     font-family: Georgia, serif;
     color: #131311;
+    text-align: center; /* Centrerar rubriken */
 }
 
 .how-it-works h2 {
-    font-size: 30px; /* Mindre än BrandTees AI */
-    font-weight: 300; /* Smalare font */
-    font-family: Georgia, serif; /* Matcha med BrandTees AI */
-    color: #131311; /* Behåll samma färg */
-    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #131311; /* Korrekt färg */
 }
 
 
