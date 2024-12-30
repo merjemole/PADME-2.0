@@ -82,11 +82,12 @@ body, html {
 }
 
 
-/* Carousel */
 .carousel {
     display: flex;
-    gap: 40px; /* Öka mellanrummet mellan bilderna */
-    animation: scroll-carousel 10s linear infinite; /* Smooth infinite scroll */
+    gap: 40px; /* Avstånd mellan bilderna */
+    animation: scroll-carousel 10s linear infinite;
+    will-change: transform;
+    width: max-content; /* Förhindra linjebrott */
 }
 
 .carousel img {
@@ -98,6 +99,14 @@ body, html {
     box-sizing: border-box; /* Gör så att padding och border inte påverkar storleken på bilden */
 }
 
+@keyframes scroll-carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-calc(250px + 40px) * 7); /* Justera för en hel uppsättning bilder */
+    }
+}
 
 
 /* Gradient Effect */
