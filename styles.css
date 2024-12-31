@@ -215,7 +215,7 @@ body, html {
 .how-it-works h2 {
     font-size: 36px;
     font-weight: 400;
-    margin-bottom: 75px; /* Öka detta värde för mer avstånd under rubriken */
+    margin: 89px 0; /* Add more space above and below the link */
     color: #131311;
     text-align: center;
     width: 100%;
