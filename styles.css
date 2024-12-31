@@ -121,7 +121,7 @@ body, html {
     width: 100%; /* Ändra till 100% så att karusellen sträcker sig över hela bredden */
     height: 250px; /* Håll höjden på 250px */
     overflow: visible;
-    margin: 40px 0; /* Justera mellanrum ovanför och under karusellen */
+    margin: 80px 0; /* Justera mellanrum ovanför och under karusellen */
     display: flex;
     align-items: center;
     justify-content: center;
