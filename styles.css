@@ -270,6 +270,107 @@ body, html {
     color: #333;
 }
 
+/* Footer Section */
+.footer {
+    background-color: #131311; /* Dark background */
+    color: #FFF; /* White text */
+    padding: 40px 20px;
+    font-family: Georgia, serif;
+}
+
+.footer-reviews blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 4px solid #FFF; /* Decorative border */
+}
+
+.footer-reviews cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-size: 14px;
+    color: #999;
+}
+
+.footer-newsletter p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-newsletter form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-newsletter input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #FFF;
+    background: none;
+    color: #FFF;
+}
+
+.footer-newsletter input::placeholder {
+    color: #CCC;
+}
+
+.footer-newsletter button {
+    padding: 10px 20px;
+    border: 1px solid #FFF;
+    background-color: #FFF;
+    color: #131311;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+    background-color: #131311;
+    color: #FFF;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: #FFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #CCC;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
+
 /* Adjustments for responsiveness */
 @media (max-width: 768px) {
     .step {
