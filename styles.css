@@ -70,6 +70,51 @@ body, html {
     text-align: center;
 }
 
+/* Collaboration Link Styles */
+.collaboration-link {
+    text-align: center;
+    margin-bottom: 20px; /* Space between the link and the carousel */
+}
+
+.collaboration-link a {
+    font-size: 18px;
+    font-family: Georgia, serif;
+    font-weight: 300; /* Light font weight */
+    color: #131311;
+    text-decoration: none;
+    border-bottom: 1px solid #131311; /* Underline */
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.collaboration-link a:hover {
+    color: #333;
+    border-color: #333;
+}
+
+/* Make Your Own Button Styles */
+.make-your-own-container {
+    text-align: center;
+    margin-top: 20px; /* Space between the carousel and the button */
+}
+
+.make-your-own-button {
+    display: inline-block;
+    font-size: 16px;
+    font-family: Georgia, serif;
+    color: #131311;
+    text-decoration: none;
+    border: 1px solid #131311; /* Thin border */
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners for elegance */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.make-your-own-button:hover {
+    background-color: #131311; /* Change background color on hover */
+    color: #FFF; /* Change text color on hover */
+}
+
+
 /* Carousel Container */
 .carousel-container {
     position: relative;
