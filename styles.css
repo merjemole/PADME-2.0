@@ -271,14 +271,18 @@ body, html {
 }
 
 
+
+
+
 /* Footer Section */
 .footer {
     background-color: #FBFBF6;
     padding: 20px 40px;
     color: #555;
     font-size: 12px;
-    text-align: center;
+    text-align: right; /* Justera så texten börjar till höger */
     line-height: 1.6;
+    font-family: Arial, sans-serif; /* Lägg till samma font som resten av sidan */
 }
 
 .footer-links {
@@ -293,7 +297,6 @@ body, html {
     list-style: none;
     padding: 0;
     min-width: 150px; /* Ger varje kolumn en jämn minsta bredd */
-
 }
 
 .footer-links ul li {
@@ -319,6 +322,7 @@ body, html {
 .footer-bottom {
     font-size: 11px;
     color: #888;
+    text-align: right; /* Se till att även copyright-texten börjar till höger */
 }
 
 /* Adjustments for responsiveness */
