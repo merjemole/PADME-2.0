@@ -81,13 +81,11 @@ body, html {
     border-radius: 10px;
 }
 
-
 .carousel {
     display: flex;
-    gap: 40px; /* Avstånd mellan bilderna */
-    animation: scroll-carousel 10s linear infinite;
+    gap: 40px;
     will-change: transform;
-    width: max-content; /* Förhindra linjebrott */
+    transition: none; /* Inga övergångar eftersom JavaScript hanterar rörelsen */
 }
 
 .carousel img {
