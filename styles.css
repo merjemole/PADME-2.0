@@ -73,7 +73,8 @@ body, html {
 /* Collaboration Link Styles */
 .collaboration-link {
     text-align: center;
-    margin-bottom: 20px; /* Space between the link and the carousel */
+    margin: 40px 0; /* Add more space above and below the link */
+
 }
 
 .collaboration-link a {
