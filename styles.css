@@ -68,38 +68,35 @@ body, html {
     text-align: center;
 }
 
-/* Carousel Container */
+/* Set up the basic structure */
+:root {
+    --d: 10s; /* animation duration */
+    --n: 7; /* number of images */
+}
+
 .carousel-container {
-    position: relative;
-    width: 100%; /* Ändra till 100% så att karusellen sträcker sig över hela bredden */
-    height: 250px; /* Håll höjden på 250px */
+    display: grid;
+    width: 380px;
+    height: 250px; /* Adjust height as needed */
     overflow: hidden;
-    margin: 40px 0; /* Justera mellanrum ovanför och under karusellen */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FFFDF4; /* Bakgrundsfärg */
-    border-radius: 10px; /* Mjuka kanter för bättre design */
+    position: relative;
+    -webkit-mask: linear-gradient(90deg, #0000, #000 10% 90%, #0000); /* Create gradient mask */
 }
 
-/* Carousel */
 .carousel {
-    display: flex;
-    gap: 40px; /* Öka mellanrummet mellan bilderna */
-    animation: scroll-carousel 10s linear infinite; /* Smooth infinite scroll */
+    display: grid;
+    grid-template-columns: repeat(var(--n), 100%); /* Creates a column for each image */
+    width: 100%;
+    height: 100%;
+    animation: scroll-carousel var(--d) linear infinite;
 }
 
-
-/* Carousel Images */
 .carousel img {
-    width: 250px; /* Justera bredden till 264px */
-    height: 250px; /* Höjd på bilderna */
+    width: 100%;
     object-fit: cover;
-    border-radius: 10px; /* Rundade hörn */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtil skugga */
+    aspect-ratio: 1.5; /* Adjust as needed */
+    grid-column: 1 / -1;
 }
-
-
 
 /* Gradient Effect */
 .carousel-gradient {
@@ -121,34 +118,39 @@ body, html {
     background: linear-gradient(to left, #FFFDF4, transparent);
 }
 
-/* Keyframes for Carousel Animation */
 @keyframes scroll-carousel {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-260px * 4)); /* Justera beroende på antal bilder i karusellen */
+        transform: translateX(-100%);
     }
 }
 
-/* Carousel Infinite Scroll */
-.carousel {
-    animation: scroll-carousel 10s linear infinite;
-    display: flex;
-    will-change: transform;
+
+/* Dynamisk animation-delay för varje bild */
+.carousel img:nth-child(1) {
+    animation-delay: 0s;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .carousel-container {
-        width: 200px;
-        height: 210px;
-    }
-    .carousel img {
-        width: 200px;
-        height: 210px;
-    }
+.carousel img:nth-child(2) {
+    animation-delay: calc(1 / var(--n) * var(--d));
 }
+
+.carousel img:nth-child(3) {
+    animation-delay: calc(2 / var(--n) * var(--d));
+}
+
+/* Repeat for each image, adjusting the delay */
+.carousel img:nth-child(4) {
+    animation-delay: calc(3 / var(--n) * var(--d));
+}
+
+.carousel img:nth-child(5) {
+    animation-delay: calc(4 / var(--n) * var(--d));
+}
+
+/* Repeat for all images */
 
 
 /* Justera avståndet mellan HOW IT WORKS och innehållet under */
