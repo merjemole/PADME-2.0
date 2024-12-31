@@ -81,12 +81,15 @@ body, html {
     border-radius: 10px;
 }
 
+
 .carousel {
     display: flex;
-    gap: 40px; /* Avstånd mellan bilder */
-    animation: scroll-carousel 20s linear infinite; /* Sömlös loop */
-    will-change: transform; /* Optimering */
+    gap: 40px; /* Avstånd mellan bilderna */
+    animation: scroll-carousel 10s linear infinite;
+    will-change: transform;
+    width: max-content; /* Förhindra linjebrott */
 }
+
 
 .carousel img {
     width: 250px;
@@ -106,15 +109,6 @@ body, html {
     }
 }
 
-
-@keyframes scroll-carousel {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-calc(250px + 40px) * 7); /* Justera för en hel uppsättning bilder */
-    }
-}
 
 
 /* Gradient Effect */
