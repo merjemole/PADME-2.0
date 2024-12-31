@@ -81,14 +81,13 @@ body, html {
     border-radius: 10px;
 }
 
+
+/* Carousel */
 .carousel {
     display: flex;
-    gap: 40px; /* Avstånd mellan bilderna */
-    animation: scroll-carousel 10s linear infinite;
-    will-change: transform;
-    width: max-content; /* Förhindra linjebrott */
+    gap: 40px; /* Öka mellanrummet mellan bilderna */
+    animation: scroll-carousel 10s linear infinite; /* Smooth infinite scroll */
 }
-
 
 .carousel img {
     width: 250px;
@@ -97,15 +96,6 @@ body, html {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtil skugga */
     border: 2px solid rgba(254, 252, 244, 0.8); /* Ljus och subtil färg för ramen */
     box-sizing: border-box; /* Gör så att padding och border inte påverkar storleken på bilden */
-}
-
-@keyframes scroll-carousel {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-calc(250px + 40px) * 7); /* Justera för en hel uppsättning bilder */
-    }
 }
 
 
@@ -129,13 +119,13 @@ body, html {
     background: linear-gradient(to left, #FFFDF4, transparent);
 }
 
-
+/* Keyframes for Carousel Animation */
 @keyframes scroll-carousel {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-calc(250px + 40px) * 7); /* Justera för en hel uppsättning bilder */
+        transform: translateX(calc(-260px * 4)); /* Justera beroende på antal bilder i karusellen */
     }
 }
 
@@ -180,7 +170,6 @@ body, html {
     text-align: center;
     width: 100%;
 }
-
 
 
 /* Justera placering av stegen */
@@ -247,7 +236,6 @@ body, html {
 }
 
 
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .floating-nav {
@@ -265,5 +253,14 @@ body, html {
     .hero .content h1 {
         font-size: 50px;
     }
-}   
+}   const navLinks = document.querySelectorAll('.nav-left a, .nav-right a');
 
+navLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        link.style.color = '#007BFF';
+    });
+
+    link.addEventListener('mouseleave', () => {
+        link.style.color = '#333';
+    });
+});
