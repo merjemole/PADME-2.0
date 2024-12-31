@@ -10,6 +10,7 @@ body, html {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     background-color: #FFFDF4; /* Samma bakgrundsfärg som karusellen */
+
 }
 
 /* Floating navigation */
@@ -67,12 +68,11 @@ body, html {
     text-align: center;
 }
 
-/* Carousel Container */
 .carousel-container {
     position: relative;
-    width: 100%; /* Karusellens bredd */
-    height: 250px;
-    overflow: hidden; /* Döljer bilder utanför ramen */
+    width: 100%;
+    height: 250px; /* Höjd på karusellen */
+    overflow: visible; /* Gör så att inga delar av bilderna eller ramen döljs */
     margin: 40px 0;
     display: flex;
     align-items: center;
@@ -81,12 +81,14 @@ body, html {
     border-radius: 10px;
 }
 
-/* Carousel */
 .carousel {
     display: flex;
     gap: 40px; /* Avstånd mellan bilderna */
-    will-change: transform; /* Förbättra prestandan */
+    animation: scroll-carousel 10s linear infinite;
+    will-change: transform;
+    width: max-content; /* Förhindra linjebrott */
 }
+
 
 .carousel img {
     width: 250px;
@@ -96,6 +98,16 @@ body, html {
     border: 2px solid rgba(254, 252, 244, 0.8); /* Ljus och subtil färg för ramen */
     box-sizing: border-box; /* Gör så att padding och border inte påverkar storleken på bilden */
 }
+
+@keyframes scroll-carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-calc(250px + 40px) * 7); /* Justera för en hel uppsättning bilder */
+    }
+}
+
 
 /* Gradient Effect */
 .carousel-gradient {
@@ -117,6 +129,23 @@ body, html {
     background: linear-gradient(to left, #FFFDF4, transparent);
 }
 
+
+@keyframes scroll-carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-calc(250px + 40px) * 7); /* Justera för en hel uppsättning bilder */
+    }
+}
+
+/* Carousel Infinite Scroll */
+.carousel {
+    animation: scroll-carousel 10s linear infinite;
+    display: flex;
+    will-change: transform;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .carousel-container {
@@ -129,7 +158,8 @@ body, html {
     }
 }
 
-/* HOW IT WORKS Section */
+
+/* Justera avståndet mellan HOW IT WORKS och innehållet under */
 .how-it-works {
     background-color: #FFFDF4;
     padding: 50px 20px;
@@ -141,6 +171,7 @@ body, html {
     align-items: center; /* Center the entire content */
 }
 
+/* Justera avståndet mellan HOW IT WORKS och innehållet under */
 .how-it-works h2 {
     font-size: 36px;
     font-weight: 400;
@@ -150,6 +181,9 @@ body, html {
     width: 100%;
 }
 
+
+
+/* Justera placering av stegen */
 .steps {
     display: flex;
     flex-direction: column;
@@ -158,6 +192,7 @@ body, html {
     margin: 0 auto;
 }
 
+/* Justera varje steg */
 .step {
     display: flex;
     align-items: flex-start; /* Justera så att bild och text är "top-align" */
@@ -166,6 +201,7 @@ body, html {
     width: 100%;
 }
 
+/* För att säkerställa att steg innehållet är centrerat, utan att påverka texten */
 .step img {
     width: 50%;
     max-width: 400px;
@@ -210,6 +246,9 @@ body, html {
     }
 }
 
+
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .floating-nav {
         flex-direction: column;
@@ -226,4 +265,5 @@ body, html {
     .hero .content h1 {
         font-size: 50px;
     }
-}
+}   
+
