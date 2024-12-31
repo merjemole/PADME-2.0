@@ -39,13 +39,11 @@ body, html {
     margin-right: 0; /* Remove extra margin on the last element */
 }
 
-.floating-nav .left a span, 
-.floating-nav .right a span {
-    font-size: 24px; /* Justera storleken här */
-}
 .floating-nav .right a span {
     vertical-align: middle;
-    width: 18px; /* Ändra bredden */
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 18px; /* Justera storleken här */
+
 }
 
 /* Remove hover effect */
