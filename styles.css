@@ -19,11 +19,16 @@ body, html {
     top: 20px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Se till att länkarna är jämnt fördelade */
     padding: 0 50px;
     color: white;
     font-size: 16px;
     z-index: 100;
+}
+
+.floating-nav .left {
+    display: flex;
+    gap: 20px; /* Justera mellanrum mellan länkar på vänstersidan */
 }
 
 .floating-nav .left a, 
@@ -31,42 +36,37 @@ body, html {
     text-decoration: none;
     color: white;
     font-family: Georgia, serif;
-    margin-right: 168px; /* Space between items */
     transition: color 0.3s ease;
 }
 
-.floating-nav .right a:last-child {
-    margin-right: 0; /* Remove extra margin on the last element */
-}
-
-.floating-nav .right a span {
-    vertical-align: middle;
-    margin-right: 8px; /* Space between icon and text */
-}
-
-/* Remove hover effect */
-.floating-nav a:hover {
-    color: white; /* Keeps text color white on hover */
-}
-
-/* Hero Section */
-.hero {
-    background-image: url('webpage.png'); /* Background image */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+.floating-nav .right {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 20px; /* Justera mellanrum mellan länkar på högersidan */
 }
 
-.hero .content h1 {
-    font-family: Georgia, serif;
-    font-weight: lighter;
-    color: white;
-    font-size: 70px;
-    text-align: center;
+.floating-nav .right a:last-child {
+    margin-right: 0; /* Ta bort extra margin på sista elementet */
 }
+
+/* För responsiv design på mindre skärmar */
+@media (max-width: 768px) {
+    .floating-nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .floating-nav .left a, 
+    .floating-nav .right a {
+        margin-right: 0;
+        margin-bottom: 20px; /* Lägg till mellanrum mellan länkar när de staplas */
+    }
+
+    .hero .content h1 {
+        font-size: 50px;
+    }
+}
+
 
 /* Carousel Container */
 .carousel-container {
