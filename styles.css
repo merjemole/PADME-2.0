@@ -270,26 +270,6 @@ body, html {
     color: #333;
 }
 
-/* Review Section */
-.reviews {
-    background-color: #FBFBF6;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.review {
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-style: italic;
-    color: #555;
-}
-
-.review span {
-    display: block;
-    margin-top: 10px;
-    font-size: 12px;
-    color: #888;
-}
 
 /* Footer Section */
 .footer {
@@ -303,7 +283,7 @@ body, html {
 
 .footer-links {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px;
     margin-bottom: 20px;
@@ -312,6 +292,8 @@ body, html {
 .footer-links ul {
     list-style: none;
     padding: 0;
+    min-width: 150px; /* Ger varje kolumn en jämn minsta bredd */
+
 }
 
 .footer-links ul li {
