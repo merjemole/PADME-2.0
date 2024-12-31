@@ -41,6 +41,8 @@ body, html {
 
 .floating-nav .right a span {
     vertical-align: middle;
+    width: 18px; /* Ändra bredden */
+    height: 18px; /* Ändra höjden */
     margin-right: 8px; /* Space between icon and text */
 }
 
