@@ -83,19 +83,29 @@ body, html {
 
 .carousel {
     display: flex;
-    gap: 40px;
-    will-change: transform;
-    transition: none; /* Inga övergångar eftersom JavaScript hanterar rörelsen */
+    gap: 40px; /* Avstånd mellan bilder */
+    animation: scroll-carousel 20s linear infinite; /* Sömlös loop */
+    will-change: transform; /* Optimering */
 }
 
 .carousel img {
     width: 250px;
     height: 250px;
-    border-radius: 10px; /* Rundade hörn */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtil skugga */
-    border: 2px solid rgba(254, 252, 244, 0.8); /* Ljus och subtil färg för ramen */
-    box-sizing: border-box; /* Gör så att padding och border inte påverkar storleken på bilden */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(254, 252, 244, 0.8);
 }
+
+/* Nyckelframes för sömlös rörelse */
+@keyframes scroll-carousel {
+    0% {
+        transform: translateX(0); /* Börja vid första bilden */
+    }
+    100% {
+        transform: translateX(calc(-260px * 7)); /* Flytta alla bilder en gång */
+    }
+}
+
 
 @keyframes scroll-carousel {
     0% {
