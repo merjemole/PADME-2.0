@@ -31,7 +31,7 @@ body, html {
     text-decoration: none;
     color: white;
     font-family: Georgia, serif;
-    margin-right: 126px; /* Space between items */
+    margin-right: 116px; /* Space between items */
     transition: color 0.3s ease;
 }
 
