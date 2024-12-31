@@ -139,12 +139,6 @@ body, html {
     }
 }
 
-/* Carousel Infinite Scroll */
-.carousel {
-    animation: scroll-carousel 10s linear infinite;
-    display: flex;
-    will-change: transform;
-}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
