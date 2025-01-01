@@ -25,6 +25,8 @@ body, html {
     font-size: 12.5px;
     z-index: 100;
     border-bottom: 1px solid #131311; /* Svart streck på Collaboration-sidan */
+    margin-bottom: 20px;  /* Större avstånd mellan streck och innehåll nedanför */
+  
 }
 
 .collaboration-page .floating-nav .left a, 
