@@ -23,8 +23,8 @@ body, html {
     padding: 0 50px;
     color: #131311;
     font-size: 12.5px;
-    backdrop-filter: blur(10px); /* Skapar blurr-effekten */
-    -webkit-backdrop-filter: blur(20px); /* För Safari */
+    backdrop-filter: blur(50px); /* Skapar blurr-effekten */
+    -webkit-backdrop-filter: blur(50px); /* För Safari */
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
     z-index: 100;
     border-bottom: 1px solid #131311; /* Svart streck på Collaboration-sidan */ 
