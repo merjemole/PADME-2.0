@@ -269,28 +269,39 @@ body, html {
     color: #333;
 }
 
+/* FAQ Section */
 .faq-section {
     background-color: #FFFDF4;
     padding: 50px 20px;
     font-family: Georgia, serif;
-    color: #F6F5F1; /* Textfärg ändrad här */
+    color: #131311;
     text-align: left;
     max-width: 1200px;
-    margin: 50px auto 0 auto; /* Marginal för att separera från andra sektioner */
+    margin: 50px auto 0 auto; /* 50px margin-top, 0 margin-bottom */
 }
 
+.faq-section h2 {
+    font-size: 39px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #131311;
+    text-align: center;
+}
+
+/* FAQ */
 .faq {
     margin-bottom: 30px;
-    background-color: #575754; /* Färg på rutorna */
-    border-radius: 10px; /* Mjuka hörn */
-    padding: 20px; /* Lite utrymme inuti rutorna */
+    border: 1px solid #ddd; /* Ramen */
+    border-radius: 8px; /* Mjuka hörn */
+    padding: 15px; /* Lite inre marginal för utrymme */
+    background-color: #FFF; /* Vit bakgrund inuti boxen */
 }
 
 .faq h3 {
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 10px;
-    color: #F6F5F1; /* Textfärg på frågorna */
+    color: #131311;
     cursor: pointer;
 }
 
@@ -298,18 +309,18 @@ body, html {
     display: none;
     font-size: 16px;
     line-height: 1.6;
-    color: #F6F5F1; /* Textfärg på svaren */
+    color: #333;
     margin-top: 10px;
 }
 
 .faq a {
-    color: #F6F5F1; /* Färg på länkar */
+    color: #131311;
     text-decoration: underline;
     transition: color 0.3s ease;
 }
 
 .faq a:hover {
-    color: #EAEAEA; /* Färg på länkar vid hover */
+    color: #555;
 }
 
 
