@@ -25,8 +25,8 @@ body, html {
     font-size: 12.5px;
     z-index: 100;
     border-bottom: 1px solid #131311; /* Svart streck på Collaboration-sidan */ 
-    margin-bottom: 10px; /* Öka detta värde för att sänka strecket */
-    padding-bottom: 10px; /* Skapa avstånd mellan text/länkar och strecket */
+    margin-bottom: 13px; /* Öka detta värde för att sänka strecket */
+    padding-bottom: 13px; /* Skapa avstånd mellan text/länkar och strecket */
 
 }
 
