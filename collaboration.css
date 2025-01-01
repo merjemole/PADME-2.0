@@ -29,7 +29,7 @@ body, html {
 .floating-nav .left a, 
 .floating-nav .right a {
     text-decoration: none;
-    color: white;
+    color: #131311;
     font-family: Georgia, serif;
     margin-right: 86px; /* Space between items */
     transition: color 0.3s ease;
@@ -48,7 +48,7 @@ body, html {
 
 /* Remove hover effect */
 .floating-nav a:hover {
-    color: white; /* Keeps text color white on hover */
+    color: #131311;
 }
 
 
