@@ -381,7 +381,7 @@ body, html {
 }
 
 .footer-bottom {
-    font-size: 11px;
+    font-size: 9px;
     color: #FEFEFE;
     text-align: left; /* Se till att även copyright-texten börjar till höger */
 }
