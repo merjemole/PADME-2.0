@@ -14,7 +14,7 @@ body, html {
 }
 
 /* Floating navigation - Collaboration Page */
-.floating-nav[data-page="collaboration"]{
+.collaboration-page .floating-nav {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -27,8 +27,8 @@ body, html {
     border-bottom: 1px solid #131311; /* Svart streck på Collaboration-sidan */
 }
 
-.floating-nav .left a[data-page="collaboration"], 
-.floating-nav .right a[data-page="collaboration"] {
+.collaboration-page .floating-nav .left a, 
+.collaboration-page .floating-nav .right a {
     text-decoration: none;
     color: #131311;
     font-family: Georgia, serif;
@@ -37,18 +37,18 @@ body, html {
     transition: color 0.3s ease;
 }
 
-.floating-nav .right a:last-child[data-page="collaboration"] {
+.collaboration-page .floating-nav .right a:last-child {
     margin-right: 0; /* Remove extra margin on the last element */
 }
 
-.floating-nav .right a span[data-page="collaboration"] {
+.collaboration-page .floating-nav .right a span {
     vertical-align: middle;
     margin-right: 6px; /* Space between icon and text */
     font-size: 18px; /* Justera storleken här */
 }
 
 /* Remove hover effect */
-.floating-nav a:hover[data-page="collaboration"] {
+.collaboration-page .floating-nav a:hover {
     color: #131311;
 }
 
