@@ -54,6 +54,14 @@ body, html {
     color: #131311;
 }
 
+/* Blurry background for navigation */
+.collaboration-page .floating-nav.scrolled {
+    background-color: rgba(255, 255, 255, 0.8); /* Ljus bakgrund med transparens */
+    backdrop-filter: blur(10px); /* Skapar blurr-effekten */
+    -webkit-backdrop-filter: blur(10px); /* För Safari */
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
 
 /* Global styles */
 #collaboration {
