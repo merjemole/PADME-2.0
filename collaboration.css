@@ -33,6 +33,7 @@ body, html {
     color: #131311;
     font-family: Georgia, serif;
     margin-right: 86px; /* Space between items */
+    margin-bottom: 10px; /* Lägg till ett mellanrum under länkarna */
     transition: color 0.3s ease;
 }
 
