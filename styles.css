@@ -307,6 +307,8 @@ body, html {
     font-size: 13px;
     text-transform: uppercase;
     color: #333;
+    font-weight: 300; /* Gör rubriken tunnare */
+
 }
 
 .footer-links ul li a {
