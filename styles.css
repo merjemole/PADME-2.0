@@ -276,9 +276,9 @@ body, html {
 
 /* Footer Section */
 .footer {
-    background-color: #FBFBF6;
+    background-color: #AEA18F;
     padding: 20px 80px;
-    color: #555;
+    color: #FEFEFE;
     font-size: 12px;
     text-align: left; /* Justera så texten börjar till höger */
     line-height: 1.6;
@@ -306,24 +306,24 @@ body, html {
 .footer-links ul li strong {
     font-size: 13px;
     text-transform: uppercase;
-    color: #333;
+    color: #FEFEFE;
     font-weight: 300; /* Gör rubriken tunnare */
 
 }
 
 .footer-links ul li a {
-    color: #555;
+    color: #FEFEFE;
     text-decoration: none;
     font-size: 12px;
 }
 
 .footer-links ul li a:hover {
-    color: #000;
+    color: #FEFEFE;
 }
 
 .footer-bottom {
     font-size: 11px;
-    color: #888;
+    color: #FEFEFE;
     text-align: center; /* Se till att även copyright-texten börjar till höger */
 }
 
