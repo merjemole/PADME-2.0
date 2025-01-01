@@ -221,8 +221,6 @@ body, html {
     width: 100%;
 }
 
-
-
 /* Justera placering av stegen */
 .steps {
     display: flex;
@@ -270,6 +268,53 @@ body, html {
     line-height: 1.6;
     color: #333;
 }
+
+/* FAQ Section */
+.faq-section {
+    background-color: #FFFDF4;
+    padding: 50px 20px;
+    font-family: Georgia, serif;
+    color: #131311;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-section h2 {
+    font-size: 39px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #131311;
+    text-align: center;
+}
+
+.faq {
+    margin-bottom: 30px;
+}
+
+.faq h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #131311;
+}
+
+.faq p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.faq a {
+    color: #131311;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.faq a:hover {
+    color: #555;
+}
+
 
 
 .newsletter-section {
