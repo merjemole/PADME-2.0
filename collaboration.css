@@ -20,13 +20,11 @@ body, html {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px 50px;  /* Öka padding-top och padding-bottom för mer utrymme */
+    padding: 0 50px;
     color: #131311;
     font-size: 12.5px;
     z-index: 100;
-    border-bottom: 1px solid #131311; /* Svart streck på Collaboration-sidan */
-    margin-bottom: 20px;  /* Större avstånd mellan streck och innehåll nedanför */
-  
+    border-bottom: 1px solid #131311; /* Svart streck på Collaboration-sidan */  
 }
 
 .collaboration-page .floating-nav .left a, 
@@ -35,7 +33,6 @@ body, html {
     color: #131311;
     font-family: Georgia, serif;
     margin-right: 86px; /* Space between items */
-    margin-bottom: 10px; /* Lägg till ett mellanrum under länkarna */
     transition: color 0.3s ease;
 }
 
