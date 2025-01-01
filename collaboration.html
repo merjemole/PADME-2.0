@@ -1,21 +1,30 @@
-<!DOCTYPE html>
-<html lang="sv">
+   <!DOCTYPE html>
+<html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Collaboration</title>
-   <link rel="stylesheet" href="style.css"> <!-- Huvud CSS -->
-   <link rel="stylesheet" href="collaboration.css"> <!-- Separat CSS för collaboration -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandTees AI</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="collaboration.css">  <!-- Den nya CSS-filen -->
+
+
 </head>
 <body>
 
-   <!-- Header med navigation -->
-   <header>
-      <nav>
-         <a href="index.html">Home</a>
-         <a href="collaboration.html" class="active">Collaboration</a>
-      </nav>
-   </header>
+    <!-- Navigation -->
+    <nav class="floating-nav">
+        <div class="left">
+            <a href="#">HOME</a>
+            <a href="#">CREATE</a>
+            <a href="collaboration.html">COLLABORATIONS</a>
+            
+        </div>
+        <div class="right">
+            <a href="#"><span class="material-icons-outlined">info</span> ABOUT US</a>
+            <a href="#"><span class="material-icons-outlined">shopping_cart</span> CART</a>
+        </div>
+    </nav>
 
    <!-- Collaboration sektion -->
    <section id="collaboration">
