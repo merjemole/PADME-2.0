@@ -57,7 +57,7 @@ body, html {
 
 /* Global styles */
 #collaboration {
-   padding: 50px 20px;
+   padding: 50px 20px; /* Öka padding-top för att skapa mer utrymme */
    background-color: #FFFDF4; /* Samma bakgrundsfärg som karusellen */
    text-align: center;
    font-family: Georgia, serif;
@@ -65,9 +65,9 @@ body, html {
 }
 
 #collaboration h1 {
-   font-size: 2.5rem;
-   font-weight: lighter; /* Följer font-weight från style.css */
-   margin-bottom: 20px;
+   font-size: 39px;
+   font-weight: 400;
+   margin: 89px 0; /* Add more space above and below the link */
    color: #131311;
 }
 
