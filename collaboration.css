@@ -80,19 +80,22 @@ body, html {
 /* Gallery Section */
 .gallery {
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 20px;
+   grid-template-columns: repeat(2, 1fr); /* Två bilder bredvid varandra */
+   gap: 40px; /* Mellanrum mellan bilderna */
+   padding: 0 100px; /* Mellanrum från skärmkanten */
    margin-bottom: 40px;
+   justify-content: center;
 }
 
 .gallery-item img {
-   width: 100%;
-   height: auto;
-   max-height: 300px;
-   object-fit: cover;
-   border-radius: 10px; /* Samma rundade hörn som i andra delar av CSS */
-   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Samma subtila skugga */
+   width: 100%; /* Bildens bredd anpassar sig efter containern */
+   height: auto; /* Bevarar proportionerna */
+   aspect-ratio: 1440 / 2160; /* Definierar bildens dimensioner */
+   object-fit: cover; /* Ser till att bilden fyller hela området */
+   border-radius: 0; /* Tar bort eventuella rundade hörn */
+   box-shadow: none; /* Tar bort skuggor */
 }
+
 
 /* Partners Section */
 .partners {
