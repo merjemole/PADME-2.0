@@ -16,8 +16,7 @@ body, html {
 
 .collaboration-page .floating-nav {
     position: absolute;
-    top: 0; /* Sätt det till 0 för att den ska börja från toppen av sidan */
-    left: 0; /* Gör så att den sträcker sig från vänster kant */
+    top: 20; /* Sätt det till 0 för att den ska börja från toppen av sidan */
     width: 100%; /* Se till att den täcker hela bredden */
     height: 100px; /* Ställ in höjden på headern, justera detta efter behov */
     display: flex;
