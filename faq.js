@@ -1,4 +1,3 @@
-<script>
     // Hitta alla frågor
     const questions = document.querySelectorAll('.faq-question');
 
@@ -16,4 +15,3 @@
             }
         });
     });
-</script>
