@@ -24,7 +24,9 @@ body, html {
     color: #131311;
     font-size: 12.5px;
     z-index: 100;
-    border-bottom: 1px solid #131311; /* Svart streck på Collaboration-sidan */  
+    border-bottom: 1px solid #131311; /* Svart streck på Collaboration-sidan */ 
+    margin-bottom: 10px; /* Öka detta värde för att sänka strecket */
+
 }
 
 .collaboration-page .floating-nav .left a, 
@@ -33,7 +35,6 @@ body, html {
     color: #131311;
     font-family: Georgia, serif;
     margin-right: 86px; /* Space between items */
-    padding-bottom: 8px; /* Lägg till padding-bottom för mer avstånd till strecket */
     transition: color 0.3s ease;
 }
 
