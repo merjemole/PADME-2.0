@@ -20,7 +20,7 @@ body, html {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 10px 50px;  /* Öka padding-top och padding-bottom för mer utrymme */
     color: #131311;
     font-size: 12.5px;
     z-index: 100;
