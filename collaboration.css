@@ -116,3 +116,118 @@ body, html {
    height: auto;
    max-height: 100px;
 }
+
+.newsletter-section {
+    background-color: #B8B1A2;
+    padding: 20px;
+    text-align: center;
+    color: #FEFEFE;
+    font-family: Georgia, serif;
+    margin-bottom: 20px; /* Ger lite luft mellan nyhetsbrevet och resten av footern */
+}
+
+.newsletter-section h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.newsletter-section p {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 8px 12px;
+    font-size: 12px;
+    border: 1px solid #FEFEFE;
+    border-radius: 4px;
+    background-color: #FFFDF4;
+    color: #333;
+    width: 250px;
+    outline: none;
+}
+
+.newsletter-form input[type="email"]::placeholder {
+    color: #666;
+    font-style: italic;
+}
+
+.newsletter-form button {
+    padding: 8px 16px;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #FEFEFE;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #444;
+}
+
+
+
+/* Footer Section */
+.footer {
+    background-color: #B8B1A2;
+    padding: 20px 80px;
+    color: #FEFEFE;
+    font-size: 12px;
+    text-align: left; /* Justera så texten börjar till höger */
+    line-height: 1.6;
+    font-family: Georgia, serif; /* Lägg till samma font som resten av sidan */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    min-width: 150px; /* Ger varje kolumn en jämn minsta bredd */
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li strong {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #FEFEFE;
+    font-weight: 300; /* Gör rubriken tunnare */
+
+}
+
+.footer-links ul li a {
+    color: #FEFEFE;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-links ul li a:hover {
+    color: #FEFEFE;
+}
+
+.footer-bottom {
+    font-size: 9px;
+    color: #FEFEFE;
+    text-align: left; /* Se till att även copyright-texten börjar till höger */
+}
