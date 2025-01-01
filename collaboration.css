@@ -25,7 +25,7 @@ body, html {
     font-size: 12.5px;
     background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent vit bakgrund */
     backdrop-filter: blur(10px); /* Skapar blurr-effekten */
-    -webkit-backdrop-filter: blur(10px); /* För Safari */
+    -webkit-backdrop-filter: blur(20px); /* För Safari */
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
     z-index: 100;
     border-bottom: 1px solid #131311; /* Svart streck på Collaboration-sidan */ 
