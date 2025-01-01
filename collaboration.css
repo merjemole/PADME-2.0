@@ -1,4 +1,59 @@
 /* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #FFFDF4; /* Samma bakgrundsfärg som karusellen */
+
+}
+
+/* Floating navigation */
+.floating-nav {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    color: #131311;
+    font-size: 12.5px;
+    z-index: 100;
+}
+
+.floating-nav .left a, 
+.floating-nav .right a {
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, serif;
+    margin-right: 86px; /* Space between items */
+    transition: color 0.3s ease;
+}
+
+.floating-nav .right a:last-child {
+    margin-right: 0; /* Remove extra margin on the last element */
+}
+
+.floating-nav .right a span {
+    vertical-align: middle;
+    margin-right: 6px; /* Space between icon and text */
+    font-size: 18px; /* Justera storleken här */
+
+}
+
+/* Remove hover effect */
+.floating-nav a:hover {
+    color: white; /* Keeps text color white on hover */
+}
+
+
+
+/* Global styles */
 #collaboration {
    padding: 50px 20px;
    background-color: #FFFDF4; /* Samma bakgrundsfärg som karusellen */
