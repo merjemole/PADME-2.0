@@ -269,50 +269,60 @@ body, html {
     color: #333;
 }
 
-/* Styla hela FAQ-sektionen */
+/* FAQ Section */
 .faq-section {
-    max-width: 600px;
+    background-color: #FFFDF4;
+    padding: 50px 20px;
+    font-family: Georgia, serif;
+    color: #131311;
+    text-align: left;
+    max-width: 1200px;
     margin: 0 auto;
-    color: inherit; /* Behåll den befintliga färgen */
 }
 
-/* Styla varje FAQ-box */
+.faq-section h2 {
+    font-size: 39px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #131311;
+    text-align: center;
+}
+
+/* FAQ */
 .faq {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 30px;
+    border: 1px solid #ddd; /* Ramen */
+    border-radius: 8px; /* Mjuka hörn */
+    padding: 15px; /* Lite inre marginal för utrymme */
+    background-color: #FFF; /* Vit bakgrund inuti boxen */
 }
 
-/* När musen hovrar över FAQ-boxen */
-.faq:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Styla frågan */
-.faq-question {
-    font-size: inherit; /* Behåll befintlig storlek */
-    font-weight: bold;
+.faq h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #131311;
     cursor: pointer;
-    margin: 0;
 }
 
-/* Styla svaret */
 .faq-answer {
-    font-size: inherit; /* Behåll befintlig storlek */
-    margin-top: 10px;
+    display: none;
+    font-size: 16px;
     line-height: 1.6;
-    display: none; /* Dölj svaret som standard */
+    color: #333;
+    margin-top: 10px;
 }
 
-/* Visa svaret när aktiv */
-.faq.active .faq-answer {
-    display: block;
+.faq a {
+    color: #131311;
+    text-decoration: underline;
+    transition: color 0.3s ease;
 }
+
+.faq a:hover {
+    color: #555;
+}
+
 
 
 .newsletter-section {
