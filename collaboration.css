@@ -13,25 +13,27 @@ body, html {
 
 }
 
-/* Floating navigation - Collaboration Page */
+
 .collaboration-page .floating-nav {
     position: absolute;
-    top: 20px;
-    width: 100%;
+    top: 0; /* Sätt det till 0 för att den ska börja från toppen av sidan */
+    left: 0; /* Gör så att den sträcker sig från vänster kant */
+    width: 100%; /* Se till att den täcker hela bredden */
+    height: 100px; /* Ställ in höjden på headern, justera detta efter behov */
     display: flex;
     justify-content: space-between;
     padding: 0 50px;
     color: #131311;
     font-size: 12.5px;
-    backdrop-filter: blur(20px); /* Skapar blurr-effekten */
-    -webkit-backdrop-filter: blur(20px); /* För Safari */
+    backdrop-filter: blur(50px); /* För att få blur-effekten över hela headern */
+    -webkit-backdrop-filter: blur(50px); /* För Safari */
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
     z-index: 100;
-    border-bottom: 1px solid #131311; /* Svart streck på Collaboration-sidan */ 
-    margin-bottom: 13px; /* Öka detta värde för att sänka strecket */
-    padding-bottom: 13px; /* Skapa avstånd mellan text/länkar och strecket */
-
+    border-bottom: 1px solid #131311; 
+    margin-bottom: 13px;
+    padding-bottom: 13px;
 }
+
 
 .collaboration-page .floating-nav .left a, 
 .collaboration-page .floating-nav .right a {
