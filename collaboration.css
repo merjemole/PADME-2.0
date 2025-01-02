@@ -55,6 +55,28 @@ body, html {
     color: #131311;
 }
 
+/* Loggan i mitten */
+.collaboration-page .floating-nav .logo {
+    position: absolute; /* Separera loggan från flexbox-flödet */
+    left: 50%; /* Placera i mitten av navbarens bredd */
+    transform: translateX(-50%); /* Korrigera för bredden på loggan */
+    font-size: 18px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    color: #131311;
+}
+
+.collaboration-page .floating-nav .logo a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.collaboration-page .floating-nav .logo a:hover {
+    color: #555;
+}
 
 
 /* Global styles */
