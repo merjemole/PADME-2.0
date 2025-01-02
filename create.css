@@ -127,7 +127,7 @@ body, html {
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
-    font-family: Arial, sans-serif;
+    font-family: Georgia, serif;
 }
 
 .form-group input:focus,
