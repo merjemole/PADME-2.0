@@ -120,26 +120,6 @@ body, html {
 }
 
 
-/* Partners Section */
-.partners {
-   margin-top: 50px;
-   text-align: center;
-}
-
-.partner-logos {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-top: 20px;
-   gap: 20px;
-}
-
-.partner-logos img {
-   width: 100px;
-   height: auto;
-   max-height: 100px;
-}
-
 .newsletter-section {
     background-color: #B8B1A2;
     padding: 20px;
