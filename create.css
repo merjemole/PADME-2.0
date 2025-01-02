@@ -74,17 +74,16 @@ body, html {
     color: #555;
 }
 
+
 .generate-images-container {
-    display: flex; /* Aktiverar flexbox */
-    flex-direction: column; /* Lägger elementen vertikalt */
-    align-items: center; /* Centrerar innehållet horisontellt */
+    width: 400px;
+    text-align: center;
+    align-items: center;
     justify-content: center; /* Centrerar innehållet vertikalt */
+    height: 100vh;
     margin: 60px auto; /* Skapar utrymme ovanför och nedanför */
-    padding: 40px; /* Ökar padding för bättre spacing inuti sektionen */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px; /* Begränsar bredden */
-    text-align: center; /* Centrerar texten i sektionen */
+    padding-top: 40px; /* Lägger till extra utrymme ovanför */
+    padding-bottom: 40px; /* Lägger till extra utrymme nedanför */
 }
 
 .generate-images-container h1 {
