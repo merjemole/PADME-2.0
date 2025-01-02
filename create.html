@@ -49,11 +49,21 @@
                <button type="submit" class="generate-button">Generate</button>
         </form> 
     </main>
-    
-<script>
+
+    <script>
     function redirectToProductPage(event) {
-        event.preventDefault(); // Förhindrar formulärets standardbeteende
-        window.location.href = 'product.html'; // Omdirigera till product.html
+        event.preventDefault(); // Förhindra standardbeteendet
+
+        // Hämta värden från formuläret
+        const imagePrompt = document.getElementById('image-prompt').value;
+        const numberOfImages = document.getElementById('number-of-images').value;
+        const imageStyle = document.getElementById('image-style').value;
+
+        // Bygg query string
+        const queryString = `?imagePrompt=${encodeURIComponent(imagePrompt)}&numberOfImages=${encodeURIComponent(numberOfImages)}&imageStyle=${encodeURIComponent(imageStyle)}`;
+
+        // Omdirigera till product.html med query string
+        window.location.href = 'product.html' + queryString;
     }
 </script>
 
