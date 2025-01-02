@@ -87,9 +87,10 @@ body, html {
 }
 
 .generate-images-container h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #131311;
+   font-size: 39px;
+   font-weight: 400;
+   margin: 89px 0; /* Add more space above and below the link */
+   color: #131311;
 }
 
 /* Form styles */
