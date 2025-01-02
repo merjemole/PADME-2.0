@@ -87,11 +87,14 @@ body, html {
 }
 
 .generate-images-container h1 {
-   font-size: 39px;
-   font-weight: 400;
-   margin: 89px 0; /* Add more space above and below the link */
-   color: #131311;
+   font-size: 39px; /* Samma som "Our Collaborations" */
+   font-weight: 400; /* Matchar vikten */
+   margin: 89px 0; /* Samma utrymme ovanför och nedanför */
+   text-align: center; /* Säkerställer centrerad placering */
+   font-family: Georgia, serif; /* Samma font */
+   color: #131311; /* Färgmatchning */
 }
+
 
 /* Form styles */
 .image-generator-form {
