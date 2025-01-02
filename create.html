@@ -46,14 +46,16 @@
                     <option value="cartoon">Cartoon</option>
                 </select>
             </div>
-            <button type="submit" class="generate-button">Generate</button>
-        </form>
-       <!-- Link to Product Page -->
-    <div style="margin-top: 20px; text-align: center;">
-        <a href="product.html" class="generate-button">Go to Product Page</a>
-    </div>
-     
+               <button type="submit" class="generate-button">Generate</button>
+        </form> 
     </main>
+    
+<script>
+    function redirectToProductPage(event) {
+        event.preventDefault(); // Förhindrar formulärets standardbeteende
+        window.location.href = 'product.html'; // Omdirigera till product.html
+    }
+</script>
 
           <!-- Footer Section -->
 <footer class="footer">
