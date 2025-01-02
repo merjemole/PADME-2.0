@@ -20,6 +20,7 @@ body, html {
     justify-content: space-between;
     padding: 0 50px;
     color: #131311;
+    background: transparent;
     font-size: 12.5px;
     backdrop-filter: blur(20px); /* För att få blur-effekten över hela headern */
     -webkit-backdrop-filter: blur(20px); /* För Safari */
