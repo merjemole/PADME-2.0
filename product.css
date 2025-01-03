@@ -6,9 +6,11 @@
 }
 
 body, html {
-    font-family: Arial, sans-serif;
     height: 100%;
-    background-color: #FFFDF4;
+    font-family: Georgia, serif;
+    overflow-x: hidden;
+    background-color: #FFFDF4; /* Samma bakgrundsfärg som karusellen */
+
 }
 
 .floating-nav {
@@ -26,8 +28,6 @@ body, html {
     z-index: 100;
     border-bottom: 1px solid #131311;
 }
-
-
 
 .floating-nav .left a, 
 .floating-nav .right a {
