@@ -1,35 +1,76 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrandTees AI</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="create.css">  <!-- Den nya CSS-filen -->
-    <link rel="stylesheet" href="product.css">  <!-- Den nya CSS-filen -->
-
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFDF4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .product-container {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            background-color: #FFFDF4;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .product-image {
+            width: 300px;
+            height: auto;
+        }
+        .product-details {
+            font-family: Georgia, serif;
+        }
+        .product-details h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .product-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .product-options label {
+            font-size: 14px;
+        }
+        .product-options select,
+        .product-options input[type="number"] {
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .add-to-cart {
+            margin-top: 20px;
+        }
+        .add-to-cart button {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .add-to-cart button:hover {
+            background-color: #444;
+        }
+    </style>
 </head>
-   <body class="product-page">
-
-      <nav class="floating-nav">
-    <div class="left">
-        <a href="index.html">HOME</a>
-        <a href="create.html">CREATE</a>
-        <a href="collaboration.html">COLLABORATIONS</a>
-    </div>
-    <div class="logo">
-        <a href="index.html">BrandTees AI</a>
-    </div>
-    <div class="right">
-        <a href="#"><span class="material-icons-outlined">info</span> ABOUT US</a>
-        <a href="#"><span class="material-icons-outlined">shopping_cart</span> CART</a>
-    </div>
-</nav>
-
+<body>
 <div class="product-container">
     <img class="product-image" src="/path-to-question-mark-tshirt.png" alt="Black T-shirt with question mark">
-
     <div class="product-details">
         <h2>Pick Your T-Shirt</h2>
         <div class="product-options">
@@ -38,13 +79,11 @@
                 <input type="radio" name="shirt" value="short-sleeve" checked> Short-sleeve t-shirt
                 <input type="radio" name="shirt" value="long-sleeve"> Long-sleeve t-shirt
             </div>
-
             <div>
                 <label>Pick colour:</label>
                 <input type="radio" name="color" value="white"> White
                 <input type="radio" name="color" value="black" checked> Black
             </div>
-
             <div>
                 <label for="size">Pick Size:</label>
                 <select id="size">
@@ -55,19 +94,54 @@
                     <option value="XL">XL</option>
                 </select>
             </div>
-
             <div>
                 <label for="quantity">Quantity:</label>
                 <input id="quantity" type="number" value="1" min="1">
             </div>
         </div>
-
         <div class="add-to-cart">
             <button>Add to cart</button>
         </div>
     </div>
 </div>
-          
 
+ <footer class="footer">
+    <div class="newsletter-section">
+    <h3>Join Our Newsletter</h3>
+    <p>Enter your email address here to stay updated with the latest news and offers.</p>
+    <form class="newsletter-form" action="#" method="post">
+        <input type="email" name="email" placeholder="Enter your email address here" required>
+        <button type="submit">Join</button>
+    </form>
+</div>
+
+    <div class="footer-links">
+        <ul>
+            <li><strong>BrandTees AI</strong></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Collaborations</a></li>
+        </ul>
+        <ul>
+            <li><strong>Customer Support</strong></li>
+            <li><a href="#">Delivery Details</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <ul>
+
+            <li><strong>Contact Us</strong></li>
+            <li><a href="#">Call</a></li>
+            <li><a href="#">Email</a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>BrandTeesAI © 2025, All Rights Reserved</p>
+    </div>
+</footer>
+ 
 </body>
 </html>
+
+
+
