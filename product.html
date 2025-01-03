@@ -119,6 +119,29 @@
         <div class="add-to-cart">
             <button>Add to cart</button>
         </div>
+        <script>
+    // Hämta query string från URL
+    const queryParams = new URLSearchParams(window.location.search);
+
+    // Hämta värden
+    const imagePrompt = queryParams.get('imagePrompt');
+    const numberOfImages = queryParams.get('numberOfImages');
+    const imageStyle = queryParams.get('imageStyle');
+
+    // Testa att skriva ut värden
+    console.log('Image Prompt:', imagePrompt);
+    console.log('Number of Images:', numberOfImages);
+    console.log('Image Style:', imageStyle);
+
+    // Visa värden på sidan
+    document.body.innerHTML = `
+        <h1>Product Page</h1>
+        <p><strong>Image Prompt:</strong> ${imagePrompt}</p>
+        <p><strong>Number of Images:</strong> ${numberOfImages}</p>
+        <p><strong>Image Style:</strong> ${imageStyle}</p>
+    `;
+</script>
+
     </div>
 </div>
 
