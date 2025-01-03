@@ -26,42 +26,45 @@
         </div>
     </nav>
 
-    <!-- Produktdetaljer -->
-    <div class="product-container">
-        <img class="product-image" src="/path-to-question-mark-tshirt.png" alt="Black T-shirt with question mark">
-        <div class="product-details">
-            <h2>Pick Your T-Shirt</h2>
-            <div class="product-options">
-                <div>
-                    <label>Pick shirt:</label>
-                    <input type="radio" name="shirt" value="short-sleeve" checked> Short-sleeve t-shirt
-                    <input type="radio" name="shirt" value="long-sleeve"> Long-sleeve t-shirt
+    <!-- Produktsektion med id "product" -->
+    <section id="product">
+        <!-- Produktdetaljer -->
+        <div class="product-container">
+            <img class="product-image" src="/path-to-question-mark-tshirt.png" alt="Black T-shirt with question mark">
+            <div class="product-details">
+                <h2>Pick Your T-Shirt</h2>
+                <div class="product-options">
+                    <div>
+                        <label>Pick shirt:</label>
+                        <input type="radio" name="shirt" value="short-sleeve" checked> Short-sleeve t-shirt
+                        <input type="radio" name="shirt" value="long-sleeve"> Long-sleeve t-shirt
+                    </div>
+                    <div>
+                        <label>Pick colour:</label>
+                        <input type="radio" name="color" value="white"> White
+                        <input type="radio" name="color" value="black" checked> Black
+                    </div>
+                    <div>
+                        <label for="size">Pick Size:</label>
+                        <select id="size">
+                            <option value="">Choose an option...</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="quantity">Quantity:</label>
+                        <input id="quantity" type="number" value="1" min="1">
+                    </div>
                 </div>
-                <div>
-                    <label>Pick colour:</label>
-                    <input type="radio" name="color" value="white"> White
-                    <input type="radio" name="color" value="black" checked> Black
+                <div class="add-to-cart">
+                    <button>Add to cart</button>
                 </div>
-                <div>
-                    <label for="size">Pick Size:</label>
-                    <select id="size">
-                        <option value="">Choose an option...</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="quantity">Quantity:</label>
-                    <input id="quantity" type="number" value="1" min="1">
-                </div>
-            </div>
-            <div class="add-to-cart">
-                <button>Add to cart</button>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
