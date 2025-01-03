@@ -11,6 +11,71 @@ body, html {
     background-color: #FFFDF4;
 }
 
+.floating-nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 13px; /* Lägg till padding-top istället */
+    color: #131311;
+    background: transparent;
+    font-size: 12.5px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    z-index: 100;
+    border-bottom: 1px solid #131311;
+}
+
+
+
+.floating-nav .left a, 
+.floating-nav .right a {
+    text-decoration: none;
+    color: #131311;
+    font-family: Georgia, serif;
+    margin-right: 86px; /* Space between items */
+    transition: color 0.3s ease;
+}
+
+.floating-nav .right a:last-child {
+    margin-right: 0; /* Remove extra margin on the last element */
+}
+
+.floating-nav .right a span {
+    vertical-align: middle;
+    margin-right: 6px; /* Space between icon and text */
+    font-size: 18px; /* Justera storleken här */
+}
+
+/* Remove hover effect */
+.floating-nav a:hover {
+    color: #131311;
+}
+
+/* Loggan i mitten */
+.floating-nav .logo {
+    position: absolute; /* Separera loggan från flexbox-flödet */
+    left: 50%; /* Placera i mitten av navbarens bredd */
+    transform: translateX(-50%); /* Korrigera för bredden på loggan */
+    font-size: 18px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    color: #131311;
+}
+
+.floating-nav .logo a {
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.floating-nav .logo a:hover {
+    color: #555;
+}
+
+
 /* Product Page Styles */
 .product-page .product-container {
     display: flex;
@@ -73,5 +138,58 @@ body, html {
 
 .product-page .add-to-cart button:hover {
     background-color: #444;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #B8B1A2;
+    padding: 20px 80px;
+    color: #FEFEFE;
+    font-size: 12px;
+    text-align: left; /* Justera så texten börjar till höger */
+    line-height: 1.6;
+    font-family: Georgia, serif; /* Lägg till samma font som resten av sidan */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    min-width: 150px; /* Ger varje kolumn en jämn minsta bredd */
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li strong {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #FEFEFE;
+    font-weight: 300; /* Gör rubriken tunnare */
+
+}
+
+.footer-links ul li a {
+    color: #FEFEFE;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-links ul li a:hover {
+    color: #FEFEFE;
+}
+
+.footer-bottom {
+    font-size: 9px;
+    color: #FEFEFE;
+    text-align: left; /* Se till att även copyright-texten börjar till höger */
 }
 
