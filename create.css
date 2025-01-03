@@ -151,22 +151,6 @@ body, html {
     border-color: #555;
 }
 
-/* Button styles */
-.generate-button {
-    padding: 10px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #333;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.generate-button:hover {
-    background-color: #555;
-}
-
 
 .newsletter-section {
     background-color: #B8B1A2;
