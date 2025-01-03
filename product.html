@@ -68,6 +68,21 @@
     </div>
 </div>
 
+<script>
+    // Hämta query-parametrarna från URL:en
+    const params = new URLSearchParams(window.location.search);
+
+    // Hämta värdena
+    const prompt = params.get('prompt') || 'Default design';
+    const images = params.get('images') || '1';
+    const style = params.get('style') || 'None';
+
+    // Visa parametrarna eller använd dem för att ändra innehållet
+    console.log(`Prompt: ${prompt}, Images: ${images}, Style: ${style}`);
+
+    // Exempel: Uppdatera rubriken baserat på prompten
+    document.querySelector('.product-details h2').textContent = `Your design: "${prompt}"`;
+</script>
           
 
 </body>
