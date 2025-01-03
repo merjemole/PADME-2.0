@@ -27,27 +27,25 @@
     </div>
 </nav>
 
-    <main class="generate-images-container">
-        <h1></h1>
-        <form class="image-generator-form">
-            <div class="form-group">
-                <label for="image-prompt">Image Prompt<span class="required">*</span></label>
-                <input id="image-prompt" type="text" placeholder="Describe your design" required>
-            </div>
-            <div class="form-group">
-                <label for="number-of-images">Number of Images</label>
-                <input id="number-of-images" type="number" value="1" min="1">
-            </div>
-            <div class="form-group">
-                <label for="image-style">Image Style</label>
-                <select id="image-style">
-                    <option value="none">None</option>
-                    <option value="realistic">Realistic</option>
-                    <option value="cartoon">Cartoon</option>
-                </select>
-            </div>
-               <button type="submit" class="generate-button">Generate</button>
-        </form> 
+    <form class="image-generator-form" action="product.html" method="get">
+    <div class="form-group">
+        <label for="image-prompt">Image Prompt<span class="required">*</span></label>
+        <input id="image-prompt" type="text" name="prompt" placeholder="Describe your design" required>
+    </div>
+    <div class="form-group">
+        <label for="number-of-images">Number of Images</label>
+        <input id="number-of-images" type="number" name="images" value="1" min="1">
+    </div>
+    <div class="form-group">
+        <label for="image-style">Image Style</label>
+        <select id="image-style" name="style">
+            <option value="none">None</option>
+            <option value="realistic">Realistic</option>
+            <option value="cartoon">Cartoon</option>
+        </select>
+    </div>
+    <button type="submit" class="generate-button">Generate</button>
+</form>
     </main>
 
           <!-- Footer Section -->
