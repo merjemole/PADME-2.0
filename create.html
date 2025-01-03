@@ -50,23 +50,6 @@
         </form> 
     </main>
 
-    <script>
-    function redirectToProductPage(event) {
-        event.preventDefault(); // Förhindra standardbeteendet
-
-        // Hämta värden från formuläret
-        const imagePrompt = document.getElementById('image-prompt').value;
-        const numberOfImages = document.getElementById('number-of-images').value;
-        const imageStyle = document.getElementById('image-style').value;
-
-        // Bygg query string
-        const queryString = `?imagePrompt=${encodeURIComponent(imagePrompt)}&numberOfImages=${encodeURIComponent(numberOfImages)}&imageStyle=${encodeURIComponent(imageStyle)}`;
-
-        // Omdirigera till product.html med query string
-        window.location.href = 'product.html' + queryString;
-    }
-</script>
-
           <!-- Footer Section -->
 <footer class="footer">
     <div class="newsletter-section">
