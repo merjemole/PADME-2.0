@@ -13,7 +13,7 @@ body, html {
 
 }
 
-.floating-nav {
+.product-page .floating-nav {
     position: absolute;
     width: 100%;
     display: flex;
@@ -29,8 +29,8 @@ body, html {
     border-bottom: 1px solid #131311;
 }
 
-.floating-nav .left a, 
-.floating-nav .right a {
+.product-page .floating-nav .left a, 
+.product-page .floating-nav .right a {
     text-decoration: none;
     color: #131311;
     font-family: Georgia, serif;
@@ -38,23 +38,23 @@ body, html {
     transition: color 0.3s ease;
 }
 
-.floating-nav .right a:last-child {
+.product-page .floating-nav .right a:last-child {
     margin-right: 0; /* Remove extra margin on the last element */
 }
 
-.floating-nav .right a span {
+.product-page .floating-nav .right a span {
     vertical-align: middle;
     margin-right: 6px; /* Space between icon and text */
     font-size: 18px; /* Justera storleken här */
 }
 
 /* Remove hover effect */
-.floating-nav a:hover {
+.product-page .floating-nav a:hover {
     color: #131311;
 }
 
 /* Loggan i mitten */
-.floating-nav .logo {
+.product-page .floating-nav .logo {
     position: absolute; /* Separera loggan från flexbox-flödet */
     left: 50%; /* Placera i mitten av navbarens bredd */
     transform: translateX(-50%); /* Korrigera för bredden på loggan */
@@ -64,20 +64,20 @@ body, html {
     color: #131311;
 }
 
-.floating-nav .logo a {
+.product-page .floating-nav .logo a {
     text-decoration: none;
     color: inherit;
     letter-spacing: 1px;
     transition: color 0.3s ease;
 }
 
-.floating-nav .logo a:hover {
+.product-page .floating-nav .logo a:hover {
     color: #555;
 }
 
 
 /* Product Page Styles */
-.product-page .product-container {
+.product-container {
     display: flex;
     gap: 50px;
     align-items: center;
@@ -90,43 +90,43 @@ body, html {
     width: 80%;
 }
 
-.product-page .product-image {
+.product-image {
     width: 300px;
     height: auto;
 }
 
-.product-page .product-details {
+.product-details {
     font-family: Georgia, serif;
 }
 
-.product-page .product-details h2 {
+.product-details h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.product-page .product-options {
+.product-options {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.product-page .product-options label {
+.product-options label {
     font-size: 14px;
 }
 
-.product-page .product-options select,
-.product-page .product-options input[type="number"] {
+.product-options select,
+.product-options input[type="number"] {
     padding: 8px;
     font-size: 14px;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
 
-.product-page .add-to-cart {
+.add-to-cart {
     margin-top: 20px;
 }
 
-.product-page .add-to-cart button {
+.add-to-cart button {
     background-color: #333;
     color: #FFF;
     padding: 10px 20px;
@@ -136,7 +136,7 @@ body, html {
     cursor: pointer;
 }
 
-.product-page .add-to-cart button:hover {
+.add-to-cart button:hover {
     background-color: #444;
 }
 
