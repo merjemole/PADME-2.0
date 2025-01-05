@@ -221,6 +221,8 @@ main {
     line-height: 1.6;
     font-family: Georgia, serif; /* Lägg till samma font som resten av sidan */
     flex-shrink: 0; /* Footern håller sig alltid längst ner */
+    margin-top: auto; /* Skjut footern till botten av sidan */
+
 }
 
 .footer-links {
