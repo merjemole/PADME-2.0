@@ -5,11 +5,22 @@
     box-sizing: border-box;
 }
 
+
 body, html {
     height: 100%;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column; /* Gör att sidans innehåll blir flexbox */
+    margin: 0;
     background-color: #FFFDF4; /* Samma bakgrundsfärg som karusellen */
+
+}
+
+main {
+    flex: 1; /* Fyller ut allt tillgängligt utrymme mellan nav och footer */
+    padding: 20px; /* Lägg till lite padding för att skapa mellanrum */
+    margin-top: 80px; /* Skapar mellanrum mellan nav och genereringsdelen */
 }
 
 .create-page .floating-nav {
@@ -212,8 +223,6 @@ body, html {
     background-color: #444;
 }
 
-
-
 /* Footer Section */
 .footer {
     background-color: #B8B1A2;
@@ -223,6 +232,8 @@ body, html {
     text-align: left; /* Justera så texten börjar till höger */
     line-height: 1.6;
     font-family: Georgia, serif; /* Lägg till samma font som resten av sidan */
+    flex-shrink: 0; /* Footern håller sig alltid längst ner */
+
 }
 
 .footer-links {
