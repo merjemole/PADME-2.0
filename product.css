@@ -7,14 +7,15 @@
 
 body, html {
     height: 100%;
-    font-family: Georgia, serif;
+    font-family: Arial, sans-serif;
     overflow-x: hidden;
-    background-color: #FFFDF4; /* Samma bakgrundsfärg som karusellen */
     display: flex;
     flex-direction: column; /* Gör att sidans innehåll blir flexbox */
     margin: 0;
+    background-color: #FFFDF4; /* Samma bakgrundsfärg som karusellen */
 
 }
+
 
 main {
     flex: 1; /* Fyller ut allt tillgängligt utrymme mellan nav och footer */
