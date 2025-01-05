@@ -10,7 +10,16 @@ body, html {
     font-family: Georgia, serif;
     overflow-x: hidden;
     background-color: #FFFDF4; /* Samma bakgrundsfärg som karusellen */
+    display: flex;
+    flex-direction: column; /* Gör att sidans innehåll blir flexbox */
+    margin: 0;
 
+}
+
+main {
+    flex: 1; /* Fyller ut allt tillgängligt utrymme mellan nav och footer */
+    padding: 20px; /* Lägg till lite padding för att skapa mellanrum */
+    margin-top: 80px; /* Skapar mellanrum mellan nav och genereringsdelen */
 }
 
 .product-page .floating-nav {
@@ -211,6 +220,7 @@ body, html {
     text-align: left; /* Justera så texten börjar till höger */
     line-height: 1.6;
     font-family: Georgia, serif; /* Lägg till samma font som resten av sidan */
+    flex-shrink: 0; /* Footern håller sig alltid längst ner */
 }
 
 .footer-links {
