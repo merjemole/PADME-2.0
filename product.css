@@ -16,7 +16,6 @@ body, html {
 
 }
 
-
 main {
     flex: 1; /* Fyller ut allt tillgängligt utrymme mellan nav och footer */
     padding: 20px; /* Lägg till lite padding för att skapa mellanrum */
