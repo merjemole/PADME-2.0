@@ -159,7 +159,10 @@ main {
 
 /* Specifikt för promptfältet */
 #image-prompt {
-    max-width: 600px; /* Lite bredare än andra fält */
+    max-width: 600px; /* Behåll bredare bredd */
+    padding: 16px 15px; /* Öka höjden genom att lägga till mer padding */
+    font-size: 16px; /* Behåll eller öka fontstorleken för att matcha höjden */
+    line-height: 1.5; /* Ökar avståndet mellan textens rader om det är flera rader */
 }
 
 /* Centrera Generate-knappen */
