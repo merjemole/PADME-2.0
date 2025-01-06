@@ -85,27 +85,34 @@ main {
     color: #555;
 }
 
-
 .generate-images-container {
     max-width: 600px; /* Sätter en maxbredd */
-    margin: 0 auto; /* Centrerar innehållet */
-    padding: 40px 20px; /* Lägger till utrymme runt och från kanterna */
+    margin: 0 auto; /* Centrerar horisontellt */
+    padding: 40px 20px; /* Lägger till utrymme runt */
     box-sizing: border-box; /* Säkerställer att padding inte påverkar bredden */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrerar vertikalt */
+    align-items: center; /* Centrerar innehållet horisontellt */
+    height: 100vh; /* Full höjd för att centrera */
+    text-align: left; /* Texten börjar från vänster */
 }
 
 .generate-images-container h1 {
     font-size: 24px; /* Mindre textstorlek */
     font-weight: 300; /* Lättare stil */
-    text-align: left;
     margin-bottom: 20px;
     font-family: Georgia, serif; /* Matchar designen */
     color: #131311; /* Textfärg */
+    width: 100%; /* Gör rubriken fullbredd */
 }
 
 .image-generator-form {
     display: flex;
     flex-direction: column;
     gap: 20px; /* Mellanrum mellan elementen */
+    width: 100%; /* Låt formuläret ta fullbredd inom container */
+    max-width: 400px; /* Begränsar formulärets bredd */
 }
 
 .form-group {
@@ -123,23 +130,23 @@ main {
 
 .form-group input,
 .form-group select {
-    padding: 8px 10px; /* Gör fältet mer kompakt */
+    padding: 8px 10px; /* Kompaktare fält */
     font-size: 14px;
     font-family: Georgia, serif;
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
-    width: 100%; /* Gör att inputfältet tar max tillgänglig bredd */
-    max-width: 300px; /* Begränsar bredden */
-}
-
-#image-prompt {
-    max-width: 400px; /* Gör Image Prompt-fältet lite bredare */
+    width: 100%; /* Fyll ut fältets bredd */
+    max-width: 300px; /* Begränsar fältets bredd */
 }
 
 #num-images,
 #image-style {
-    max-width: 200px; /* Gör fälten Number of Images och Image Style kortare */
+    max-width: 300px; /* Gör rutorna lika stora */
+}
+
+#image-prompt {
+    max-width: 400px; /* Gör Image Prompt-fältet lite bredare */
 }
 
 .generate-button {
