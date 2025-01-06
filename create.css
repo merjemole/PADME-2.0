@@ -124,7 +124,7 @@ main {
 }
 
 .form-group label {
-    font-size: 14px; /* Mindre textstorlek */
+    font-size: 18px; /* Mindre textstorlek */
     font-family: Georgia, serif;
     color: #131311; /* Textfärg */
     font-weight: 300; /* Lättare stil */
@@ -133,7 +133,7 @@ main {
 .form-group input,
 .form-group select {
     padding: 8px 10px; /* Kompaktare fält */
-    font-size: 18px;
+    font-size: 14px;
     font-family: Georgia, serif;
     border: 1px solid #ccc;
     border-radius: 5px;
