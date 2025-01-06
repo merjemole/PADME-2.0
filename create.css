@@ -127,6 +127,8 @@ main {
     margin-bottom: 20px; /* Mellanrum mellan grupper */
 }
 
+
+
 .form-group label {
     font-size: 20px;
     font-family: Georgia, serif;
@@ -156,17 +158,6 @@ main {
     background-color: white;
     color: #888; /* Textfärg */
     line-height: 1.5;
-
-    /* Tar bort standardutseendet för pilen */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    
-    /* Placering av pil */
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path fill="%23888" d="M7 10l5 5 5-5z"/></svg>');
-    background-repeat: no-repeat;
-    background-position: right 10px center; /* Justera pilens position */
-    background-size: 12px; /* Storlek på pilen */
 }
 
 
@@ -189,12 +180,26 @@ main {
 
 
 /* Stil för Image Style */
-#image-style {
-    width: 150px; /* Bredd 300px */
-    height: 35px; /* Höjd 35px */
-    padding: 5px;
+    #image-style {
+    width: 150px; /* Bredd */
+    height: 35px; /* Höjd */
+    padding: 5px; /* Intern marginal */
     font-size: 16px;
+    color: #888; /* Textfärg */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    -webkit-appearance: none; /* För Safari/Chrome */
+    -moz-appearance: none;    /* För Firefox */
+    appearance: none;         /* För andra webbläsare */
+
+    background-color: white; /* Bakgrundsfärg */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path fill="%23888" d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center; /* Justerar pilen */
+    background-size: 12px;
 }
+
 
 
 /* Centrera Generate-knappen */
