@@ -179,7 +179,7 @@ main {
 
 /* Stil för Image Style */
 #image-style {
-    width: 200px; /* Bredd 300px */
+    width: 150px; /* Bredd 300px */
     height: 35px; /* Höjd 35px */
     padding: 5px;
     font-size: 16px;
