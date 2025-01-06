@@ -87,31 +87,61 @@ main {
 
 
 .generate-images-container {
-    max-width: 600px; /* Sätter en maxbredd */
-    margin: 0 auto; /* Centrerar behållaren horisontellt */
-    padding: 40px 20px; /* Skapar utrymme på insidan */
-    background-color: #FFFDF4; /* Matchar bakgrunden */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lägger till en subtil skugga */
-    border-radius: 10px; /* Rundade hörn */
+    max-width: 600px; /* Maxbredd för att matcha designen */
+    margin: 0 auto; /* Centrerar innehållet */
+    padding: 40px; /* Lägger till utrymme runt */
 }
 
 .generate-images-container h1 {
-    font-size: 24px; /* Ändra storleken för att passa designen */
-    font-weight: 600;
+    font-size: 24px; /* Exakt textstorlek från bilden */
+    font-weight: bold;
+    text-align: left;
     margin-bottom: 20px;
-    color: #131311;
-    text-align: center;
+    font-family: Georgia, serif; /* Samma typsnitt */
+    color: #131311; /* Textfärgen från designen */
+}
+
+.image-generator-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Mellanrum mellan elementen */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Säkerställer korrekt placering */
+    gap: 5px;
+}
+
+.form-group label {
+    font-size: 16px; /* Matchar textstorlek */
     font-family: Georgia, serif;
+    color: #131311; /* Textfärg */
+    font-weight: bold; /* Matchar bilden */
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    font-size: 14px;
+    font-family: Georgia, serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 100%; /* Säkerställer full bredd */
 }
 
 .generate-button {
-    display: inline-block;
-    padding: 10px 20px;
+    display: block;
+    padding: 10px;
     background-color: #333;
-    color: #FFF;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 4px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    font-family: Georgia, serif;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
