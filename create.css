@@ -86,90 +86,80 @@ main {
 }
 
 .generate-images-container {
-    max-width: 600px; /* Sätter en maxbredd */
-    margin: 0 auto; /* Centrerar horisontellt */
-    padding: 40px 20px; /* Lägger till utrymme runt */
-    box-sizing: border-box; /* Säkerställer att padding inte påverkar bredden */
+    max-width: 800px; /* Ökad bredd */
+    margin: 0 auto;
+    padding: 50px 30px; /* Större padding */
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centrerar vertikalt */
-    align-items: center; /* Centrerar innehållet horisontellt */
-    height: 100vh; /* Full höjd för att centrera */
-    text-align: left; /* Texten börjar från vänster */
-
-
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Tar bort full höjd */
+    text-align: left;
+    background-color: #FFFDF4; /* Lätt bakgrund för att lyfta fram sektionen */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lägger till en subtil skugga */
 }
 
 .generate-images-container h1 {
-    font-size: 24px; /* Mindre textstorlek */
-    font-weight: 300; /* Lättare stil */
-    margin-bottom: 20px;
-    font-family: Georgia, serif; /* Matchar designen */
-    color: #131311; /* Textfärg */
-    width: 100%; /* Gör rubriken fullbredd */
+    font-size: 36px; /* Ökar textstorleken */
+    font-weight: 500; /* Gör rubriken något tjockare */
+    margin-bottom: 30px; /* Större mellanrum under rubriken */
+    font-family: Georgia, serif;
+    color: #333; /* Mörkare textfärg */
+    text-align: center; /* Centrerar rubriken */
 }
 
 .image-generator-form {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Mellanrum mellan elementen */
-    width: 100%; /* Låt formuläret ta fullbredd inom container */
-    max-width: 400px; /* Begränsar formulärets bredd */
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 5px; /* Lite mellanrum mellan label och fältet */
+    gap: 25px; /* Ökat mellanrum mellan element */
+    width: 100%;
+    max-width: 600px; /* Ökad bredd för formuläret */
 }
 
 .form-group label {
-    font-size: 18px; /* Mindre textstorlek */
+    font-size: 20px; /* Ökad textstorlek */
     font-family: Georgia, serif;
-    color: #131311; /* Textfärg */
-    font-weight: 300; /* Lättare stil */
+    color: #131311;
+    font-weight: 400;
 }
 
 .form-group input,
 .form-group select {
-    padding: 8px 10px; /* Kompaktare fält */
-    font-size: 14px;
+    padding: 12px 15px; /* Större padding för bättre användarupplevelse */
+    font-size: 16px; /* Ökad textstorlek */
     font-family: Georgia, serif;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px; /* Rundare hörn */
     outline: none;
-    width: 100%; /* Fyll ut fältets bredd */
-    max-width: 300px; /* Begränsar fältets bredd */
-}
-
-#num-images,
-#image-style {
-    max-width: 300px; /* Gör rutorna lika stora */
+    width: 100%;
+    max-width: 400px; /* Ökad bredd på input-fält */
 }
 
 #image-prompt {
-    max-width: 400px; /* Gör Image Prompt-fältet lite bredare */
+    max-width: 600px; /* Gör prompt-fältet större */
 }
 
 .generate-button {
     display: inline-block;
-    padding: 8px 16px; /* Kompaktare knapp */
+    padding: 12px 20px; /* Större knapp */
     background-color: #333;
     color: white;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px; /* Ökad textstorlek */
     border: none;
-    border-radius: 5px;
+    border-radius: 8px; /* Rundare hörn */
     font-family: Georgia, serif;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 150px; /* Gör knappen mindre */
+    width: 200px; /* Större bredd på knappen */
 }
 
 .generate-button:hover {
     background-color: #555;
 }
-
 
 .newsletter-section {
     background-color: #B8B1A2;
