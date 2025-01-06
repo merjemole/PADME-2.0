@@ -116,7 +116,7 @@ main {
     flex-direction: column;
     gap: 25px; /* Ökat mellanrum mellan element */
     width: 100%;
-    max-width: 700px; /* Ökad bredd för formuläret */
+    max-width: 600px; /* Ökad bredd för formuläret */
 }
 
 /* Stil för formulärets rubriker och fält */
@@ -159,7 +159,7 @@ main {
 
 /* Specifikt för promptfältet */
 #image-prompt {
-    max-width: 600px; /* Behåll bredare bredd */
+    max-width: 700px; /* Behåll bredare bredd */
     padding: 16px 15px; /* Öka höjden genom att lägga till mer padding */
     font-size: 16px; /* Behåll eller öka fontstorleken för att matcha höjden */
     line-height: 1.5; /* Ökar avståndet mellan textens rader om det är flera rader */
@@ -167,14 +167,14 @@ main {
 
 /* Specific styles for Number of Images */
 #number-of-images {
-    height: 50px; /* Sätt höjden till 50px */
+    width: 50px; /* Sätt höjden till 50px */
     padding: 0 15px; /* Justera sidpadding om nödvändigt */
     font-size: 14px; /* Anpassa fontstorlek för proportioner */
 }
 
 /* Specific styles for Image Style */
 #image-style {
-    height: 200px; /* Sätt höjden till 200px */
+    width: 200px; /* Sätt höjden till 200px */
     padding: 0 15px; /* Justera sidpadding om nödvändigt */
     font-size: 14px; /* Anpassa fontstorlek för proportioner */
 }
