@@ -119,12 +119,12 @@ main {
     max-width: 600px; /* Ökad bredd för formuläret */
 }
 
-/* Justering för att alla fält är under rubriken */
+/* Stil för formulärets rubriker och fält */
 .form-group {
     display: flex;
     flex-direction: column; /* Staplar rubrik och fält vertikalt */
-    gap: 8px; /* Ökat mellanrum mellan rubrik och fält */
-    margin-bottom: 20px; /* Ökat mellanrum mellan grupper */
+    gap: 8px; /* Mellanrum mellan rubrik och fält */
+    margin-bottom: 20px; /* Mellanrum mellan grupper */
 }
 
 .form-group label {
@@ -137,9 +137,9 @@ main {
     gap: 4px; /* Litet mellanrum mellan rubrik och stjärna */
 }
 
-/* Stil för obligatoriska fält */
+/* Stil för stjärnan */
 .form-group label .required {
-    color: #888; /* Grå färg för stjärnan */
+    color: #888; /* Grå färg */
     font-size: 18px; /* Lite mindre än rubriken */
     font-weight: normal; /* Lättare stil */
 }
@@ -147,14 +147,14 @@ main {
 /* Stilen för input och select */
 .form-group input,
 .form-group select {
-    padding: 12px 15px; /* Bra padding för användarupplevelse */
-    font-size: 16px; /* Större textstorlek */
+    padding: 12px 15px;
+    font-size: 16px;
     font-family: Georgia, serif;
     border: 1px solid #ccc;
-    border-radius: 8px; /* Rundare hörn */
+    border-radius: 8px; /* Rundade hörn */
     outline: none;
     width: 100%; /* Bredden fyller hela gruppens bredd */
-    max-width: 400px; /* Begränsad maxbredd för enhetligt utseende */
+    max-width: 400px; /* Begränsad maxbredd */
 }
 
 /* Specifikt för promptfältet */
@@ -162,20 +162,21 @@ main {
     max-width: 600px; /* Lite bredare än andra fält */
 }
 
-
+/* Centrera Generate-knappen */
 .generate-button {
-    display: inline-block;
+    display: block; /* Gör knappen till ett blockelement */
+    margin: 0 auto; /* Centrerar knappen horisontellt */
     padding: 12px 20px; /* Större knapp */
     background-color: #333;
     color: white;
     text-align: center;
-    font-size: 16px; /* Ökad textstorlek */
+    font-size: 16px;
     border: none;
-    border-radius: 8px; /* Rundare hörn */
+    border-radius: 8px; /* Rundade hörn */
     font-family: Georgia, serif;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 200px; /* Större bredd på knappen */
+    width: 200px; /* Fast bredd */
 }
 
 .generate-button:hover {
