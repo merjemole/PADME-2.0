@@ -187,10 +187,10 @@ main {
 
 
 /* Stil för Image Style */
-    #image-style {
+#image-style {
     width: 150px; /* Bredd */
     height: 35px; /* Höjd */
-    padding: 5px; /* Intern marginal */
+    padding: 5px 15px; /* Ökar vänster padding från 5px till 15px */
     font-size: 16px;
     color: #888; /* Textfärg */
     border: 1px solid #ccc;
