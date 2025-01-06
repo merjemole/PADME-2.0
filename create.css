@@ -116,7 +116,7 @@ main {
     flex-direction: column;
     gap: 25px; /* Ökat mellanrum mellan element */
     width: 100%;
-    max-width: 600px; /* Ökad bredd för formuläret */
+    max-width: 700px; /* Ökad bredd för formuläret */
 }
 
 /* Stil för formulärets rubriker och fält */
