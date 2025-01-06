@@ -147,13 +147,16 @@ main {
 /* Stilen för input och select */
 .form-group input,
 .form-group select {
-    padding: 12px 15px;
+   padding: 12px 15px;
     font-size: 16px;
     font-family: Georgia, serif;
     border: 1px solid #ccc;
     border-radius: 8px; /* Rundade hörn */
     outline: none;
-    width: 100%; /* Bredden fyller hela gruppens bredd */
+    background-color: #d3d3d3; /* Ljusgrå bakgrundsfärg */
+    color: #333; /* Mörk textfärg */
+    appearance: none; /* Tar bort webbläsarens standardpil */
+    cursor: pointer; /* Ger en bättre indikation om att fältet är klickbart */
 }
 
 /* Stil för promptfältet */
