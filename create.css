@@ -9,11 +9,10 @@ body, html {
     height: 100%;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column; /* Gör att sidans innehåll blir flexbox */
-    margin: 0;
-    background-color: #FFFDF4; /* Samma bakgrundsfärg som karusellen */
-
+    background-color: #FFFDF4;
+    display: flex; /* Flex för att centrera hela sidan */
+    justify-content: center; /* Centrerar horisontellt */
+    align-items: center; /* Centrerar vertikalt */
 }
 
 main {
