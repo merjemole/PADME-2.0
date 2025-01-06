@@ -96,6 +96,8 @@ main {
     align-items: center; /* Centrerar innehållet horisontellt */
     height: 100vh; /* Full höjd för att centrera */
     text-align: left; /* Texten börjar från vänster */
+
+
 }
 
 .generate-images-container h1 {
@@ -131,7 +133,7 @@ main {
 .form-group input,
 .form-group select {
     padding: 8px 10px; /* Kompaktare fält */
-    font-size: 14px;
+    font-size: 18px;
     font-family: Georgia, serif;
     border: 1px solid #ccc;
     border-radius: 5px;
