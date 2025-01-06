@@ -168,15 +168,13 @@ main {
 /* Specific styles for Number of Images */
 #number-of-images {
     width: 50px; /* Sätt höjden till 50px */
-    padding: 0 15px; /* Justera sidpadding om nödvändigt */
-    font-size: 14px; /* Anpassa fontstorlek för proportioner */
+
 }
 
 /* Specific styles for Image Style */
 #image-style {
     width: 200px; /* Sätt höjden till 200px */
-    padding: 0 15px; /* Justera sidpadding om nödvändigt */
-    font-size: 14px; /* Anpassa fontstorlek för proportioner */
+
 }
 
 
