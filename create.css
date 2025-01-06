@@ -13,9 +13,13 @@ body, html {
 }
 
 main {
-    flex: 1; /* Fyller ut allt tillgängligt utrymme mellan nav och footer */
-    padding: 20px; /* Lägg till lite padding för att skapa mellanrum */
-    margin-top: 80px; /* Skapar mellanrum mellan nav och genereringsdelen */
+    display: flex;
+    justify-content: center; /* Centrerar horisontellt */
+    align-items: center; /* Centrerar vertikalt */
+    height: 100vh; /* Gör main lika hög som hela viewporten */
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: left; /* Texten börjar från vänster */
 }
 
 .create-page .floating-nav {
