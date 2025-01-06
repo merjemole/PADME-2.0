@@ -165,17 +165,7 @@ main {
     line-height: 1.5; /* Ökar avståndet mellan textens rader om det är flera rader */
 }
 
-/* Specific styles for Number of Images */
-#number-of-images {
-    width: 50px; /* Sätt höjden till 50px */
 
-}
-
-/* Specific styles for Image Style */
-#image-style {
-    width: 200px; /* Sätt höjden till 200px */
-
-}
 
 
 /* Centrera Generate-knappen */
