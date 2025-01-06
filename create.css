@@ -87,23 +87,21 @@ main {
 
 
 .generate-images-container {
-    width: 400px;
-    text-align: center;
-    align-items: center;
-    justify-content: center; /* Centrerar innehållet vertikalt */
-    height: 100vh;
-    margin: 60px auto; /* Skapar utrymme ovanför och nedanför */
-    padding-top: 40px; /* Lägger till extra utrymme ovanför */
-    padding-bottom: 40px; /* Lägger till extra utrymme nedanför */
+    max-width: 600px; /* Sätter en maxbredd */
+    margin: 0 auto; /* Centrerar behållaren horisontellt */
+    padding: 40px 20px; /* Skapar utrymme på insidan */
+    background-color: #FFFDF4; /* Matchar bakgrunden */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lägger till en subtil skugga */
+    border-radius: 10px; /* Rundade hörn */
 }
 
 .generate-images-container h1 {
-   font-size: 39px; /* Samma som "Our Collaborations" */
-   font-weight: 400; /* Matchar vikten */
-   margin: 89px 0; /* Samma utrymme ovanför och nedanför */
-   text-align: center; /* Säkerställer centrerad placering */
-   font-family: Georgia, serif; /* Samma font */
-   color: #131311; /* Färgmatchning */
+    font-size: 24px; /* Ändra storleken för att passa designen */
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #131311;
+    text-align: center;
+    font-family: Georgia, serif;
 }
 
 .generate-button {
@@ -121,13 +119,11 @@ main {
     background-color: #555;
 }
 
-
-
-/* Form styles */
 .image-generator-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-top: 20px; /* Ger lite utrymme mellan rubrik och formulär */
 }
 
 .form-group {
@@ -277,3 +273,5 @@ main {
     color: #FEFEFE;
     text-align: left; /* Se till att även copyright-texten börjar till höger */
 }
+
+
