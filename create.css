@@ -165,14 +165,15 @@ main {
     line-height: 1.5;
 }
 
-/* Stil för Antal bilder */
 #number-of-images {
     width: 70px; /* Bredd 70px */
     height: 35px; /* Höjd 35px */
-    padding: 5px; /* Justera padding om det behövs */
-    font-size: 16px;
-    border-radius: 8px; /* Rundade hörn */
+    padding: 5px; /* Standard padding */
+    font-size: 16px; /* Justera storlek */
+    text-align: center; /* Centrerar texten horisontellt */
+    appearance: none; /* Tar bort standardstilar för vissa webbläsare */
 }
+
 
 /* Stil för Image Style */
 #image-style {
@@ -180,7 +181,6 @@ main {
     height: 35px; /* Höjd 35px */
     padding: 5px;
     font-size: 16px;
-    border-radius: 8px; /* Rundade hörn */
 }
 
 
