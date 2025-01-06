@@ -119,28 +119,49 @@ main {
     max-width: 600px; /* Ökad bredd för formuläret */
 }
 
+/* Justering för att alla fält är under rubriken */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Staplar rubrik och fält vertikalt */
+    gap: 8px; /* Ökat mellanrum mellan rubrik och fält */
+    margin-bottom: 20px; /* Ökat mellanrum mellan grupper */
+}
+
 .form-group label {
-    font-size: 20px; /* Ökad textstorlek */
+    font-size: 20px;
     font-family: Georgia, serif;
     color: #131311;
     font-weight: 400;
+    display: flex;
+    align-items: center; /* Gör att stjärnan linjerar med texten */
+    gap: 4px; /* Litet mellanrum mellan rubrik och stjärna */
 }
 
+/* Stil för obligatoriska fält */
+.form-group label .required {
+    color: #888; /* Grå färg för stjärnan */
+    font-size: 18px; /* Lite mindre än rubriken */
+    font-weight: normal; /* Lättare stil */
+}
+
+/* Stilen för input och select */
 .form-group input,
 .form-group select {
-    padding: 12px 15px; /* Större padding för bättre användarupplevelse */
-    font-size: 16px; /* Ökad textstorlek */
+    padding: 12px 15px; /* Bra padding för användarupplevelse */
+    font-size: 16px; /* Större textstorlek */
     font-family: Georgia, serif;
     border: 1px solid #ccc;
     border-radius: 8px; /* Rundare hörn */
     outline: none;
-    width: 100%;
-    max-width: 400px; /* Ökad bredd på input-fält */
+    width: 100%; /* Bredden fyller hela gruppens bredd */
+    max-width: 400px; /* Begränsad maxbredd för enhetligt utseende */
 }
 
+/* Specifikt för promptfältet */
 #image-prompt {
-    max-width: 600px; /* Gör prompt-fältet större */
+    max-width: 600px; /* Lite bredare än andra fält */
 }
+
 
 .generate-button {
     display: inline-block;
