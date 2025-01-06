@@ -153,9 +153,20 @@ main {
     border: 1px solid #ccc;
     border-radius: 8px;
     outline: none;
-    background-color: white; /* Behåll bakgrundsfärgen vit */
-    color: #888; /* Gör textfärgen grå */
+    background-color: white;
+    color: #888; /* Textfärg */
     line-height: 1.5;
+
+    /* Tar bort standardutseendet för pilen */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    /* Placering av pil */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path fill="%23888" d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Justera pilens position */
+    background-size: 12px; /* Storlek på pilen */
 }
 
 
