@@ -154,7 +154,7 @@ main {
     border-radius: 8px; /* Rundade hörn */
     outline: none;
     width: 100%; /* Bredden fyller hela gruppens bredd */
-    max-width: 400px; /* Begränsad maxbredd */
+    max-width: 200px; /* Begränsad maxbredd */
 }
 
 /* Specifikt för promptfältet */
