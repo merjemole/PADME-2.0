@@ -33,19 +33,21 @@
         <label for="image-prompt">Image Prompt<span class="required">*</span></label>
         <input id="image-prompt" type="text" name="prompt" placeholder="Describe your design" required>
     </div>
-    <div class="form-group">
-        <label for="number-of-images">Number of Images<span class="required">*</span></label>
-        <input id="number-of-images" type="number" name="images" value="1" min="1" required>
-    </div>
-    <div class="form-group">
-        <label for="image-style">Image Style<span class="required">*</span></label>
-        <select id="image-style" name="style" required>
-            <option value="" disabled selected>Select style</option>
-            <option value="none">None</option>
-            <option value="realistic">Realistic</option>
-            <option value="cartoon">Cartoon</option>
-        </select>
-    </div>
+
+
+<div class="form-group number-of-images-group">
+    <label for="number-of-images">Number of Images<span class="required">*</span></label>
+    <input id="number-of-images" type="number" name="images" value="1" min="1" required>
+</div>
+<div class="form-group image-style-group">
+    <label for="image-style">Image Style<span class="required">*</span></label>
+    <select id="image-style" name="style" required>
+        <option value="" disabled selected>Select style</option>
+        <option value="none">None</option>
+        <option value="realistic">Realistic</option>
+        <option value="cartoon">Cartoon</option>
+    </select>
+</div>
     <button type="button" class="generate-button" onclick="location.href='product.html'">Generate</button>
 </form>
 
