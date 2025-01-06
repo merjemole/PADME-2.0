@@ -116,7 +116,7 @@ main {
     flex-direction: column;
     gap: 25px; /* Ökat mellanrum mellan element */
     width: 100%;
-    max-width: 600px; /* Ökad bredd för formuläret */
+    max-width: 700px; /* Ökad bredd för formuläret */
 }
 
 /* Stil för formulärets rubriker och fält */
@@ -154,7 +154,6 @@ main {
     border-radius: 8px; /* Rundade hörn */
     outline: none;
     width: 100%; /* Bredden fyller hela gruppens bredd */
-    max-width: 100px; /* Begränsad maxbredd */
 }
 
 /* Stil för promptfältet */
@@ -166,7 +165,7 @@ main {
 }
 
 #number-of-images {
-    width: 70px; /* Bredd 70px */
+    width: 60px; /* Bredd 70px */
     height: 35px; /* Höjd 35px */
     padding: 5px; /* Standard padding */
     font-size: 16px; /* Justera storlek */
