@@ -116,7 +116,7 @@ main {
     flex-direction: column;
     gap: 25px; /* Ökat mellanrum mellan element */
     width: 100%;
-    max-width: 700px; /* Ökad bredd för formuläret */
+    max-width: 750px; /* Ökad bredd för formuläret */
 }
 
 /* Stil för formulärets rubriker och fält */
@@ -176,7 +176,7 @@ main {
 
 /* Stil för Image Style */
 #image-style {
-    width: 300px; /* Bredd 300px */
+    width: 200px; /* Bredd 300px */
     height: 35px; /* Höjd 35px */
     padding: 5px;
     font-size: 16px;
