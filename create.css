@@ -10,9 +10,6 @@ body, html {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     background-color: #FFFDF4;
-    display: flex; /* Flex för att centrera hela sidan */
-    justify-content: center; /* Centrerar horisontellt */
-    align-items: center; /* Centrerar vertikalt */
 }
 
 main {
