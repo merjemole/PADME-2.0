@@ -157,15 +157,31 @@ main {
     max-width: 100px; /* Begränsad maxbredd */
 }
 
-/* Specifikt för promptfältet */
+/* Stil för promptfältet */
 #image-prompt {
-    max-width: 700px; /* Behåll bredare bredd */
-    padding: 16px 15px; /* Öka höjden genom att lägga till mer padding */
-    font-size: 16px; /* Behåll eller öka fontstorleken för att matcha höjden */
-    line-height: 1.5; /* Ökar avståndet mellan textens rader om det är flera rader */
+    max-width: 800px; /* Ändrad bredd till 800px */
+    padding: 16px 15px; /* Behåll höjden som tidigare */
+    font-size: 16px;
+    line-height: 1.5;
 }
 
+/* Stil för Antal bilder */
+#number-of-images {
+    width: 70px; /* Bredd 70px */
+    height: 35px; /* Höjd 35px */
+    padding: 5px; /* Justera padding om det behövs */
+    font-size: 16px;
+    border-radius: 8px; /* Rundade hörn */
+}
 
+/* Stil för Image Style */
+#image-style {
+    width: 300px; /* Bredd 300px */
+    height: 35px; /* Höjd 35px */
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 8px; /* Rundade hörn */
+}
 
 
 /* Centrera Generate-knappen */
