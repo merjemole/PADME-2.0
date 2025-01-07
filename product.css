@@ -88,8 +88,6 @@ main {
     color: #555;
 }
 
-
-/* Product Page Styles */
 .product-container {
     display: flex;
     gap: 50px;
@@ -99,10 +97,11 @@ main {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 100px auto;
+    margin: 150px auto 150px; /* Ökad marginal för mer mellanrum ovan och under */
     width: 80%;
-    padding-bottom: 40px; /* Lägger till extra utrymme nedanför */
+    padding-bottom: 40px; /* Extra utrymme inuti sektionen */
 }
+
 
 .product-image {
     width: 300px;
