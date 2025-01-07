@@ -217,14 +217,14 @@ main {
 /* Footer Section */
 .footer {
     background-color: #B8B1A2;
-    padding: 20px 80px;
     color: #FEFEFE;
     font-size: 12px;
     text-align: left; /* Justera så texten börjar till höger */
     line-height: 1.6;
     font-family: Georgia, serif; /* Lägg till samma font som resten av sidan */
     flex-shrink: 0; /* Footern håller sig alltid längst ner */
-    margin-top: auto; /* Skjut footern till botten av sidan */
+    margin-top: 100px; /* Avstånd mellan innehåll och footer */
+    padding: 30px 80px; /* Extra padding i footern för mer utrymme */
 
 }
 
