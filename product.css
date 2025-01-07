@@ -20,7 +20,7 @@ main {
     flex: 1; /* Fyller ut allt tillgängligt utrymme mellan nav och footer */
     padding: 40px 20px; /* Extra padding runt innehållet */
     margin-top: 150px; /* Specifik avstånd för produkt-sidan */
-    margin-bottom: 150px;
+    margin-bottom: 200px; /* Ändra från 150px till 200px (eller högre) */
     align-self: stretch; /* Eller auto, beroende på layouten */
 
 }
@@ -101,7 +101,8 @@ main {
     width: 80%;
     padding-bottom: 40px; /* Extra utrymme inuti sektionen */
     margin-top: 200px; /* Öka avståndet ovanför */
-    margin-bottom: 200px; /* Öka avståndet under */
+    margin-bottom: 250px; /* Öka avståndet under */
+
 }
 
 
@@ -225,7 +226,7 @@ main {
     line-height: 1.6;
     font-family: Georgia, serif; /* Lägg till samma font som resten av sidan */
     flex-shrink: 0; /* Footern håller sig alltid längst ner */
-    margin-top: 100px; /* Avstånd mellan innehåll och footer */
+    margin-top: 150px; /* Öka från 100px till 150px eller högre */
     padding: 30px 80px; /* Extra padding i footern för mer utrymme */
 
 }
