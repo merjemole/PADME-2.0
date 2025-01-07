@@ -18,9 +18,9 @@ body, html {
 
 main {
     flex: 1; /* Fyller ut allt tillgängligt utrymme mellan nav och footer */
-    padding: 20px; /* Lägg till lite padding för att skapa mellanrum */
-    margin-top: 80px !important;
-    margin-bottom: 40px !important;
+    padding: 40px 20px; /* Extra padding runt innehållet */
+    margin-top: 100px; /* Öka avstånd från navbar */
+    margin-bottom: 100px; /* Öka avstånd till footer */
     align-self: stretch; /* Eller auto, beroende på layouten */
 
 }
