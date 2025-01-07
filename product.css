@@ -20,7 +20,9 @@ main {
     flex: 1; /* Fyller ut allt tillgängligt utrymme mellan nav och footer */
     padding: 20px; /* Lägg till lite padding för att skapa mellanrum */
     margin-top: 80px; /* Skapar mellanrum mellan nav och genereringsdelen */
+    margin-bottom: 40px; /* Skapar mellanrum mellan main och footern */
 }
+
 
 .product-page .floating-nav {
     position: absolute;
