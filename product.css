@@ -19,8 +19,8 @@ body, html {
 main {
     flex: 1; /* Fyller ut allt tillgängligt utrymme mellan nav och footer */
     padding: 40px 20px; /* Extra padding runt innehållet */
-    margin-top: 100px; /* Öka avstånd från navbar */
-    margin-bottom: 100px; /* Öka avstånd till footer */
+    margin-top: 150px; /* Specifik avstånd för produkt-sidan */
+    margin-bottom: 150px;
     align-self: stretch; /* Eller auto, beroende på layouten */
 
 }
