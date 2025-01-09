@@ -126,7 +126,6 @@ main {
 
 .product-options label {
     font-size: 16px; /* Större fontstorlek för rubriker */
-    font-weight: bold; /* Gör rubrikerna tydligare */
     font-family: Georgia, serif; /* Samma font för alla rubriker */
     margin-bottom: 5px; /* Lite avstånd under rubriken */
 }
