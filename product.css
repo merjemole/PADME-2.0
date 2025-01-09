@@ -100,8 +100,8 @@ main {
     margin: 150px auto 150px; /* Ökad marginal för mer mellanrum ovan och under */
     width: 80%;
     padding-bottom: 40px; /* Extra utrymme inuti sektionen */
-    margin-top: 200px; /* Öka avståndet ovanför */
-    margin-bottom: 320px; /* Öka avståndet under */
+    margin-top: 250px; /* Öka avståndet ovanför */
+    margin-bottom: 300px; /* Öka avståndet under */
 }
 
 .product-image {
