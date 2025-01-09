@@ -125,9 +125,9 @@ main {
 }
 
 .product-options label {
-    font-size: 16px; /* Större fontstorlek för rubriker */
+    font-size: 18px; /* Större fontstorlek för rubriker */
     font-family: Georgia, serif; /* Samma font för alla rubriker */
-    margin-bottom: 5px; /* Lite avstånd under rubriken */
+    display: block; /* Gör att "Pick shirt:" och "Pick color" hamnar ovanför alternativen */
 }
 
 .product-options select,
