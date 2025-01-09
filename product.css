@@ -101,10 +101,8 @@ main {
     width: 80%;
     padding-bottom: 40px; /* Extra utrymme inuti sektionen */
     margin-top: 200px; /* Öka avståndet ovanför */
-    margin-bottom: 250px; /* Öka avståndet under */
-
+    margin-bottom: 320px; /* Öka avståndet under */
 }
-
 
 .product-image {
     width: 300px;
