@@ -103,7 +103,9 @@ main {
     padding-bottom: 40px; /* Extra utrymme inuti sektionen */
     margin-top: 250px; /* Öka avståndet ovanför */
     margin-bottom: 300px; /* Öka avståndet under */
+    padding-left: 30px; /* Flytta innehållet mer till höger */
 }
+
 
 .product-image {
     width: 300px;
@@ -122,13 +124,14 @@ main {
 .product-options {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Extra mellanrum mellan alternativen */
+    gap: 25px; /* Extra mellanrum mellan alternativen */
 }
 
 .product-options label {
     font-size: 18px; /* Större fontstorlek för rubriker */
     font-family: Georgia, serif; /* Samma font för alla rubriker */
     display: block; /* Gör att "Pick shirt:" och "Pick color" hamnar ovanför alternativen */
+    margin-bottom: 10px; /* Mer utrymme mellan rubriker och alternativen */
 }
 
 .product-options select,
