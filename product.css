@@ -121,11 +121,14 @@ main {
 .product-options {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px; /* Extra mellanrum mellan alternativen */
 }
 
 .product-options label {
-    font-size: 14px;
+    font-size: 16px; /* Större fontstorlek för rubriker */
+    font-weight: bold; /* Gör rubrikerna tydligare */
+    font-family: Georgia, serif; /* Samma font för alla rubriker */
+    margin-bottom: 5px; /* Lite avstånd under rubriken */
 }
 
 .product-options select,
@@ -134,6 +137,11 @@ main {
     font-size: 14px;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+
+.product-options .option-group {
+    display: flex;
+    flex-direction: column; /* Placera rubriken ovanför alternativen */
 }
 
 .add-to-cart {
