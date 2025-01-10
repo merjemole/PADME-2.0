@@ -114,7 +114,7 @@ main {
 
 .product-details {
     font-family: Georgia, serif;
-    margin-left: 20px; /* Flyttar hela innehållet till höger */
+    margin-left: 40px; /* Flyttar hela innehållet till höger */
 }
 
 .product-details h2 {
@@ -126,7 +126,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 25px; /* Extra mellanrum mellan alternativen */
-    margin-left: 20px; /* Extra avstånd för innehållet */
+    margin-left: 40px; /* Extra avstånd för innehållet */
 }
 
 .product-options label {
@@ -162,7 +162,6 @@ main {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 20px; /* Flyttar hela innehållet till höger */
 }
 
 .add-to-cart button:hover {
