@@ -151,6 +151,7 @@ main {
 
 .add-to-cart {
     margin-top: 20px;
+    margin-left: 0; /* Behåll "Add to cart" i linje med övrigt */
 }
 
 .add-to-cart button {
