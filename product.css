@@ -151,7 +151,7 @@ main {
 
 .add-to-cart {
     margin-top: 20px;
-    margin-left: 0; /* Behåll "Add to cart" i linje med övrigt */
+    margin-left: 20px; /* Flyttar hela innehållet till höger */
 }
 
 .add-to-cart button {
@@ -162,7 +162,7 @@ main {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 0; /* Behåll "Add to cart" i linje med övrigt */
+    margin-left: 20px; /* Flyttar hela innehållet till höger */
 }
 
 .add-to-cart button:hover {
