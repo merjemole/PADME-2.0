@@ -114,6 +114,7 @@ main {
 
 .product-details {
     font-family: Georgia, serif;
+    margin-left: 20px; /* Flyttar hela innehållet till höger */
 }
 
 .product-details h2 {
@@ -125,6 +126,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 25px; /* Extra mellanrum mellan alternativen */
+    margin-left: 20px; /* Extra avstånd för innehållet */
 }
 
 .product-options label {
