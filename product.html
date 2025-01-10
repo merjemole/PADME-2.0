@@ -6,10 +6,8 @@
     <title>Product Page</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="product.css"> <!-- Lägg till specifika stilar för produktsidan om det behövs -->
-    
+    <link rel="stylesheet" href="product.css">
 </head>
-    
 <body class="product-page">
 
     <!-- Navigeringsmeny -->
@@ -30,9 +28,8 @@
 
     <!-- Produktsektion med id "product" -->
     <section id="product">
-        <!-- Produktdetaljer -->
         <div class="product-container">
-            <img class="product-image" src="/path-to-question-mark-tshirt.png" alt="Black T-shirt with question mark">
+            <img id="product-image" class="product-image" src="/path-to-question-mark-tshirt.png" alt="Black T-shirt with question mark">
             <div class="product-details">
                 <h2></h2>
                 <div class="product-options">
@@ -103,5 +100,32 @@
         </div>
     </footer>
 
+    <script>
+        // Koppla till elementen
+        const shirtOptions = document.querySelectorAll('input[name="shirt"]');
+        const colorOptions = document.querySelectorAll('input[name="color"]');
+        const productImage = document.getElementById('product-image');
+
+        // Bildkartläggning för olika kombinationer
+        const imageMap = {
+            "short-sleeve-black": "/path-to-short-sleeve-black.png",
+            "short-sleeve-white": "/path-to-short-sleeve-white.png",
+            "long-sleeve-black": "/path-to-long-sleeve-black.png",
+            "long-sleeve-white": "/path-to-long-sleeve-white.png"
+        };
+
+        // Funktion för att uppdatera bilden
+        function updateImage() {
+            const selectedShirt = document.querySelector('input[name="shirt"]:checked').value;
+            const selectedColor = document.querySelector('input[name="color"]:checked').value;
+
+            const imageKey = `${selectedShirt}-${selectedColor}`;
+            productImage.src = imageMap[imageKey];
+        }
+
+        // Lyssna på ändringar
+        shirtOptions.forEach(option => option.addEventListener('change', updateImage));
+        colorOptions.forEach(option => option.addEventListener('change', updateImage));
+    </script>
 </body>
 </html>
