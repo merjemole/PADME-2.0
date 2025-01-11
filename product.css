@@ -114,7 +114,12 @@ main {
 
 .product-details {
     font-family: Georgia, serif;
-    margin-left: 80px; /* Flyttar hela innehållet till höger */
+    margin-left: 90px; /* Flyttar hela innehållet till höger */
+    padding: 20px; /* Lägg till padding för textens innehåll */
+    border: 1px solid #ddd; /* Ram runt texten */
+    border-radius: 10px; /* Gör ramen rundad */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lägg till skugga */
+    background-color: #FFFDF4; /* Bakgrundsfärg för textsektionen */
 }
 
 .product-details h2 {
@@ -126,7 +131,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 25px; /* Extra mellanrum mellan alternativen */
-    margin-left: 80px; /* Extra avstånd för innehållet */
+    margin-left: 890px; /* Extra avstånd för innehållet */
 }
 
 .product-options label {
@@ -151,7 +156,7 @@ main {
 
 .add-to-cart {
     margin-top: 20px;
-    margin-left: 80px; /* Flyttar hela innehållet till höger */
+    margin-left: 90px; /* Flyttar hela innehållet till höger */
 }
 
 .add-to-cart button {
