@@ -294,14 +294,13 @@ main {
 .footer {
     background-color: #B8B1A2;
     padding: 20px 80px;
-    width: 100%; /* Täcker hela skärmens bredd */
+    width: 100%; /* Se till att footern täcker hela bredden */
     color: #FEFEFE;
     font-size: 12px;
-    text-align: left; /* Justera så texten börjar till höger */
+    text-align: left;
     line-height: 1.6;
-    font-family: Georgia, serif; /* Lägg till samma font som resten av sidan */
-    flex-shrink: 0; /* Footern håller sig alltid längst ner */
-
+    font-family: Georgia, serif;
+    flex-shrink: 0; /* Förhindra att footern krymper */
 }
 
 
