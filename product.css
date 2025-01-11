@@ -106,10 +106,10 @@ main {
     padding-left: 30px; /* Flytta innehållet mer till höger */
 }
 
-
 .product-image {
-    width: 300px;
+    width: 450px; /* Gör bilden större */
     height: auto;
+    margin-left: 20px; /* Flytta bilden lite till höger */
 }
 
 .product-details {
