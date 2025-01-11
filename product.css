@@ -100,7 +100,6 @@ main {
     background-color: transparent; /* Ingen bakgrundsfärg för hela sektionen */
     margin-top: 250px; /* Öka avståndet ovanför */
     margin-bottom: 300px; /* Öka avståndet under */
-
 }
 
 .product-image {
@@ -138,6 +137,7 @@ main {
 .product-options label {
     font-size: 18px; /* Tydlig rubrikstorlek */
     display: block; /* Gör att rubriken står ovanför alternativen */
+    margin-top: 20px; /* Extra avstånd mellan rubrik och alternativ */
     margin-bottom: 16px; /* Mer utrymme mellan rubriker och alternativen */
 
 }
