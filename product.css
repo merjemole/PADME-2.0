@@ -131,6 +131,7 @@ main {
     gap: 15px; /* Mellanrum mellan alternativ */
     margin-top: 20px; /* Extra avstånd mellan rubrik och alternativ */
     margin-left: 21px; /* Extra avstånd för innehållet */
+    margin-bottom: 16px; /* Mer utrymme mellan rubriker och alternativen */
 }
 
 .product-options label {
@@ -146,7 +147,6 @@ main {
     font-size: 14px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    margin-bottom: 15px; /* Avstånd mellan input och nästa sektion */
 }
 
 .add-to-cart {
