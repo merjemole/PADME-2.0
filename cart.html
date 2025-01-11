@@ -28,11 +28,55 @@
         </div>
     </nav>
 
+<h1>Your Cart</h1>
+<div class="cart-container">
+    <!-- Cart Items Section -->
+    <div class="cart-items">
+        <div class="cart-item">
+            <img src="path-to-image1.png" alt="Product Image">
+            <div class="cart-item-details">
+                <p class="cart-item-name">Checkered Shirt</p>
+                <p>Size: Medium</p>
+                <p>Color: Red</p>
+                <p class="cart-item-price">$20</p>
+            </div>
+            <div class="cart-item-quantity">
+                <button class="quantity-btn">-</button>
+                <span>1</span>
+                <button class="quantity-btn">+</button>
+            </div>
+            <button class="remove-btn">&times;</button>
+        </div>
+        <!-- Repeat for other items -->
+    </div>
 
-    
-    <h1>Your Cart</h1>
-    <div id="cart-items"></div>
-    <button id="checkout-btn">Checkout</button>
+    <!-- Order Summary Section -->
+    <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="summary-item">
+            <p>Subtotal</p>
+            <p>$80</p>
+        </div>
+        <div class="summary-item">
+            <p>Discount (–10%)</p>
+            <p>- $8</p>
+        </div>
+        <div class="summary-item">
+            <p>Delivery Fee</p>
+            <p>$15</p>
+        </div>
+        <hr>
+        <div class="summary-total">
+            <p>Total</p>
+            <p>$87</p>
+        </div>
+        <div class="promo-code">
+            <input type="text" placeholder="Add promo code">
+            <button>Apply</button>
+        </div>
+        <button class="checkout-btn">Go to Checkout →</button>
+    </div>
+</div>
 
      <!-- Footer -->
     <footer class="footer">
