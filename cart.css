@@ -3,21 +3,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Georgia, serif; /* Sätt global font till Georgia */
 }
 
 body, html {
-    height: 100%; /* Viktigt för att flexbox ska fungera */
+    height: 100%;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     display: flex;
-    flex-direction: column; /* Placera nav, main och footer i en kolumn */
-    background-color: #FFFDF4;
+    flex-direction: column; /* Gör att sidans innehåll blir flexbox */
+    margin: 0;
+    background-color: #FFFDF4; /* Samma bakgrundsfärg som karusellen */
+
 }
 
 main {
-    flex: 1; /* Fyll ut allt tillgängligt utrymme mellan nav och footer */
+    flex: 1; /* Fyller ut allt tillgängligt utrymme mellan nav och footer */
     padding: 40px 20px; /* Extra padding runt innehållet */
-    margin-top: 150px; /* Behåll detta om det är viktigt för designen */
+    margin-top: 150px; /* Specifik avstånd för produkt-sidan */
+    margin-bottom: 200px; /* Ändra från 150px till 200px (eller högre) */
+    align-self: stretch; /* Eller auto, beroende på layouten */
+
 }
 
 .cart-page .floating-nav {
@@ -229,7 +235,6 @@ main {
 }
 
 
-
 .newsletter-section {
     background-color: #B8B1A2;
     padding: 20px;
@@ -290,19 +295,20 @@ main {
     background-color: #444;
 }
 
+
 /* Footer Section */
 .footer {
     background-color: #B8B1A2;
-    padding: 20px 80px;
-    width: 100%; /* Se till att footern täcker hela bredden */
     color: #FEFEFE;
     font-size: 12px;
-    text-align: left;
+    text-align: left; /* Justera så texten börjar till höger */
     line-height: 1.6;
-    font-family: Georgia, serif;
-    flex-shrink: 0; /* Förhindra att footern krymper */
-}
+    font-family: Georgia, serif; /* Lägg till samma font som resten av sidan */
+    flex-shrink: 0; /* Footern håller sig alltid längst ner */
+    margin-top: 150px; /* Öka från 100px till 150px eller högre */
+    padding: 30px 80px; /* Extra padding i footern för mer utrymme */
 
+}
 
 .footer-links {
     display: flex;
