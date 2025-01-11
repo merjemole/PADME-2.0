@@ -118,6 +118,7 @@ main {
     background-color: #FFFDF4; /* Bakgrundsfärg för textområdet */
     flex: 1; /* Fyll ut det tillgängliga utrymmet */
     margin-left: 21px; /* Flyttar hela innehållet till höger */
+    margin-bottom: 16px; /* Mer utrymme mellan rubriker och alternativen */
 }
 
 .product-details h2 {
@@ -163,6 +164,7 @@ main {
     font-size: 16px;
     cursor: pointer;
     margin-left: 0; /* Flyttar hela innehållet till höger */
+    margin-bottom: 16px; /* Mer utrymme mellan rubriker och alternativen */
 }
 
 .add-to-cart button:hover {
