@@ -3,27 +3,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, serif; /* Sätt global font till Georgia */
 }
 
 body, html {
     height: 100%;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column; /* Gör att sidans innehåll blir flexbox */
-    margin: 0;
-    background-color: #FFFDF4; /* Samma bakgrundsfärg som karusellen */
-
+    background-color: #FFFDF4;
 }
 
 main {
-    flex: 1; /* Fyller ut allt tillgängligt utrymme mellan nav och footer */
-    padding: 40px 20px; /* Extra padding runt innehållet */
-    margin-top: 150px; /* Specifik avstånd för produkt-sidan */
-    margin-bottom: 200px; /* Ändra från 150px till 200px (eller högre) */
-    align-self: stretch; /* Eller auto, beroende på layouten */
-
+    display: flex;
+    justify-content: center; /* Centrerar horisontellt */
+    align-items: center; /* Centrerar vertikalt */
+    height: 100vh; /* Gör main lika hög som hela viewporten */
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: left; /* Texten börjar från vänster */
 }
 
 .cart-page .floating-nav {
