@@ -148,7 +148,11 @@ main {
     font-size: 14px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    width: 100%; /* Gör fältet lika brett som container */
+    max-width: 300px; /* Sätter en maxbredd om det behövs */
+    box-sizing: border-box; /* Inkluderar padding i breddberäkningen */
 }
+
 
 .add-to-cart {
     margin-top: 20px; /* Avstånd mellan alternativ och knappen */
