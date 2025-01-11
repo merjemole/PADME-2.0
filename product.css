@@ -153,6 +153,42 @@ main {
     box-sizing: border-box; /* Inkluderar padding i breddberäkningen */
 }
 
+/* Anpassa pilen för select-fält */
+.product-options select {
+    -webkit-appearance: none; /* Tar bort standardutseendet i Webkit-baserade webbläsare */
+    -moz-appearance: none; /* Tar bort standardutseendet i Firefox */
+    appearance: none; /* Tar bort standardutseendet */
+    background-color: #FFFDF4; /* Samma bakgrundsfärg som textområdet */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 12px; /* Ger extra utrymme för texten */
+    font-size: 14px;
+    width: 100%; /* Gör fältet lika brett som container */
+    max-width: 300px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 width%3D%2210%22 height%3D%225%22 viewBox%3D%220 0 10 5%22%3E%3Cpath fill%3D%22%23333%22 d%3D%22M0 0l5 5 5-5z%22/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 12px center; /* Placera pilen till höger */
+    background-size: 10px; /* Anpassa pilens storlek */
+}
+
+.product-options select:focus {
+    border-color: #888; /* Ändrar gränsfärgen vid fokus */
+    outline: none; /* Tar bort standardfokusram */
+}
+
+.product-options select:hover {
+    border-color: #aaa; /* Ändrar gränsfärgen vid hover */
+}
+
+/* Fix för Internet Explorer (om stöd krävs) */
+.product-options select::-ms-expand {
+    display: none; /* Dölj standardpilen i IE */
+}
+
+
 
 .add-to-cart {
     margin-top: 20px; /* Avstånd mellan alternativ och knappen */
