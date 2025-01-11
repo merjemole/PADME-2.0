@@ -98,12 +98,12 @@ main {
     width: 80%; /* Bredd på sektionen */
     padding: 0; /* Ta bort padding från hela containern */
     background-color: transparent; /* Ingen bakgrundsfärg för hela sektionen */
-    margin-top: 250px; /* Öka avståndet ovanför */
+    margin-top: 200px; /* Öka avståndet ovanför */
     margin-bottom: 300px; /* Öka avståndet under */
 }
 
 .product-image {
-    width: 450px; /* Större bildstorlek */
+    width: 600px; /* Större bildstorlek */
     height: auto; /* Automatisk höjd baserat på bredd */
     margin-left: 20px; /* Flytta bilden lite till höger */
 }
