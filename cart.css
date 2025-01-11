@@ -30,7 +30,7 @@ main {
 }
 
 
-.floating-nav {
+.cart-page .floating-nav {
     position: absolute;
     width: 100%;
     display: flex;
@@ -46,8 +46,8 @@ main {
     border-bottom: 1px solid #131311;
 }
 
-.floating-nav .left a, 
-.floating-nav .right a {
+.cart-page .floating-nav .left a, 
+.cart-page .floating-nav .right a {
     text-decoration: none;
     color: #131311;
     font-family: Georgia, serif;
@@ -55,23 +55,23 @@ main {
     transition: color 0.3s ease;
 }
 
-.floating-nav .right a:last-child {
+.cart-page .floating-nav .right a:last-child {
     margin-right: 0; /* Remove extra margin on the last element */
 }
 
-.floating-nav .right a span {
+.cart-page .floating-nav .right a span {
     vertical-align: middle;
     margin-right: 6px; /* Space between icon and text */
     font-size: 18px; /* Justera storleken här */
 }
 
 /* Remove hover effect */
-.floating-nav a:hover {
+.cart-page .floating-nav a:hover {
     color: #131311;
 }
 
 /* Loggan i mitten */
-.floating-nav .logo {
+.cart-page .floating-nav .logo {
     position: absolute; /* Separera loggan från flexbox-flödet */
     left: 50%; /* Placera i mitten av navbarens bredd */
     transform: translateX(-50%); /* Korrigera för bredden på loggan */
@@ -81,14 +81,14 @@ main {
     color: #131311;
 }
 
-.floating-nav .logo a {
+.cart-page .floating-nav .logo a {
     text-decoration: none;
     color: inherit;
     letter-spacing: 1px;
     transition: color 0.3s ease;
 }
 
-.floating-nav .logo a:hover {
+.cart-page .floating-nav .logo a:hover {
     color: #555;
 }
 
