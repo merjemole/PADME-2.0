@@ -133,10 +133,11 @@ main {
     margin-left: 21px; /* Extra avstånd för innehållet */
 }
 
+
 .product-options label {
     font-size: 18px; /* Tydlig rubrikstorlek */
     display: block; /* Gör att rubriken står ovanför alternativen */
-    margin-bottom: 16px; /* Mer utrymme mellan rubriker och alternativen */
+    margin-bottom: 10px; /* Mer utrymme mellan rubriker och alternativen */
 
 }
 
@@ -146,7 +147,7 @@ main {
     font-size: 14px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    margin-bottom: 15px; /* Avstånd mellan input och nästa sektion */
+    margin-bottom: 21px; /* Avstånd mellan input och nästa sektion */
 }
 
 .add-to-cart {
