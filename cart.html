@@ -3,13 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Product Page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product.css">
 </head>
-<body>
+<body class="product-page">
+
+    <!-- Navigeringsmeny -->
+    <nav class="floating-nav">
+        <div class="left">
+            <a href="index.html">HOME</a>
+            <a href="create.html">CREATE</a>
+            <a href="collaboration.html">COLLABORATIONS</a>
+        </div>
+        <div class="logo">
+            <a href="index.html">BrandTees AI</a>
+        </div>
+        <div class="right">
+            <a href="#"><span class="material-icons-outlined">info</span> ABOUT US</a>
+            <a href="#"><span class="material-icons-outlined">shopping_cart</span> CART</a>
+        </div>
+    </nav>
+
+
+    
     <h1>Your Cart</h1>
     <div id="cart-items"></div>
     <button id="checkout-btn">Checkout</button>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="newsletter-section">
+            <h3>Join Our Newsletter</h3>
+            <p>Enter your email address here to stay updated with the latest news and offers.</p>
+            <form class="newsletter-form" action="#" method="post">
+                <input type="email" name="email" placeholder="Enter your email address here" required>
+                <button type="submit">Join</button>
+            </form>
+        </div>
+
+        <div class="footer-links">
+            <ul>
+                <li><strong>BrandTees AI</strong></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Collaborations</a></li>
+            </ul>
+            <ul>
+                <li><strong>Customer Support</strong></li>
+                <li><a href="#">Delivery Details</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <ul>
+                <li><strong>Contact Us</strong></li>
+                <li><a href="#">Call</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>BrandTeesAI © 2025, All Rights Reserved</p>
+        </div>
+    </footer>
+    
 
     <script>
         // Hämta kundvagnsdata från localStorage
