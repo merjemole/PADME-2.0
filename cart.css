@@ -10,6 +10,8 @@ body, html {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     background-color: #FFFDF4;
+    min-height: 100vh; /* Säkerställer att body täcker hela viewportens höjd */
+
 }
 
 main {
@@ -300,6 +302,7 @@ main {
     line-height: 1.6;
     font-family: Georgia, serif; /* Lägg till samma font som resten av sidan */
     flex-shrink: 0; /* Footern håller sig alltid längst ner */
+    margin: 0;
 
 }
 
