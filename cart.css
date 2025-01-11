@@ -93,7 +93,7 @@ main {
     padding: 20px;
     background-color: #FFFDF4;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1800px;  /* Ändra max-width för att bredda container */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
