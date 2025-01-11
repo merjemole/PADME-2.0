@@ -104,7 +104,8 @@ main {
     flex-direction: column;
     gap: 20px;
     padding-right: 20px;
-    border-right: 1px solid #ddd;
+    /* Ta bort eller kommentera ut denna rad */
+    /* border-right: 1px solid #ddd; */
 }
 
 .cart-item {
@@ -173,7 +174,7 @@ main {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-left: 20px; /* Lite mer utrymme mellan cart-items och order-summary */
+    margin-left: 50px; /* Lite mer utrymme mellan cart-items och order-summary */
 }
 
 .order-summary h2 {
