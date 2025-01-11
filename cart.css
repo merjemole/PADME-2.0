@@ -1,1 +1,280 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif; /* Sätt global font till Georgia */
+}
 
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column; /* Gör att sidans innehåll blir flexbox */
+    margin: 0;
+    background-color: #FFFDF4; /* Samma bakgrundsfärg som karusellen */
+
+}
+
+main {
+    flex: 1; /* Fyller ut allt tillgängligt utrymme mellan nav och footer */
+    padding: 40px 20px; /* Extra padding runt innehållet */
+    margin-top: 150px; /* Specifik avstånd för produkt-sidan */
+    margin-bottom: 200px; /* Ändra från 150px till 200px (eller högre) */
+    align-self: stretch; /* Eller auto, beroende på layouten */
+
+}
+
+
+.floating-nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 13px; /* Lägg till padding-top istället */
+    color: #131311;
+    background: transparent;
+    font-size: 12.5px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    z-index: 100;
+    border-bottom: 1px solid #131311;
+}
+
+.floating-nav .left a, 
+.floating-nav .right a {
+    text-decoration: none;
+    color: #131311;
+    font-family: Georgia, serif;
+    margin-right: 86px; /* Space between items */
+    transition: color 0.3s ease;
+}
+
+.floating-nav .right a:last-child {
+    margin-right: 0; /* Remove extra margin on the last element */
+}
+
+.floating-nav .right a span {
+    vertical-align: middle;
+    margin-right: 6px; /* Space between icon and text */
+    font-size: 18px; /* Justera storleken här */
+}
+
+/* Remove hover effect */
+.floating-nav a:hover {
+    color: #131311;
+}
+
+/* Loggan i mitten */
+.floating-nav .logo {
+    position: absolute; /* Separera loggan från flexbox-flödet */
+    left: 50%; /* Placera i mitten av navbarens bredd */
+    transform: translateX(-50%); /* Korrigera för bredden på loggan */
+    font-size: 18px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    color: #131311;
+}
+
+.floating-nav .logo a {
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.floating-nav .logo a:hover {
+    color: #555;
+}
+
+
+/* Sidan för varukorgen */
+.cart-page {
+    padding: 50px 20px;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.cart-item-details {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.cart-item-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cart-item-quantity,
+.cart-item-price {
+    font-size: 14px;
+    color: #666;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.cart-actions button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cart-actions button:hover {
+    background-color: #555;
+}
+
+
+
+
+.newsletter-section {
+    background-color: #B8B1A2;
+    padding: 20px;
+    text-align: center;
+    color: #FEFEFE;
+    font-family: Georgia, serif;
+    margin-bottom: 20px; /* Ger lite luft mellan nyhetsbrevet och resten av footern */
+}
+
+.newsletter-section h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.newsletter-section p {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 8px 12px;
+    font-size: 12px;
+    border: 1px solid #FEFEFE;
+    border-radius: 4px;
+    background-color: #FFFDF4;
+    color: #333;
+    width: 250px;
+    outline: none;
+}
+
+.newsletter-form input[type="email"]::placeholder {
+    color: #666;
+    font-style: italic;
+}
+
+.newsletter-form button {
+    padding: 8px 16px;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #FEFEFE;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #444;
+}
+
+
+/* Footer Section */
+.footer {
+    background-color: #B8B1A2;
+    color: #FEFEFE;
+    font-size: 12px;
+    text-align: left; /* Justera så texten börjar till höger */
+    line-height: 1.6;
+    font-family: Georgia, serif; /* Lägg till samma font som resten av sidan */
+    flex-shrink: 0; /* Footern håller sig alltid längst ner */
+    margin-top: 150px; /* Öka från 100px till 150px eller högre */
+    padding: 30px 80px; /* Extra padding i footern för mer utrymme */
+
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    min-width: 150px; /* Ger varje kolumn en jämn minsta bredd */
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li strong {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #FEFEFE;
+    font-weight: 300; /* Gör rubriken tunnare */
+
+}
+
+.footer-links ul li a {
+    color: #FEFEFE;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-links ul li a:hover {
+    color: #FEFEFE;
+}
+
+.footer-bottom {
+    font-size: 9px;
+    color: #FEFEFE;
+    text-align: left; /* Se till att även copyright-texten börjar till höger */
+}
