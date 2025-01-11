@@ -134,26 +134,25 @@ main {
 }
 
 .product-options label {
-    font-size: 18px;
-    display: block;
-    margin-bottom: 20px; /* Mellanrum mellan rubriker och alternativ */
+    font-size: 18px; /* Tydlig rubrikstorlek */
+    display: block; /* Gör att rubriken står ovanför alternativen */
+    margin-bottom: 16px; /* Mer utrymme mellan rubriker och alternativen */
+
 }
 
 .product-options select,
 .product-options input[type="number"] {
-    margin-bottom: 40px; /* Mellanrum mellan varje fält */
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px; /* Avstånd mellan input och nästa sektion */
 }
 
 .add-to-cart {
-    margin-top: 40px; /* Mellanrum ovanför knappen */
-    margin-bottom: 40px; /* Avstånd till botten av ramen */
+    margin-top: 20px; /* Avstånd mellan alternativ och knappen */
+    margin-left: 21px; /* Flyttar hela innehållet till höger */
 }
-
-/* För hela sektionen */
-.product-details {
-    padding-bottom: 60px; /* Gör så att det finns lika mycket avstånd som upptill */
-}
-
 
 .add-to-cart button {
     background-color: #333;
