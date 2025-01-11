@@ -89,37 +89,31 @@ main {
     color: #555;
 }
 
+
 .product-container {
     display: flex;
     gap: 50px;
-    align-items: center;
-    background-color: #FFFDF4;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 150px auto 150px; /* Ökad marginal för mer mellanrum ovan och under */
-    width: 80%;
-    padding-bottom: 40px; /* Extra utrymme inuti sektionen */
-    margin-top: 250px; /* Öka avståndet ovanför */
-    margin-bottom: 300px; /* Öka avståndet under */
-    padding-left: 30px; /* Flytta innehållet mer till höger */
+    align-items: flex-start; /* Justerar innehållet från toppen */
+    margin: 150px auto; /* Centrerar sektionen vertikalt */
+    width: 80%; /* Bredd på sektionen */
+    padding: 0; /* Ta bort padding från hela containern */
+    background-color: transparent; /* Ingen bakgrundsfärg för hela sektionen */
 }
 
 .product-image {
-    width: 450px; /* Gör bilden större */
-    height: auto;
+    width: 450px; /* Större bildstorlek */
+    height: auto; /* Automatisk höjd baserat på bredd */
     margin-left: 20px; /* Flytta bilden lite till höger */
 }
 
 .product-details {
     font-family: Georgia, serif;
-    margin-left: 90px; /* Flyttar hela innehållet till höger */
-    padding: 20px; /* Lägg till padding för textens innehåll */
+    padding: 20px; /* Padding för textens innehåll */
     border: 1px solid #ddd; /* Ram runt texten */
-    border-radius: 10px; /* Gör ramen rundad */
+    border-radius: 10px; /* Rundade hörn för ramen */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lägg till skugga */
-    background-color: #FFFDF4; /* Bakgrundsfärg för textsektionen */
+    background-color: #FFFDF4; /* Bakgrundsfärg för textområdet */
+    flex: 1; /* Fyll ut det tillgängliga utrymmet */
 }
 
 .product-details h2 {
@@ -130,15 +124,14 @@ main {
 .product-options {
     display: flex;
     flex-direction: column;
-    gap: 25px; /* Extra mellanrum mellan alternativen */
-    margin-left: 890px; /* Extra avstånd för innehållet */
+    gap: 15px; /* Mellanrum mellan alternativ */
+    margin-top: 20px; /* Extra avstånd mellan rubrik och alternativ */
 }
 
 .product-options label {
-    font-size: 18px; /* Större fontstorlek för rubriker */
-    font-family: Georgia, serif; /* Samma font för alla rubriker */
-    display: block; /* Gör att "Pick shirt:" och "Pick color" hamnar ovanför alternativen */
-    margin-bottom: 10px; /* Mer utrymme mellan rubriker och alternativen */
+    font-size: 18px; /* Tydlig rubrikstorlek */
+    display: block; /* Gör att rubriken står ovanför alternativen */
+    margin-bottom: 5px;
 }
 
 .product-options select,
@@ -149,14 +142,8 @@ main {
     border-radius: 4px;
 }
 
-.product-options .option-group {
-    display: flex;
-    flex-direction: column; /* Placera rubriken ovanför alternativen */
-}
-
 .add-to-cart {
-    margin-top: 20px;
-    margin-left: 90px; /* Flyttar hela innehållet till höger */
+    margin-top: 20px; /* Avstånd mellan alternativ och knappen */
 }
 
 .add-to-cart button {
@@ -172,6 +159,7 @@ main {
 .add-to-cart button:hover {
     background-color: #444;
 }
+
 
 .newsletter-section {
     background-color: #B8B1A2;
