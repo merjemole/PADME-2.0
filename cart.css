@@ -19,11 +19,12 @@ body, html {
 
 }
 
+
 main {
     flex: 1; /* Fyller ut allt tillgängligt utrymme mellan nav och footer */
     padding: 40px 20px; /* Extra padding runt innehållet */
     margin-top: 150px; /* Specifik avstånd för produkt-sidan */
-    margin-bottom: 200px; /* Ändra från 150px till 200px (eller högre) */
+    padding-bottom: 400px; /* Lägg till padding istället för margin-bottom */
     align-self: stretch; /* Eller auto, beroende på layouten */
 
 }
@@ -310,7 +311,6 @@ main {
     line-height: 1.6;
     font-family: Georgia, serif; /* Lägg till samma font som resten av sidan */
     flex-shrink: 0; /* Footern håller sig alltid längst ner */
-    position: relative; /* Ta bort fixed-positionen som orsakade problem */
 
 }
 
