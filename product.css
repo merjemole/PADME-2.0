@@ -158,7 +158,7 @@ main {
     -webkit-appearance: none; /* Tar bort standardutseendet i Webkit-baserade webbläsare */
     -moz-appearance: none; /* Tar bort standardutseendet i Firefox */
     appearance: none; /* Tar bort standardutseendet */
-    background-color: #FFFDF4; /* Samma bakgrundsfärg som textområdet */
+    background-color: #FFF; /* Samma bakgrundsfärg som textområdet */
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 8px 12px; /* Ger extra utrymme för texten */
