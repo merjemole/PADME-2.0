@@ -303,15 +303,17 @@ main {
     background-color: #B8B1A2;
     color: #FEFEFE;
     font-size: 12px;
-    text-align: left; /* Justera så texten börjar till höger */
     line-height: 1.6;
-    font-family: Georgia, serif; /* Lägg till samma font som resten av sidan */
-    flex-shrink: 0; /* Footern håller sig alltid längst ner */
-    margin-top: 150px; /* Öka från 100px till 150px eller högre */
-    padding: 30px 80px; /* Extra padding i footern för mer utrymme */
-    position: fixed;
-
+    font-family: Georgia, serif;
+    margin-top: 150px;
+    padding: 30px 80px;
+    width: 100%; /* Se till att footern täcker hela skärmen */
+    position: relative; /* Ändra från fixed till relative */
+    bottom: 0; /* Se till att den ligger längst ner */
+    text-align: left;
+    box-sizing: border-box; /* Gör att padding och border inkluderas i bredden */
 }
+
 
 .footer-links {
     display: flex;
