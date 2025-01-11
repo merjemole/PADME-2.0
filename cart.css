@@ -14,6 +14,8 @@ body, html {
     flex-direction: column; /* Gör att sidans innehåll blir flexbox */
     margin: 0;
     background-color: #FFFDF4; /* Samma bakgrundsfärg som karusellen */
+    flex-direction: column; /* Gör att body och dess innehåll blir flexbox */
+
 
 }
 
@@ -300,18 +302,18 @@ main {
 
 /* Footer Section */
 .footer {
-    background-color: #B8B1A2;
+    background-color: #B8B1A2; /* Footerns bakgrundsfärg */
     color: #FEFEFE;
     font-size: 12px;
     line-height: 1.6;
     font-family: Georgia, serif;
     margin-top: 150px;
     padding: 30px 80px;
-    width: 100%; /* Se till att footern täcker hela skärmen */
-    position: relative; /* Ändra från fixed till relative */
-    bottom: 0; /* Se till att den ligger längst ner */
+    width: 100%; /* Täcker hela skärmens bredd */
     text-align: left;
-    box-sizing: border-box; /* Gör att padding och border inkluderas i bredden */
+    box-sizing: border-box; /* Padding inkluderas i bredden */
+    flex-shrink: 0; /* Footern håller sig längst ner och krymper inte */
+    position: relative; /* Ta bort fixed-positionen som orsakade problem */
 }
 
 
