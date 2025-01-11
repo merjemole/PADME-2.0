@@ -234,6 +234,7 @@ main {
     flex-shrink: 0; /* Footern håller sig alltid längst ner */
     margin-top: 150px; /* Öka från 100px till 150px eller högre */
     padding: 30px 80px; /* Extra padding i footern för mer utrymme */
+    position: fixed;
 
 }
 
