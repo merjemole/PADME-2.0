@@ -94,7 +94,7 @@ main {
     display: flex;
     gap: 50px;
     align-items: flex-start; /* Justerar innehållet från toppen */
-    margin: 150px auto; /* Centrerar sektionen vertikalt */
+    margin: 150px auto 150px; /* Ökad marginal för mer mellanrum ovan och under */
     width: 80%; /* Bredd på sektionen */
     padding: 0; /* Ta bort padding från hela containern */
     background-color: transparent; /* Ingen bakgrundsfärg för hela sektionen */
@@ -114,6 +114,7 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lägg till skugga */
     background-color: #FFFDF4; /* Bakgrundsfärg för textområdet */
     flex: 1; /* Fyll ut det tillgängliga utrymmet */
+    margin-left: 21px; /* Flyttar hela innehållet till höger */
 }
 
 .product-details h2 {
@@ -126,6 +127,7 @@ main {
     flex-direction: column;
     gap: 15px; /* Mellanrum mellan alternativ */
     margin-top: 20px; /* Extra avstånd mellan rubrik och alternativ */
+    margin-left: 21px; /* Extra avstånd för innehållet */
 }
 
 .product-options label {
