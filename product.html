@@ -102,34 +102,57 @@
             <p>BrandTeesAI © 2025, All Rights Reserved</p>
         </div>
     </footer>
-
+    
     <script>
-        // Koppla till elementen
-        const shirtOptions = document.querySelectorAll('input[name="shirt"]');
-        const colorOptions = document.querySelectorAll('input[name="color"]');
-        const productImage = document.getElementById('product-image');
+    // Befintlig bilduppdateringslogik
+    const shirtOptions = document.querySelectorAll('input[name="shirt"]');
+    const colorOptions = document.querySelectorAll('input[name="color"]');
+    const productImage = document.getElementById('product-image');
 
-        // Bildkartläggning för olika kombinationer
-        const imageMap = {
-            "short-sleeve-black": "short-sleeve-black.png",
-            "short-sleeve-white": "short-sleeve-white.png",
-            "long-sleeve-black": "long-sleeve-black.png",
-            "long-sleeve-white": "long-sleeve-white.png"
-        };
+    const imageMap = {
+        "short-sleeve-black": "short-sleeve-black.png",
+        "short-sleeve-white": "short-sleeve-white.png",
+        "long-sleeve-black": "long-sleeve-black.png",
+        "long-sleeve-white": "long-sleeve-white.png"
+    };
 
+    function updateImage() {
+        const selectedShirt = document.querySelector('input[name="shirt"]:checked').value;
+        const selectedColor = document.querySelector('input[name="color"]:checked').value;
+        const imageKey = `${selectedShirt}-${selectedColor}`;
+        productImage.src = imageMap[imageKey];
+    }
 
-        // Funktion för att uppdatera bilden
-        function updateImage() {
-            const selectedShirt = document.querySelector('input[name="shirt"]:checked').value;
-            const selectedColor = document.querySelector('input[name="color"]:checked').value;
+    shirtOptions.forEach(option => option.addEventListener('change', updateImage));
+    colorOptions.forEach(option => option.addEventListener('change', updateImage));
 
-            const imageKey = `${selectedShirt}-${selectedColor}`;
-            productImage.src = imageMap[imageKey];
+    // Lägg till "Add to cart"-logiken HÄR
+    const addToCartBtn = document.getElementById('add-to-cart-btn');
+
+    addToCartBtn.addEventListener('click', () => {
+        const selectedShirt = document.querySelector('input[name="shirt"]:checked').value;
+        const selectedColor = document.querySelector('input[name="color"]:checked').value;
+        const selectedSize = document.getElementById('size').value;
+        const quantity = document.getElementById('quantity').value;
+
+        if (!selectedSize) {
+            alert('Please select a size.');
+            return;
         }
 
-        // Lyssna på ändringar
-        shirtOptions.forEach(option => option.addEventListener('change', updateImage));
-        colorOptions.forEach(option => option.addEventListener('change', updateImage));
-    </script>
+        const product = {
+            shirt: selectedShirt,
+            color: selectedColor,
+            size: selectedSize,
+            quantity: parseInt(quantity, 10),
+        };
+
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.push(product);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        window.location.href = 'cart.html';
+    });
+</script>
+
 </body>
 </html>
