@@ -136,7 +136,7 @@ main {
 .product-options label {
     font-size: 18px; /* Tydlig rubrikstorlek */
     display: block; /* Gör att rubriken står ovanför alternativen */
-    margin-bottom: 10px; /* Mer utrymme mellan rubriker och alternativen */
+    margin-bottom: 16px; /* Mer utrymme mellan rubriker och alternativen */
 
 }
 
