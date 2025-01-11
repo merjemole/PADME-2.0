@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Your Cart</h1>
+    <div id="cart-items"></div>
+    <button id="checkout-btn">Checkout</button>
+
+    <script>
+        // Hämta kundvagnsdata från localStorage
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        const cartItemsDiv = document.getElementById('cart-items');
+
+        if (cart.length === 0) {
+            cartItemsDiv.innerHTML = '<p>Your cart is empty.</p>';
+        } else {
+            cart.forEach((item, index) => {
+                const itemDiv = document.createElement('div');
+                itemDiv.innerHTML = `
+                    <p>Shirt: ${item.shirt}</p>
+                    <p>Color: ${item.color}</p>
+                    <p>Size: ${item.size}</p>
+                    <p>Quantity: ${item.quantity}</p>
+                    <button onclick="removeItem(${index})">Remove</button>
+                `;
+                cartItemsDiv.appendChild(itemDiv);
+            });
+        }
+
+        // Funktion för att ta bort en vara
+        function removeItem(index) {
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            location.reload(); // Uppdatera sidan
+        }
+    </script>
+</body>
+</html>
