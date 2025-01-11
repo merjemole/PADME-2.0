@@ -98,6 +98,9 @@ main {
     width: 80%; /* Bredd på sektionen */
     padding: 0; /* Ta bort padding från hela containern */
     background-color: transparent; /* Ingen bakgrundsfärg för hela sektionen */
+    margin-top: 250px; /* Öka avståndet ovanför */
+    margin-bottom: 300px; /* Öka avståndet under */
+
 }
 
 .product-image {
