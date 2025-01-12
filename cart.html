@@ -28,6 +28,7 @@
     </nav>
     
     <main>
+        
     <section id="cart">
         <h1>Your Cart</h1>
         <div class="cart-container">
@@ -51,25 +52,24 @@
         <!-- Repeat for other items -->
     </div>
 
-    <!-- Order Summary Section -->
-    <div class="order-summary">
+
+
+              <div class="order-summary">
         <h2>Order Summary</h2>
-        <div class="summary-item">
-            <p>Subtotal</p>
-            <p>$80</p>
-        </div>
-        <div class="summary-item">
-            <p>Discount (–10%)</p>
-            <p>- $8</p>
-        </div>
-        <div class="summary-item">
-            <p>Delivery Fee</p>
-            <p>49 SEK</p>
-        </div>
-        <hr>
-        <div class="summary-total">
-            <p>Total</p>
-            <p>$87</p>
+        <div id="order-summary-details">
+            <div class="summary-item">
+                <p>Subtotal</p>
+                <p id="subtotal">$0</p>
+            </div>
+            <div class="summary-item">
+                <p>Delivery Fee</p>
+                <p id="delivery">49 SEK</p>
+            </div>
+            <hr>
+            <div class="summary-total">
+                <p>Total</p>
+                <p id="total">$49</p>
+            </div>
         </div>
         <div class="promo-code">
             <input type="text" placeholder="Add promo code">
@@ -117,34 +117,54 @@
     </footer>
     
 
-    <script>
-        // Hämta kundvagnsdata från localStorage
-        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+<script>
+        const cartContainer = document.getElementById('cart-container');
+        const totalItemsElem = document.getElementById('total-items');
+        const totalPriceElem = document.getElementById('total-price');
 
-        const cartItemsDiv = document.getElementById('cart-items');
+        function loadCart() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cartContainer.innerHTML = ''; // Töm containern först
 
-        if (cart.length === 0) {
-            cartItemsDiv.innerHTML = '<p>Your cart is empty.</p>';
-        } else {
-            cart.forEach((item, index) => {
-                const itemDiv = document.createElement('div');
-                itemDiv.innerHTML = `
-                    <p>Shirt: ${item.shirt}</p>
-                    <p>Color: ${item.color}</p>
-                    <p>Size: ${item.size}</p>
-                    <p>Quantity: ${item.quantity}</p>
-                    <button onclick="removeItem(${index})">Remove</button>
+            if (cart.length === 0) {
+                cartContainer.innerHTML = '<p>Your cart is empty.</p>';
+                return;
+            }
+
+            let totalItems = 0;
+            let totalPrice = 0;
+
+            cart.forEach((product, index) => {
+                const { shirt, color, size, quantity } = product;
+
+                const item = document.createElement('div');
+                item.classList.add('cart-item');
+                item.innerHTML = `
+                    <p><strong>Shirt:</strong> ${shirt}, <strong>Color:</strong> ${color}, <strong>Size:</strong> ${size}</p>
+                    <p><strong>Quantity:</strong> ${quantity}</p>
+                    <button class="remove-item" data-index="${index}">Remove</button>
                 `;
-                cartItemsDiv.appendChild(itemDiv);
+                cartContainer.appendChild(item);
+
+                totalItems += quantity;
+                totalPrice += quantity * 20; // Anta att varje t-shirt kostar $20
             });
+
+            totalItemsElem.textContent = `Total items: ${totalItems}`;
+            totalPriceElem.textContent = `Total price: $${totalPrice.toFixed(2)}`;
         }
 
-        // Funktion för att ta bort en vara
-        function removeItem(index) {
-            cart.splice(index, 1);
-            localStorage.setItem('cart', JSON.stringify(cart));
-            location.reload(); // Uppdatera sidan
-        }
+        cartContainer.addEventListener('click', (event) => {
+            if (event.target.classList.contains('remove-item')) {
+                const index = event.target.getAttribute('data-index');
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart.splice(index, 1); // Ta bort produkten
+                localStorage.setItem('cart', JSON.stringify(cart));
+                loadCart(); // Ladda om kundvagnen
+            }
+        });
+
+        loadCart(); // Kör när sidan laddas
     </script>
 </body>
 </html>
