@@ -90,21 +90,20 @@ main {
     margin-bottom: 30px; /* Ändra detta värde för mer eller mindre utrymme */
 }
 
-/* Lägger till ett avstånd mellan produktinformationen och sammanfattningen */
+
 #cart-container {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     background-color: #FFFDF4;
     margin: 0 auto;
-    max-width: 2000px;
+    max-width: 2000px;  /* Du kan justera max-width här om du vill ha en bredare container */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    gap: 30px; /* Lägg till gap mellan cart items och order summary */
 }
 
 .cart-items {
-    flex: 3; /* Sätt den här flex-basen så den tar upp 3 delar av layouten */
+    flex: 4; /* Ändrat från 3 till 4 för att ge den mer utrymme */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -113,36 +112,55 @@ main {
 
 .cart-item {
     display: flex;
-    align-items: flex-start; /* Justera vertikalt så att innehållet inte ligger för tätt */
+    align-items: center;
     padding: 15px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Få elementet att fylla sin container bredd */
+    width: 800px;  /* Justera bredden på produktboxen för att göra den bredare */
 }
 
 .cart-item img {
-    width: 100px;
+    width: 100px;  /* Justerat bildens storlek för att passa den bredare boxen */
     height: 100px;
     object-fit: cover;
     border-radius: 8px;
 }
+
 
 .cart-item-details {
     flex: 1;
     margin-left: 15px;
 }
 
-.cart-item-name,
-.cart-item-price,
-.cart-item-quantity {
-    margin-bottom: 10px; /* Lägg till mer avstånd mellan radpunkter */
+.cart-item-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cart-item-price {
+    color: #333;
+    font-weight: bold;
+    margin-top: 5px;
 }
 
 .cart-item-quantity {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.quantity-btn {
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quantity-btn:hover {
+    background-color: #ddd;
 }
 
 .remove-btn {
@@ -154,16 +172,13 @@ main {
     margin-left: 10px;
 }
 
-/* Order Summary */
 .order-summary {
-    flex: 1; /* Sätt den att ta upp 1 del */
+    flex: 1;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-left: 30px; /* Skapa utrymme mellan order-summary och cart-items */
-    display: flex;
-    flex-direction: column;
+    margin-left: 50px; /* Lite mer utrymme mellan cart-items och order-summary */
 }
 
 .order-summary h2 {
@@ -218,6 +233,7 @@ main {
     margin-top: 20px;
     cursor: pointer;
 }
+
 
 
 .checkout-btn:hover {
