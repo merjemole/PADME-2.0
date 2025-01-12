@@ -90,8 +90,7 @@ main {
     margin-bottom: 30px; /* Ändra detta värde för mer eller mindre utrymme */
 }
 
-
-.cart-container {
+#cart-container {
     display: flex;
     justify-content: space-between;
     padding: 20px;
