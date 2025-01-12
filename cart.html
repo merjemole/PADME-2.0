@@ -6,8 +6,7 @@
     <title>Product Page</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="product.css">
-    <link rel="stylesheet" href="cart.css">  <!-- Ny CSS-fil för varukorg -->
+    <link rel="stylesheet" href="cart.css">
 </head>
 <body class="cart-page">
 
@@ -28,111 +27,61 @@
     </nav>
     
     <main>
-        
-    <section id="cart">
-        <h1>Your Cart</h1>
-        <div class="cart-container">
-        <!-- Cart Items Section -->
-        <div class="cart-items">
-            <div class="cart-item">
-                <img src="path-to-image1.png" alt="Product Image">
-                <div class="cart-item-details">
-                <p class="cart-item-name"></p>
-                <p>Size: Medium</p>
-                <p>Color: Red</p>
-                <p class="cart-item-price">$20</p>
+        <section id="cart">
+            <h1>Your Cart</h1>
+            <div id="cart-container">
+                <!-- Produkterna laddas här via JavaScript -->
             </div>
-            <div class="cart-item-quantity">
-                <button class="quantity-btn">-</button>
-                <span>1</span>
-                <button class="quantity-btn">+</button>
-            </div>
-            <button class="remove-btn">&times;</button>
-        </div>
-        <!-- Repeat for other items -->
-    </div>
 
-
-
-              <div class="order-summary">
-        <h2>Order Summary</h2>
-        <div id="order-summary-details">
-            <div class="summary-item">
-                <p>Subtotal</p>
-                <p id="subtotal">$0</p>
+            <!-- Beställningssammanfattning -->
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <div id="order-summary-details">
+                    <div class="summary-item">
+                        <p>Subtotal</p>
+                        <p id="subtotal">0 SEK</p>
+                    </div>
+                    <div class="summary-item">
+                        <p>Delivery Fee</p>
+                        <p id="delivery">49 SEK</p>
+                    </div>
+                    <hr>
+                    <div class="summary-total">
+                        <p>Total</p>
+                        <p id="total">49 SEK</p>
+                    </div>
+                </div>
+                <button class="checkout-btn">Go to Checkout →</button>
             </div>
-            <div class="summary-item">
-                <p>Delivery Fee</p>
-                <p id="delivery">49 SEK</p>
-            </div>
-            <hr>
-            <div class="summary-total">
-                <p>Total</p>
-                <p id="total">$49</p>
-            </div>
-        </div>
-        <div class="promo-code">
-            <input type="text" placeholder="Add promo code">
-            <button>Apply</button>
-        </div>
-        <button class="checkout-btn">Go to Checkout →</button>
-    </div>
-</div>
-       </section>
-           </main>
+        </section>
+    </main>
 
-     <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
-        <div class="newsletter-section">
-            <h3>Join Our Newsletter</h3>
-            <p>Enter your email address here to stay updated with the latest news and offers.</p>
-            <form class="newsletter-form" action="#" method="post">
-                <input type="email" name="email" placeholder="Enter your email address here" required>
-                <button type="submit">Join</button>
-            </form>
-        </div>
-
-        <div class="footer-links">
-            <ul>
-                <li><strong>BrandTees AI</strong></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Collaborations</a></li>
-            </ul>
-            <ul>
-                <li><strong>Customer Support</strong></li>
-                <li><a href="#">Delivery Details</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-            <ul>
-                <li><strong>Contact Us</strong></li>
-                <li><a href="#">Call</a></li>
-                <li><a href="#">Email</a></li>
-            </ul>
-        </div>
         <div class="footer-bottom">
             <p>BrandTeesAI © 2025, All Rights Reserved</p>
         </div>
     </footer>
-    
 
-<script>
+    <script>
+        // Hämta element
         const cartContainer = document.getElementById('cart-container');
-        const totalItemsElem = document.getElementById('total-items');
-        const totalPriceElem = document.getElementById('total-price');
+        const subtotalElem = document.getElementById('subtotal');
+        const totalElem = document.getElementById('total');
+        const deliveryFee = 49;
 
+        // Ladda varukorg från LocalStorage
         function loadCart() {
             const cart = JSON.parse(localStorage.getItem('cart')) || [];
-            cartContainer.innerHTML = ''; // Töm containern först
+            cartContainer.innerHTML = ''; // Töm containern
 
             if (cart.length === 0) {
                 cartContainer.innerHTML = '<p>Your cart is empty.</p>';
+                updateSummary(0);
                 return;
             }
 
-            let totalItems = 0;
-            let totalPrice = 0;
+            let subtotal = 0;
 
             cart.forEach((product, index) => {
                 const { shirt, color, size, quantity } = product;
@@ -140,31 +89,58 @@
                 const item = document.createElement('div');
                 item.classList.add('cart-item');
                 item.innerHTML = `
-                    <p><strong>Shirt:</strong> ${shirt}, <strong>Color:</strong> ${color}, <strong>Size:</strong> ${size}</p>
-                    <p><strong>Quantity:</strong> ${quantity}</p>
-                    <button class="remove-item" data-index="${index}">Remove</button>
+                    <div class="item-details">
+                        <p><strong>Shirt:</strong> ${shirt}</p>
+                        <p><strong>Color:</strong> ${color}</p>
+                        <p><strong>Size:</strong> ${size}</p>
+                        <p><strong>Price:</strong> $20</p>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn decrease" data-index="${index}">-</button>
+                            <span>${quantity}</span>
+                            <button class="quantity-btn increase" data-index="${index}">+</button>
+                        </div>
+                        <button class="remove-btn" data-index="${index}">&times;</button>
+                    </div>
                 `;
                 cartContainer.appendChild(item);
 
-                totalItems += quantity;
-                totalPrice += quantity * 20; // Anta att varje t-shirt kostar $20
+                subtotal += quantity * 20; // Anta priset $20 per t-shirt
             });
 
-            totalItemsElem.textContent = `Total items: ${totalItems}`;
-            totalPriceElem.textContent = `Total price: $${totalPrice.toFixed(2)}`;
+            updateSummary(subtotal);
         }
 
+        // Uppdatera beställningssammanfattning
+        function updateSummary(subtotal) {
+            subtotalElem.textContent = `${subtotal} SEK`;
+            totalElem.textContent = `${subtotal + deliveryFee} SEK`;
+        }
+
+        // Hantera knapptryckningar
         cartContainer.addEventListener('click', (event) => {
-            if (event.target.classList.contains('remove-item')) {
-                const index = event.target.getAttribute('data-index');
-                const cart = JSON.parse(localStorage.getItem('cart')) || [];
-                cart.splice(index, 1); // Ta bort produkten
-                localStorage.setItem('cart', JSON.stringify(cart));
-                loadCart(); // Ladda om kundvagnen
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const index = event.target.getAttribute('data-index');
+
+            if (event.target.classList.contains('remove-btn')) {
+                // Ta bort vara
+                cart.splice(index, 1);
+            } else if (event.target.classList.contains('increase')) {
+                // Öka antal
+                cart[index].quantity += 1;
+            } else if (event.target.classList.contains('decrease')) {
+                // Minska antal
+                if (cart[index].quantity > 1) {
+                    cart[index].quantity -= 1;
+                }
             }
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+            loadCart();
         });
 
-        loadCart(); // Kör när sidan laddas
+        // Initiera när sidan laddas
+        loadCart();
     </script>
+
 </body>
 </html>
