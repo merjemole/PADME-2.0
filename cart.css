@@ -86,6 +86,10 @@ main {
     color: #555;
 }
 
+#cart h1 {
+    margin-bottom: 30px; /* Ändra detta värde för mer eller mindre utrymme */
+}
+
 
 .cart-container {
     display: flex;
