@@ -10,18 +10,17 @@ body, html {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     background-color: #FFFDF4;
-    min-height: 100vh; /* Säkerställer att body täcker hela viewportens höjd */
-
+    min-height: 100vh; /* Ensures body covers the full viewport height */
 }
 
 main {
     display: flex;
-    justify-content: center; /* Centrerar horisontellt */
-    align-items: center; /* Centrerar vertikalt */
-    height: 100vh; /* Gör main lika hög som hela viewporten */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Main section covers full viewport height */
     box-sizing: border-box;
     padding: 20px;
-    text-align: left; /* Texten börjar från vänster */
+    text-align: left; /* Text starts from left */
 }
 
 .cart-page .floating-nav {
@@ -29,7 +28,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px 50px 13px; /* Lägg till padding-top istället */
+    padding: 20px 50px 13px; /* Add padding-top */
     color: #131311;
     background: transparent;
     font-size: 12.5px;
@@ -56,7 +55,7 @@ main {
 .cart-page .floating-nav .right a span {
     vertical-align: middle;
     margin-right: 6px; /* Space between icon and text */
-    font-size: 18px; /* Justera storleken här */
+    font-size: 18px; /* Adjust size here */
 }
 
 /* Remove hover effect */
@@ -64,11 +63,11 @@ main {
     color: #131311;
 }
 
-/* Loggan i mitten */
+/* Logo in the middle */
 .cart-page .floating-nav .logo {
-    position: absolute; /* Separera loggan från flexbox-flödet */
-    left: 50%; /* Placera i mitten av navbarens bredd */
-    transform: translateX(-50%); /* Korrigera för bredden på loggan */
+    position: absolute; /* Separate logo from flexbox flow */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for logo width */
     font-size: 18px;
     font-family: Georgia, serif;
     font-weight: bold;
@@ -87,9 +86,8 @@ main {
 }
 
 #cart h1 {
-    margin-bottom: 30px; /* Ändra detta värde för mer eller mindre utrymme */
+    margin-bottom: 30px; /* Adjust value for more or less space */
 }
-
 
 #cart-container {
     display: flex;
@@ -97,13 +95,13 @@ main {
     padding: 20px;
     background-color: #FFFDF4;
     margin: 0 auto;
-    max-width: 2000px;  /* Du kan justera max-width här om du vill ha en bredare container */
+    max-width: 2000px;  /* Adjust max-width for a wider container */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cart-items {
-    flex: 4; /* Ändrat från 3 till 4 för att ge den mer utrymme */
+    flex: 4; /* Adjusted from 3 to 4 for more space */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -117,16 +115,15 @@ main {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 800px;  /* Justera bredden på produktboxen för att göra den bredare */
+    width: 800px;  /* Adjust width for wider product boxes */
 }
 
 .cart-item img {
-    width: 100px;  /* Justerat bildens storlek för att passa den bredare boxen */
+    width: 100px;  /* Adjusted image size for wider box */
     height: 100px;
     object-fit: cover;
     border-radius: 8px;
 }
-
 
 .cart-item-details {
     flex: 1;
@@ -178,7 +175,7 @@ main {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-left: 50px; /* Lite mer utrymme mellan cart-items och order-summary */
+    margin-left: 50px; /* More space between cart-items and order-summary */
 }
 
 .order-summary h2 {
@@ -234,8 +231,6 @@ main {
     cursor: pointer;
 }
 
-
-
 .checkout-btn:hover {
     background-color: #333;
 }
@@ -246,7 +241,7 @@ main {
     text-align: center;
     color: #FEFEFE;
     font-family: Georgia, serif;
-    margin-bottom: 20px; /* Ger lite luft mellan nyhetsbrevet och resten av footern */
+    margin-bottom: 20px; /* Space between newsletter and footer */
 }
 
 .newsletter-section h3 {
@@ -306,12 +301,11 @@ main {
     padding: 20px 80px;
     color: #FEFEFE;
     font-size: 12px;
-    text-align: left; /* Justera så texten börjar till höger */
+    text-align: left; /* Adjust text alignment */
     line-height: 1.6;
-    font-family: Georgia, serif; /* Lägg till samma font som resten av sidan */
-    flex-shrink: 0; /* Footern håller sig alltid längst ner */
+    font-family: Georgia, serif;
+    flex-shrink: 0; /* Footer stays at the bottom */
     margin: 0;
-
 }
 
 .footer-links {
@@ -325,7 +319,7 @@ main {
 .footer-links ul {
     list-style: none;
     padding: 0;
-    min-width: 150px; /* Ger varje kolumn en jämn minsta bredd */
+    min-width: 150px; /* Ensure even column width */
 }
 
 .footer-links ul li {
@@ -336,8 +330,7 @@ main {
     font-size: 13px;
     text-transform: uppercase;
     color: #FEFEFE;
-    font-weight: 300; /* Gör rubriken tunnare */
-
+    font-weight: 300;
 }
 
 .footer-links ul li a {
@@ -353,5 +346,5 @@ main {
 .footer-bottom {
     font-size: 9px;
     color: #FEFEFE;
-    text-align: left; /* Se till att även copyright-texten börjar till höger */
+    text-align: left; /* Align copyright text properly */
 }
