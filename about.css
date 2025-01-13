@@ -23,7 +23,7 @@ main {
     text-align: left; /* Text starts from left */
 }
 
-.cart-page .floating-nav {
+.about-page .floating-nav {
     position: absolute;
     width: 100%;
     display: flex;
@@ -39,8 +39,8 @@ main {
     border-bottom: 1px solid #131311;
 }
 
-.cart-page .floating-nav .left a, 
-.cart-page .floating-nav .right a {
+.about-page .floating-nav .left a, 
+.about-page .floating-nav .right a {
     text-decoration: none;
     color: #131311;
     font-family: Georgia, serif;
@@ -48,23 +48,23 @@ main {
     transition: color 0.3s ease;
 }
 
-.cart-page .floating-nav .right a:last-child {
+.about-page .floating-nav .right a:last-child {
     margin-right: 0; /* Remove extra margin on the last element */
 }
 
-.cart-page .floating-nav .right a span {
+.about-page .floating-nav .right a span {
     vertical-align: middle;
     margin-right: 6px; /* Space between icon and text */
     font-size: 18px; /* Adjust size here */
 }
 
 /* Remove hover effect */
-.cart-page .floating-nav a:hover {
+.about-page .floating-nav a:hover {
     color: #131311;
 }
 
 /* Logo in the middle */
-.cart-page .floating-nav .logo {
+.about-page .floating-nav .logo {
     position: absolute; /* Separate logo from flexbox flow */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for logo width */
@@ -74,14 +74,14 @@ main {
     color: #131311;
 }
 
-.cart-page .floating-nav .logo a {
+.about-page .floating-nav .logo a {
     text-decoration: none;
     color: inherit;
     letter-spacing: 1px;
     transition: color 0.3s ease;
 }
 
-.cart-page .floating-nav .logo a:hover {
+.about-page .floating-nav .logo a:hover {
     color: #555;
 }
 
