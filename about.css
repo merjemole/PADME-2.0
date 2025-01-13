@@ -22,8 +22,6 @@ main {
     margin: 0 auto;
 }
 
-
-
 .about-page .floating-nav {
     position: absolute;
     width: 100%;
@@ -86,12 +84,6 @@ main {
     color: #555;
 }
 
-
-
-.about-page .floating-nav .logo a:hover {
-    color: #555;
-}
-
 /* Ensure all sections take full width and have similar alignment */
 .about-section, .mission-section, .innovation-section {
     margin-bottom: 60px; /* Space between the sections */
@@ -100,6 +92,7 @@ main {
     align-items: flex-start; /* Align items at the top */
     text-align: left; /* Align text to the left */
     padding: 0 20px;
+    margin-top: 80px; /* Add space from the top of the page */
 }
 
 .about-container {
@@ -121,13 +114,6 @@ main {
     font-weight: 300;
     color: #555;
 }
-
-
-/* Add space under the heading and text */
-.about-page h1, .about-page p {
-    margin-bottom: 40px; /* More space below the heading and text */
-}
-
 
 .newsletter-section {
     background-color: #B8B1A2;
