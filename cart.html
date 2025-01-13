@@ -70,51 +70,46 @@
         const totalElem = document.getElementById('total');
         const deliveryFee = 49;
 
-        // Ladda varukorg från LocalStorage
-        function loadCart() {
-            const cart = JSON.parse(localStorage.getItem('cart')) || [];
-            cartContainer.innerHTML = ''; // Töm containern
 
-            if (cart.length === 0) {
-                cartContainer.innerHTML = '<p>Your cart is empty.</p>';
-                updateSummary(0);
-                return;
-            }
+// Ladda varukorg från LocalStorage
+function loadCart() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cartContainer.innerHTML = ''; // Töm containern
 
-            let subtotal = 0;
+    if (cart.length === 0) {
+        cartContainer.innerHTML = '<p>Your cart is empty.</p>';
+        updateSummary(0);
+        return;
+    }
 
-            cart.forEach((product, index) => {
-                const { shirt, color, size, quantity } = product;
+    let subtotal = 0;
 
-                const item = document.createElement('div');
-                item.classList.add('cart-item');
-                item.innerHTML = `
-                    <div class="item-details">
-                        <p><strong>Shirt:</strong> ${shirt}</p>
-                        <p><strong>Color:</strong> ${color}</p>
-                        <p><strong>Size:</strong> ${size}</p>
-                        <p><strong>Price:</strong> $20</p>
-                        <div class="quantity-controls">
-                            <button class="quantity-btn decrease" data-index="${index}">-</button>
-                            <span>${quantity}</span>
-                            <button class="quantity-btn increase" data-index="${index}">+</button>
-                        </div>
-                        <button class="remove-btn" data-index="${index}">&times;</button>
-                    </div>
-                `;
-                cartContainer.appendChild(item);
+    cart.forEach((product, index) => {
+        const { shirt, color, size, quantity } = product;
 
-                subtotal += quantity * 20; // Anta priset $20 per t-shirt
-            });
+        const item = document.createElement('div');
+        item.classList.add('cart-item');
+        item.innerHTML = `
+            <div class="item-details">
+                <p><strong>Shirt:</strong> ${shirt}</p>
+                <p><strong>Color:</strong> ${color}</p>
+                <p><strong>Size:</strong> ${size}</p>
+                <p><strong>Price:</strong> 200 SEK</p>
+                <div class="quantity-controls">
+                    <button class="quantity-btn decrease" data-index="${index}">-</button>
+                    <span>${quantity}</span>
+                    <button class="quantity-btn increase" data-index="${index}">+</button>
+                </div>
+                <button class="remove-btn" data-index="${index}">&times;</button>
+            </div>
+        `;
+        cartContainer.appendChild(item);
 
-            updateSummary(subtotal);
-        }
+        subtotal += quantity * 200; // Anta priset 200 SEK per t-shirt
+    });
 
-        // Uppdatera beställningssammanfattning
-        function updateSummary(subtotal) {
-            subtotalElem.textContent = `${subtotal} SEK`;
-            totalElem.textContent = `${subtotal + deliveryFee} SEK`;
-        }
+    updateSummary(subtotal);
+}
 
         // Hantera knapptryckningar
         cartContainer.addEventListener('click', (event) => {
