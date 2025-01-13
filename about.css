@@ -86,13 +86,13 @@ main {
 
 /* Ensure all sections take full width and have similar alignment */
 .about-section, .mission-section, .innovation-section {
-    margin-bottom: 60px; /* Space between the sections */
     display: flex;
     justify-content: center; /* Center the content horizontally */
     align-items: flex-start; /* Align items at the top */
     text-align: left; /* Align text to the left */
     padding: 0 20px;
-    margin-top: 80px; /* Add space from the top of the page */
+    margin-top: 40px; /* Reduced space from the top of the page */
+    margin-bottom: 30px; /* Reduced space between sections */
 }
 
 .about-container {
