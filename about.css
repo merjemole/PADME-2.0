@@ -117,10 +117,10 @@ main {
 }
 
 
-
-
-
-
+/* Add space under the heading and text */
+.about-page h1, .about-page p {
+    margin-bottom: 40px; /* More space below the heading and text */
+}
 
 
 .newsletter-section {
