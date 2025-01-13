@@ -85,21 +85,22 @@ main {
     color: #555;
 }
 
-
 #cart {
     display: flex;
+    flex-direction: column; /* Ändrar layouten till en vertikal kolumn */
     max-width: 1200px;
     width: 100%;
-    gap: 20px; /* Space between cart and summary */
-    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Mellanrum mellan sektionerna */
+    align-items: flex-start; /* Justera innehållet åt vänster */
 }
 
 #cart h1 {
     font-size: 32px;
-    margin-bottom: 30px;
-    text-align: left;
+    margin-bottom: 20px;
     color: #131311;
+    align-self: flex-start; /* Ser till att rubriken håller sig vänsterställd */
 }
+
 
 /* Cart layout */
 #cart-container {
