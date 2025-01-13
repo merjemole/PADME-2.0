@@ -85,116 +85,128 @@ main {
     color: #555;
 }
 
-#cart h1 {
-    margin-bottom: 30px; /* Adjust value for more or less space */
-}
 
-#cart-container {
+#cart {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #FFFDF4;
-    margin: 0 auto;
-    max-width: 2000px;  /* Adjust max-width for a wider container */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
 }
 
-.cart-items {
-    flex: 4; /* Adjusted from 3 to 4 for more space */
+#cart h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: left;
+    color: #131311;
+}
+
+/* Cart layout */
+#cart-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-right: 20px;
+    flex: 3;
+    margin-right: 50px;
 }
 
 .cart-item {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
     padding: 15px;
-    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 800px;  /* Adjust width for wider product boxes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cart-item img {
-    width: 100px;  /* Adjusted image size for wider box */
-    height: 100px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.cart-item-details {
+.cart-item .item-details {
     flex: 1;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
-.cart-item-name {
-    font-size: 16px;
-    font-weight: bold;
+.cart-item .item-details p {
+    font-size: 14px;
     margin-bottom: 5px;
 }
 
-.cart-item-price {
-    color: #333;
+.cart-item .item-details p:last-child {
     font-weight: bold;
-    margin-top: 5px;
+    color: #333;
 }
 
-.cart-item-quantity {
+.cart-item .quantity-controls {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
 .quantity-btn {
-    background-color: #eee;
+    background-color: #EEE;
     border: none;
     padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .quantity-btn:hover {
-    background-color: #ddd;
+    background-color: #DDD;
 }
 
 .remove-btn {
-    background-color: transparent;
+    background: none;
     border: none;
-    color: red;
-    font-size: 18px;
+    color: #FF4D4D;
+    font-size: 20px;
     cursor: pointer;
-    margin-left: 10px;
 }
 
+.remove-btn:hover {
+    color: #FF0000;
+}
+
+/* Order Summary */
 .order-summary {
     flex: 1;
+    max-width: 350px;
+    background-color: #FFFFFF;
     padding: 20px;
-    background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-left: 50px; /* More space between cart-items and order-summary */
+    margin-top: 40px;
+    align-self: flex-end;
+    text-align: left;
 }
 
 .order-summary h2 {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 20px;
+    color: #131311;
 }
 
-.summary-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.summary-total {
+.summary-item, .summary-total {
     display: flex;
     justify-content: space-between;
     font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.summary-total {
     font-weight: bold;
-    margin-top: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #DDD;
+    margin: 15px 0;
 }
 
 .promo-code {
@@ -206,34 +218,42 @@ main {
 .promo-code input {
     flex: 1;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #DDD;
     border-radius: 4px;
+    font-size: 14px;
 }
 
 .promo-code button {
     padding: 10px 20px;
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #FFF;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 14px;
+}
+
+.promo-code button:hover {
+    background-color: #333;
 }
 
 .checkout-btn {
+    display: block;
     width: 100%;
     padding: 15px;
-    background-color: black;
-    color: white;
+    margin-top: 20px;
+    background-color: #000;
+    color: #FFF;
     border: none;
     border-radius: 4px;
-    font-size: 16px;
-    margin-top: 20px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .checkout-btn:hover {
     background-color: #333;
 }
+
 
 .newsletter-section {
     background-color: #B8B1A2;
