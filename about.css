@@ -130,7 +130,7 @@ main {
     text-align: center;
     color: #FEFEFE;
     font-family: Georgia, serif;
-    margin-bottom: 40px; /* Space between newsletter and footer */
+    margin-bottom: 20px; /* Space between newsletter and footer */
 }
 
 .newsletter-section h3 {
@@ -195,7 +195,6 @@ main {
     font-family: Georgia, serif;
     flex-shrink: 0; /* Footer stays at the bottom */
     margin: 0;
-    margin-top: 60px; /* Added space before the footer */
 }
 
 .footer-links {
