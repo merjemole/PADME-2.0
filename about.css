@@ -91,7 +91,7 @@ main {
     align-items: flex-start; /* Align items at the top */
     text-align: left; /* Align text to the left */
     padding: 0 20px;
-    margin-top: 40px; /* Reduced space from the top of the page */
+    margin-top: 100px; /* Increased space from the top of the page */
     margin-bottom: 30px; /* Reduced space between sections */
 }
 
@@ -121,7 +121,7 @@ main {
     text-align: center;
     color: #FEFEFE;
     font-family: Georgia, serif;
-    margin-bottom: 20px; /* Space between newsletter and footer */
+    margin-bottom: 80px; /* Increased space between newsletter and footer */
 }
 
 .newsletter-section h3 {
