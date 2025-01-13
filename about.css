@@ -1,6 +1,89 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #FFFDF4;
+    min-height: 100vh; /* Ensures body covers the full viewport height */
+}
 
+main {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Main section covers full viewport height */
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: left; /* Text starts from left */
+}
 
+.cart-page .floating-nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 13px; /* Add padding-top */
+    color: #131311;
+    background: transparent;
+    font-size: 12.5px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    z-index: 100;
+    border-bottom: 1px solid #131311;
+}
+
+.cart-page .floating-nav .left a, 
+.cart-page .floating-nav .right a {
+    text-decoration: none;
+    color: #131311;
+    font-family: Georgia, serif;
+    margin-right: 86px; /* Space between items */
+    transition: color 0.3s ease;
+}
+
+.cart-page .floating-nav .right a:last-child {
+    margin-right: 0; /* Remove extra margin on the last element */
+}
+
+.cart-page .floating-nav .right a span {
+    vertical-align: middle;
+    margin-right: 6px; /* Space between icon and text */
+    font-size: 18px; /* Adjust size here */
+}
+
+/* Remove hover effect */
+.cart-page .floating-nav a:hover {
+    color: #131311;
+}
+
+/* Logo in the middle */
+.cart-page .floating-nav .logo {
+    position: absolute; /* Separate logo from flexbox flow */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for logo width */
+    font-size: 18px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    color: #131311;
+}
+
+.cart-page .floating-nav .logo a {
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.cart-page .floating-nav .logo a:hover {
+    color: #555;
+}
 
 
 
