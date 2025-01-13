@@ -96,9 +96,15 @@ main {
 
 #cart h1 {
     font-size: 32px;
-    margin-bottom: 30px;
+    margin-bottom: 10px; /* Mellanrum mellan rubriken och texten nedanför */
     text-align: left;
     color: #131311;
+}
+
+#cart p {
+    font-size: 16px; /* Storlek för "Your cart is empty" */
+    color: #333; /* Textfärg */
+    margin-top: 0; /* Undvik extra marginal överst */
 }
 
 
