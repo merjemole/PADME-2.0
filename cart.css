@@ -93,6 +93,7 @@ main {
     width: 100%;
 }
 
+/* Cart header */
 #cart h1 {
     font-size: 32px;
     margin-bottom: 30px;
@@ -100,15 +101,23 @@ main {
     color: #131311;
 }
 
-/* Cart layout */
+/* Cart layout: container for items and summary */
 #cart-container {
+    display: flex;
+    flex-direction: row; /* Lägg items till vänster och sammanfattningen till höger */
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Cart items container */
+.cart-items {
+    flex: 3; /* Större utrymme för produkter */
     display: flex;
     flex-direction: column;
     gap: 20px;
-    flex: 3;
-    margin-right: 50px;
 }
 
+/* Individual cart item */
 .cart-item {
     display: flex;
     align-items: center;
@@ -175,14 +184,13 @@ main {
 
 /* Order Summary */
 .order-summary {
-    flex: 1;
+    flex: 1; /* Mindre utrymme för sammanfattningen */
     max-width: 350px;
     background-color: #FFFFFF;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
-    align-self: flex-end;
+    align-self: flex-start; /* Placera högre upp */
     text-align: left;
 }
 
@@ -254,6 +262,18 @@ hr {
     background-color: #333;
 }
 
+/* Responsive design */
+@media (max-width: 768px) {
+    #cart-container {
+        flex-direction: column; /* På mindre skärmar staplas allt vertikalt */
+    }
+
+    .order-summary {
+        align-self: stretch;
+        max-width: none;
+        margin-top: 20px;
+    }
+}
 
 .newsletter-section {
     background-color: #B8B1A2;
