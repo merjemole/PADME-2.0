@@ -20,6 +20,8 @@ main {
     padding: 20px;
     width: 1520px;
     margin: 0 auto;
+    height: auto;
+    align-items: flex-start; /* Aligns content from the top */
 }
 
 
