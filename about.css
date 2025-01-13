@@ -23,6 +23,7 @@ main {
 }
 
 
+
 .about-page .floating-nav {
     position: absolute;
     width: 100%;
@@ -86,26 +87,26 @@ main {
 }
 
 
-.about-section, .mission-section, .innovation-section {
-    margin-bottom: 60px; /* Space between the sections */
+
+.about-page .floating-nav .logo a:hover {
+    color: #555;
 }
 
-
-.about-section {
+/* Ensure all sections take full width and have similar alignment */
+.about-section, .mission-section, .innovation-section {
+    margin-bottom: 60px; /* Space between the sections */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-start; /* Align items at the top */
+    text-align: left; /* Align text to the left */
     padding: 0 20px;
-    background-color: #FFFDF4;
-    color: #131311;
 }
 
 .about-container {
     max-width: 700px;
     font-family: Georgia, serif;
     line-height: 1.8;
+    width: 100%; /* Make sure the container spans the full available width */
 }
 
 .about-container h1 {
