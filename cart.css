@@ -88,9 +88,10 @@ main {
 
 #cart {
     display: flex;
-    flex-direction: column;
     max-width: 1200px;
     width: 100%;
+    gap: 20px; /* Space between cart and summary */
+    align-items: flex-start; /* Align items at the top */
 }
 
 #cart h1 {
@@ -102,11 +103,10 @@ main {
 
 /* Cart layout */
 #cart-container {
+    flex: 3; /* Takes more space */
     display: flex;
     flex-direction: column;
     gap: 20px;
-    flex: 3;
-    margin-right: 50px;
 }
 
 .cart-item {
@@ -117,13 +117,6 @@ main {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.cart-item img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 8px;
 }
 
 .cart-item .item-details {
@@ -175,15 +168,16 @@ main {
 
 /* Order Summary */
 .order-summary {
-    flex: 1;
+    flex: 1; /* Takes less space */
     max-width: 350px;
     background-color: #FFFFFF;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
-    align-self: flex-end;
+    align-self: flex-start; /* Aligns to the top of the container */
     text-align: left;
+    position: sticky; /* Sticks to the viewport when scrolling */
+    top: 20px;
 }
 
 .order-summary h2 {
@@ -209,34 +203,6 @@ hr {
     margin: 15px 0;
 }
 
-.promo-code {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.promo-code input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #DDD;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-.promo-code button {
-    padding: 10px 20px;
-    background-color: #000;
-    color: #FFF;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.promo-code button:hover {
-    background-color: #333;
-}
-
 .checkout-btn {
     display: block;
     width: 100%;
@@ -248,11 +214,14 @@ hr {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .checkout-btn:hover {
     background-color: #333;
 }
+
 
 .newsletter-section {
     background-color: #B8B1A2;
