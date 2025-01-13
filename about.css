@@ -21,6 +21,8 @@ main {
     box-sizing: border-box;
     padding: 20px;
     text-align: left; /* Text starts from left */
+    width: 1520px; /* Set width to 1520px */
+    margin: 0 auto; /* Center the content */
 }
 
 .about-page .floating-nav {
